@@ -274,7 +274,7 @@ section{
 
 .tm-banner2 {
     margin-top: 35px;
-    height: 299px;
+    height: 280px;
     background-color: #54C1FF;
     background-image: url("../img/bg-banner2.svg"), linear-gradient(45deg, transparent, #9F3EFF);
     background-repeat: no-repeat;
@@ -883,8 +883,3 @@ ol.tm-list-number li::before {
 .tm-bank-button+.tm-bank-button {
     margin-left: 15px;
 }
-
-
-
-
-
