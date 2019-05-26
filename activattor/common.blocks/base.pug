@@ -24,9 +24,9 @@ html(lang="ru")
     meta(name="description" content="Краткое содержание для сниппета яндекса")
     meta(name="Keywords" content="Ключевые слова через запятую в контексте страницы")
   body
-    //- img(src=require('../../img/logo_x100.png') alt="Univer clab logotyp")
-    //- include ./common.blocks/banners
-    include ./header
+    //- img(src=require('../../img/logo_x100.png') alt="logotyp")
+    div.mp-pusher#mp-pusher
+      include ./header
     main
       block main
     include ./footer
