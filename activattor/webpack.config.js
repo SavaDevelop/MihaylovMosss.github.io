@@ -48,6 +48,11 @@ const common = merge([
             chunks: ['index'],
             template: PATHS.source + '/index.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'delivery.html',
+            chunks: ['delivery'],
+            template: PATHS.source + '/delivery.pug'
+        }),
         // данный плагин может объеденять общие для шаблона js
         // new webpack.optimize.CommonsChunkPlugin({
         //   name: "common"
