@@ -63,6 +63,11 @@ const common = merge([
             chunks: ['news-section'],
             template: PATHS.source + '/desktop.bundles/news-section.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'blank.html',
+            chunks: ['blank'],
+            template: PATHS.source + '/desktop.bundles/blank.pug'
+        }),
         // данный плагин может объеденять общие для шаблона js
         // new webpack.optimize.CommonsChunkPlugin({
         //   name: "common"
