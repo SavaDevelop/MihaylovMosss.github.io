@@ -285,7 +285,7 @@ section{
 .tm-banner2-col1 {
     display: block;
     width: 30%;
-    margin-top: -16px;
+    margin-top: 3px; /*-16px*/
     margin-left: 19px;
     padding-left: 15px;
 }
