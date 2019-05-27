@@ -5148,90 +5148,38 @@ block main
                     svg.icon(width="13" height="10")
                       use(xlink:href="#double_chevron")
     include ../common.blocks/block.consultant.pug
-    //- вместо кода, вызываем блок
-    //- section.help_main.d-flex.justify-content-center.help-content
-      .container(style="position: relative")
-        .yellow-rotated
-          p
-            | Мы родберем варианты,
-            br
-            |             наиболее походящие именно Вам
-        .row
-          .col-lg-4
-            img.consultant-img(src="catalog/img/man_blue.png" alt="")
-          .col-lg-6
-            .help-right-content
-              .mobile-help-right
-                .man-mobile-left
-                  img(src="catalog/img/circle-man-mobile.png")
-                .man-mobile-right
-                  p.mobile-help-title
-                    | Остались вопросы по этому товару?
-                  p.mobile-help-text
-                    | Заполните эту форму и наш эксперт проконсультирует вас по подбору
-              p.help-title
-                | Получите
-                br
-                span.upper-title бесплатную консультацию
-                br
-                |                 эксперта по подбору лучшей модели
-              .help-form
-                form(action="" method="")
-                  .form-top
-                    .form-input
-                      input(type="text" placeholder="Имя")
-                      span.name-icon
-                        svg.icon
-                          use(xlink:href="#name-icon")
-                    .form-input
-                      input(type="text" placeholder="Телефон")
-                      span.name-icon
-                        svg.icon
-                          use(xlink:href="#phone-icon")
-                    .help_main-btn
-                      a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
-                        | ПОЛУЧИТЬ ПОМОЩЬ
-                  .form-bottom
-                    .checkbox_cnt
-                      input#check60(style="display: none" type="checkbox")
-                      label(for="check60")
-                        span.check_cnt.check-yellow
-                          svg.icon
-                            use(xlink:href="#yellow-check")
-                        p
-                          | Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих персональных данных в соотвествии с политикой конфиденциальности
-    
+  
     .lower_main.mx-auto
-          .lower_main-left
-            h3 Лодка ПВХ Ривьера 3200 СК надувная под мотор комби черно-красная
-            p.main-lower-text
-              | Двухтактный подвесной двигатель Mercury ME 15 M по праву считается одним из самых лучших в своем
-              | классе. Этот мотор выбирают многие рыболовы, которые ездят на большие реки и озера, также Mercury ME
-              | 15M подойдет для рыбалки на водохранилищах. Мотор Mercury ME 15M используют как на надувных килевых
-              | лодках, так и на железных лодках и катерах. Этот подвесной двигатель является очень компактным и
-              | удобным в использовании и обслуживании, неприхотлив и вынослив при эксплуатации в самых тяжелых
-              | условиях.
-            p.lower-mobile-title Лодочный мотор Меркури (Mercury) 15MH 294CC (15 л.с., 2 такта)
-            div
-              video#movie1(src="media/fishing.mp4")
-              .yellow-circle
-                svg.icon
-                  use(xlink:href="#play_icon")
-              script.
-                document.getElementsByClassName('yellow-circle')[0].onclick = function () {
-                document.getElementById('movie1').play();
-                document.getElementById('movie1').setAttribute('controls', 'controls');
-                this.remove();
-                }
-            h3 Лодочный мотор Меркури (Mercury) 15MH 294CC (15 л.с., 2 такта)
-            p.mobile-lower-text
-              | Двухтактный подвесной двигатель Mercury ME 15 M по праву считается одним из самых лучших в своем
-              | классе. Этот мотор выбирают многие рыболовы, которые ездят на большие реки и озера, также Mercury ME
-              | 15M подойдет для рыбалки на водохранилищах. Мотор Mercury ME 15M используют как на надувных килевых
-              | лодках, так и на железных лодках и катерах. Этот подвесной двигатель является очень компактным и
-              | удобным в использовании и обслуживании, неприхотлив и вынослив при эксплуатации в самых тяжелых
-              | условиях.
-          .lower_main-right
+      .lower_main-left
+        h3 Лодка ПВХ Ривьера 3200 СК надувная под мотор комби черно-красная
+        p.main-lower-text
+          | Двухтактный подвесной двигатель Mercury ME 15 M по праву считается одним из самых лучших в своем
+          | классе. Этот мотор выбирают многие рыболовы, которые ездят на большие реки и озера, также Mercury ME
+          | 15M подойдет для рыбалки на водохранилищах. Мотор Mercury ME 15M используют как на надувных килевых
+          | лодках, так и на железных лодках и катерах. Этот подвесной двигатель является очень компактным и
+          | удобным в использовании и обслуживании, неприхотлив и вынослив при эксплуатации в самых тяжелых
+          | условиях.
+        p.lower-mobile-title Лодочный мотор Меркури (Mercury) 15MH 294CC (15 л.с., 2 такта)
+        div
+          video#movie1(src="../catalog/media/fishing.mp4")
+          .yellow-circle
+            svg.icon
+              use(xlink:href="#play_icon")
+          script.
+            document.getElementsByClassName('yellow-circle')[0].onclick = function () {
+            document.getElementById('movie1').play();
+            document.getElementById('movie1').setAttribute('controls', 'controls');
+            this.remove();
+            }
+        h3 Лодочный мотор Меркури (Mercury) 15MH 294CC (15 л.с., 2 такта)
+        p.mobile-lower-text
+          | Двухтактный подвесной двигатель Mercury ME 15 M по праву считается одним из самых лучших в своем
+          | классе. Этот мотор выбирают многие рыболовы, которые ездят на большие реки и озера, также Mercury ME
+          | 15M подойдет для рыбалки на водохранилищах. Мотор Mercury ME 15M используют как на надувных килевых
+          | лодках, так и на железных лодках и катерах. Этот подвесной двигатель является очень компактным и
+          | удобным в использовании и обслуживании, неприхотлив и вынослив при эксплуатации в самых тяжелых
+          | условиях.
+      .lower_main-right
             .river-boats
               .riviera
                 a(data-fancybox="gallery" href="catalog/img/river1.png")
@@ -5378,10 +5326,10 @@ block main
           rect(x="6" y="2" width="4" height="10" rx="2" fill="#F9C300")
           rect(x="12" width="4" height="14" rx="2" fill="#F9C300")
           rect(y="4" width="4" height="6" rx="2" fill="#F9C300")
-
-    script(src="../js/popper.min.js")
-    script(src="../js/modernizr.custom.js")
+block src_block
+    script(src="../catalog/js/popper.min.js")
     script(src="../catalog/js/ion.rangeSlider.min.js")
+    script(src="../js/modernizr.custom.js")
     script.
       $("#demo_1, #demo_2, #demo_3, #demo_4, #demo_5, #demo_6, #demo_7, #demo_8, #demo_9, #demo_10, #demo_11, #demo_12").ionRangeSlider({
         type: "double",
@@ -5402,7 +5350,7 @@ block main
         $('[data-toggle="tooltip"]').tooltip();
         $('.filter_top_panel a').tooltip();
       })
-    script(src="../js/owl.carousel.min.js")
+    script(src="../catalog/js/owl.carousel.min.js")
     script.
       var _slider = $('#page_slider')
       _slider.owlCarousel({
