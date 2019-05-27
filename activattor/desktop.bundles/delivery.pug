@@ -1,4 +1,4 @@
-extends ./common.blocks/base
+extends ../common.blocks/base
 block title 
   | Доставка
 block main
@@ -41,7 +41,7 @@ block main
                     span.tm-delivery-icon-1 
                     span.tm-delivery-icon-arrow 
                   div Вы вносите минимальную предоплату чтобы 
-                    b зарезервировать товар
+                    b зарезервировать товар 
                     | на складе на ваше имя
                 div.tm-delivery-section-1-item.col-lg-2.col-md-4
                   div.icon
@@ -54,27 +54,27 @@ block main
                     span.tm-delivery-icon-3 
                     span.tm-delivery-icon-arrow 
                   div Вы вносите минимальную предоплату чтобы 
-                    b зарезервировать товар
+                    b зарезервировать товар 
                     | на складе на ваше имя
                 div.tm-delivery-section-1-item.col-lg-2.col-md-4.mt-lg-0.mt-md-5
                   div.icon
                     span.tm-delivery-icon-4 
                     span.tm-delivery-icon-arrow 
                   div Мы 
-                    b тестируем и упаковываем
+                    b тестируем и упаковываем 
                     | ваш заказ
                 div.tm-delivery-section-1-item.col-lg-2.col-md-4.mt-lg-0.mt-md-5
                   div.icon
                     span.tm-delivery-icon-5 
                     span.tm-delivery-icon-arrow 
                   div Вы вносите 
-                    b полную сумму
+                    b полную сумму 
                     | оплаты
                 div.tm-delivery-section-1-item.col-lg-2.col-md-4.mt-lg-0.mt-md-5
                   div.icon
                     span.tm-delivery-icon-6 
                   div Мы доставляем заказ и предоставляем 
-                    b гарантию
+                    b гарантию 
                     | на продукцию до 
                     b 5 лет
           section
@@ -175,13 +175,13 @@ block main
                 div.tm-media-text Юридическим
                   br
                   | лицам
-    include common.blocks/block.consultant.pug
+    include ../common.blocks/block.consultant.pug
   script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
-  script(src="assets/bootstrap-4/js/bootstrap.min.js")
+  script(src="../assets/bootstrap-4/js/bootstrap.min.js")
   script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
-  script(src="assets/slick/slick.js")
-  script(src="js/main.js")
-  script(src="js/modernizr.custom.js")
-  script(src="js/classie.js")
-  script(src="js/mlpushmenu.js")
+  script(src="../assets/slick/slick.js")
+  script(src="../js/main.js")
+  script(src="../js/modernizr.custom.js")
+  script(src="../js/classie.js")
+  script(src="../js/mlpushmenu.js")
   script new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), { type : 'cover' } );
