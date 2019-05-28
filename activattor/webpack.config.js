@@ -26,7 +26,8 @@ var bootstrapConfig = (process.argv[3] === 'development') ? bootstrapEntryPoints
 const common = merge([
   {
     entry: {
-        'index':    PATHS.source + '/js/base.js'//,
+        'index':    PATHS.source + '/js/base.js',
+        'catalog':  PATHS.source + 'desktop.bundles/catalog/catalog.js',
         // 'bootstrap': bootstrapConfig
     },
     output: {
@@ -56,7 +57,7 @@ const common = merge([
         new HtmlWebpackPlugin({
             filename: 'catalog.html',
             chunks: ['catalog'],
-            template: PATHS.source + '/desktop.bundles/catalog.pug'
+            template: PATHS.source + '/desktop.bundles/catalog/catalog.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'news-section.html',
