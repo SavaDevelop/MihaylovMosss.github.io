@@ -26,8 +26,8 @@ var bootstrapConfig = (process.argv[3] === 'development') ? bootstrapEntryPoints
 const common = merge([
   {
     entry: {
-        'index':    PATHS.source + '/js/base.js',
-        'catalog':  PATHS.source + 'desktop.bundles/catalog/catalog.js',
+        'base':    PATHS.source + '/js/base.js',
+        'catalog':  PATHS.source + '/desktop.bundles/catalog/catalog.js',
         // 'bootstrap': bootstrapConfig
     },
     output: {

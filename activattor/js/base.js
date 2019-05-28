@@ -1,1 +1,1 @@
-alert('wejh');
+import '../js/slick/slick.js';
