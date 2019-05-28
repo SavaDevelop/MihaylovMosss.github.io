@@ -1,17 +1,45 @@
 module.exports = function(paths) {
     return {
         module: {
-            rules: [
-                {
+            rules: [{
                     test: /\.scss$/,
                     include: paths,
-                    use: [
-                        'style-loader',
-                        'css-loader',
-                        'sass-loader'
-                    ]
-                }
-            ]
+                    use: [{
+                            loader: style-loader, options: {
+                              sourceMap: true
+                            }
+                          },
+                          {
+                            loader: css-loader, options: {
+                              sourceMap: true
+                            }
+                          },
+                          {
+                            loader: sass-loader, options: {
+                              sourceMap: true
+
+                            }
+                          }]
+                    },
+                    {
+                    test:  /\.sass$/,
+                    include: paths,
+                    use:[{
+                          loader: style-loader, options: {
+                            sourceMap: true
+                          }
+                        },
+                        {
+                          loader: css-loader, options: {
+                            sourceMap: true
+                          }
+                        },
+                        {
+                          loader: sass-loader, options: {
+                            sourceMap: true
+                          }
+                        }]
+                    }]
         }
     };
 };
