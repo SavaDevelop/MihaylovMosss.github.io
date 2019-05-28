@@ -1,4 +1,4 @@
-extends ../../common.blocks/base
+extends ../../common.blocks/base/base
 block head
   link(rel="stylesheet" type="text/css" href="../js/owl.carousel/owl.carousel.min.css")
   link(rel="stylesheet" type="text/css" href="../sass/main.css")
@@ -6,14 +6,14 @@ block head
   link(rel="stylesheet" type="text/css" href="../sass/catalog/media.css")
   link(rel="stylesheet" type="text/css" href="../js/ion.rangeSlider/ion.rangeSlider.min.css")
   link(rel="stylesheet" type="text/css" href="../sass/theme.css")
-block title 
+block title
   | Каталог
 block main
   main
     section.chosen-block#chosen-second-block
       div.container
         div.row
-          include '../../common.blocks/breadcrumb/breadcrumb.pug'
+          include ../../common.blocks/breadcrumb/breadcrumb.pug
           div.col-lg-12
             div.catal_section_title
               h2 Лодки ПВХ
@@ -48,7 +48,7 @@ block main
                         p По убыванию цены
                         input(placeholder="По убыванию цены" type="hidden" readonly)
                         svg.icon
-                          use(xlink:href="#yellow_arrow_bottom") 
+                          use(xlink:href="#yellow_arrow_bottom")
                       div.input-menu
                         ul.boat_menu
                           li Все лодки
@@ -67,7 +67,7 @@ block main
                         p По 12 на странице
                         input(placeholder="По убыванию цены" type="hidden" readonly)
                         svg.icon
-                          use(xlink:href="#yellow_arrow_bottom") 
+                          use(xlink:href="#yellow_arrow_bottom")
                       div.input-menu
                         ul
                           li По 12 на странице
@@ -89,7 +89,7 @@ block main
                     label Фильтры
                     div.white_icon.open-filter
                       svg.icon
-                        use(xlink:href="#plus_icon") 
+                        use(xlink:href="#plus_icon")
             div.blue-sorting_mobile
               div.blue-sorting-top
                 div.mobile-select-content
@@ -100,7 +100,7 @@ block main
                         li Все лодки
                           span
                             svg.icon
-                              use(xlink:href="#yellow-li") 
+                              use(xlink:href="#yellow-li")
                         li Под небольшой мотор
                         li Бюджетная со сланью
                         li Большие килевые
@@ -115,8 +115,8 @@ block main
                   div.mobile-select.filter-mobile#trigger1
                     p(data-full=" применены") Фильтры
                     div.white_icon.open-filter
-                      span.minus 
-                      span.plus 
+                      span.minus
+                      span.plus
                 div.mobile-select-content
                   div.mobile-select(tabindex="0")
                     p(data-detail=" по возрастанию цены") Сортировка
@@ -133,7 +133,7 @@ block main
                         li Из толстой ткани
                     input(type="hidden")
                     svg.icon
-                      use(xlink:href="#yellow_arrow_bottom") 
+                      use(xlink:href="#yellow_arrow_bottom")
                   div.mobile-select.show-select(tabindex="0")
                     p(data-detail=" по 12 на странице") Показывать
                     div.input-menu
@@ -149,7 +149,7 @@ block main
                         li Из толстой ткани
                     input(type="hidden")
                     svg.icon
-                      use(xlink:href="#yellow_arrow_bottom") 
+                      use(xlink:href="#yellow_arrow_bottom")
               div.blue-sorting-bottom
                 p Показать характеристики
                 div.white_bar
@@ -196,7 +196,7 @@ block main
                         svg.icon(width="13" height="10")
                           use(xlink:href="#check")
                         span
-                          | В наличии 
+                          | В наличии
                           span 3 ед.
                       p.aside_info.aside_character.top-aside от 1416 рублей в месяц
                       .prod_info.aside_info.character_info
@@ -420,7 +420,7 @@ block main
                         svg.icon(width="13" height="10")
                           use(xlink:href="#check")
                         span
-                          | В наличии 
+                          | В наличии
                           span 3 ед.
                       p.aside_info.aside_character.top-aside от 1416 рублей в месяц
                       .prod_info.aside_info.character_info
@@ -644,7 +644,7 @@ block main
                         svg.icon(width="13" height="10")
                           use(xlink:href="#check")
                         span
-                          | В наличии 
+                          | В наличии
                           span 3 ед.
                       p.aside_info.aside_character.top-aside от 1416 рублей в месяц
                       .prod_info.aside_info.character_info
@@ -868,7 +868,7 @@ block main
                         svg.icon(width="13" height="10")
                           use(xlink:href="#check")
                         span
-                          | В наличии 
+                          | В наличии
                           span 3 ед.
                       p.aside_info.aside_character.top-aside от 1416 рублей в месяц
                       .prod_info.aside_info.character_info
@@ -1092,7 +1092,7 @@ block main
                         svg.icon(width="13" height="10")
                           use(xlink:href="#check")
                         span
-                          | В наличии 
+                          | В наличии
                           span 3 ед.
                       p.aside_info.aside_character.top-aside от 1416 рублей в месяц
                       .prod_info.aside_info.character_info
@@ -1316,7 +1316,7 @@ block main
                         svg.icon(width="13" height="10")
                           use(xlink:href="#check")
                         span
-                          | В наличии 
+                          | В наличии
                           span 3 ед.
                       p.aside_info.aside_character.top-aside от 1416 рублей в месяц
                       .prod_info.aside_info.character_info
@@ -1501,7 +1501,7 @@ block main
                           button.button-blue-bg(type="button") купить в кредит
                           button.button-blue-outline(type="button") в корзину
 
-              
+
               //- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
               //-   <article class="element_grid__el">
               //-     <div class="prod_preview">
@@ -3883,7 +3883,7 @@ block main
                 section.price_range(data-filter="price")
                   .filter_top_panel
                     span
-                      | Совместимость с мотором л.с. 
+                      | Совместимость с мотором л.с.
                       span.info(data-info="lorem ipsum")
                         svg.icon
                           use(xlink:href="#question_icon")
@@ -4038,7 +4038,7 @@ block main
             //-             <use xlink:href="#arrow_top"></use>
             //-           </svg>
             //-         </span>
-            //- 
+            //-
             //-       </div>
             //-       <div class="filter_bottom_panel">
             //-         <div id="demo_1">
@@ -4236,7 +4236,7 @@ block main
             //-             <p>Муссон</p>
             //-           </label>
             //-         </div>
-            //- 
+            //-
             //-       </div>
             //-     </section>
             //-     <section data-filter="price" class="price_range">
@@ -4633,7 +4633,7 @@ block main
             //-             <use xlink:href="#arrow_top"></use>
             //-           </svg>
             //-         </span>
-            //- 
+            //-
             //-       </div>
             //-       <div class="filter_bottom_panel">
             //-         <div id="demo_7">
@@ -4652,7 +4652,7 @@ block main
             //-             <use xlink:href="#arrow_top"></use>
             //-           </svg>
             //-         </span>
-            //- 
+            //-
             //-       </div>
             //-       <div class="filter_bottom_panel">
             //-         <div id="demo_8">
@@ -4671,7 +4671,7 @@ block main
             //-             <use xlink:href="#arrow_top"></use>
             //-           </svg>
             //-         </span>
-            //- 
+            //-
             //-       </div>
             //-       <div class="filter_bottom_panel">
             //-         <div id="demo_9">
@@ -4727,7 +4727,7 @@ block main
           //- </div>
     include ../../common.blocks/catalog_boats_main.pug
     include ../../common.blocks/block.consultant.pug
-  
+
     .lower_main.mx-auto
       .lower_main-left
         h3 Лодка ПВХ Ривьера 3200 СК надувная под мотор комби черно-красная
@@ -4839,18 +4839,18 @@ block main
 
     svg(width="0" height="0" style="display: none")
       symbol(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.8 5.5" id="arrow-long")
-          path(d="M15.8 2.8c0 .2-.2.4-.4.4H1.3L3 4.9c.2.1.2.4 0 .5-.1.1-.4.1-.5 0L.1 3c-.1-.1-.1-.4 0-.5L2.5.1c.1-.1.4-.1.5 0 .1.1.1.4 0 .5L1.3 2.4h14.1c.2 0 .4.2.4.4z") 
+          path(d="M15.8 2.8c0 .2-.2.4-.4.4H1.3L3 4.9c.2.1.2.4 0 .5-.1.1-.4.1-.5 0L.1 3c-.1-.1-.1-.4 0-.5L2.5.1c.1-.1.4-.1.5 0 .1.1.1.4 0 .5L1.3 2.4h14.1c.2 0 .4.2.4.4z")
       symbol(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 23.8" id="balance")
-          path(d="M29.9 12.2L25 3l2.7-.4c.3 0 .4-.3.4-.5 0-.3-.3-.4-.5-.4L18 3.3c-.3-1.1-1.3-1.9-2.5-2.1V.4c0-.2-.2-.4-.5-.4s-.5.2-.5.4v.7c-1.6.2-2.7 1.5-2.7 3.1v.1L2.3 5.8c-.3 0-.4.3-.4.5.1.2.3.3.5.3l2.5-.4L.1 15c-.1.1-.1.2-.1.3 0 3 2.5 5.4 5.6 5.4 3.1 0 5.6-2.4 5.7-5.4 0-.2-.1-.3-.3-.4L6.2 6l5.8-.8c.4 1.1 1.3 1.9 2.5 2.1V23H9c-.3 0-.5.2-.5.4s.2.4.5.4h12c.2 0 .5-.2.5-.4s-.2-.4-.5-.4h-5.5V7.3c1.6-.2 2.7-1.5 2.7-3.1v-.1l5.5-.9-4.9 9c-.1.1 0 .3 0 .4 0 3 2.5 5.3 5.6 5.3 3.1 0 5.6-2.4 5.7-5.4 0-.1-.1-.2-.2-.3zM5.6 19.8c-2.5 0-4.5-1.8-4.7-4.1h9.4C10 18 8 19.8 5.6 19.8zm4.5-4.9H1.2l4.4-8.2 4.5 8.2zM15 6.4c-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.2 2.3-2.2s2.3 1 2.3 2.3c0 1.2-1 2.2-2.3 2.2zm9.4-2.6l4.4 8.3H20l4.4-8.3zm0 13.2c-2.5 0-4.5-1.8-4.7-4.1h9.4c-.3 2.3-2.3 4.1-4.7 4.1z") 
+          path(d="M29.9 12.2L25 3l2.7-.4c.3 0 .4-.3.4-.5 0-.3-.3-.4-.5-.4L18 3.3c-.3-1.1-1.3-1.9-2.5-2.1V.4c0-.2-.2-.4-.5-.4s-.5.2-.5.4v.7c-1.6.2-2.7 1.5-2.7 3.1v.1L2.3 5.8c-.3 0-.4.3-.4.5.1.2.3.3.5.3l2.5-.4L.1 15c-.1.1-.1.2-.1.3 0 3 2.5 5.4 5.6 5.4 3.1 0 5.6-2.4 5.7-5.4 0-.2-.1-.3-.3-.4L6.2 6l5.8-.8c.4 1.1 1.3 1.9 2.5 2.1V23H9c-.3 0-.5.2-.5.4s.2.4.5.4h12c.2 0 .5-.2.5-.4s-.2-.4-.5-.4h-5.5V7.3c1.6-.2 2.7-1.5 2.7-3.1v-.1l5.5-.9-4.9 9c-.1.1 0 .3 0 .4 0 3 2.5 5.3 5.6 5.3 3.1 0 5.6-2.4 5.7-5.4 0-.1-.1-.2-.2-.3zM5.6 19.8c-2.5 0-4.5-1.8-4.7-4.1h9.4C10 18 8 19.8 5.6 19.8zm4.5-4.9H1.2l4.4-8.2 4.5 8.2zM15 6.4c-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.2 2.3-2.2s2.3 1 2.3 2.3c0 1.2-1 2.2-2.3 2.2zm9.4-2.6l4.4 8.3H20l4.4-8.3zm0 13.2c-2.5 0-4.5-1.8-4.7-4.1h9.4c-.3 2.3-2.3 4.1-4.7 4.1z")
       symbol(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.3 10.3" id="check")
           path(d="M4.2 8.3L.9 5.5 0 6.6l4.4 3.7L12.3.9 11.2 0l-7 8.3z")
       symbol(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.4 18" id="chevron")
-          path(d="M9.4 18c-.3 0-.5-.1-.7-.3L0 9 8.7.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L2.8 9l7.3 7.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3z") 
+          path(d="M9.4 18c-.3 0-.5-.1-.7-.3L0 9 8.7.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L2.8 9l7.3 7.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3z")
       symbol(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.9 9.3" id="double_chevron")
-          path(d="M7.2 9.3c-.1 0-.3 0-.4-.1L0 4.7 6.8.1c.4-.2.8-.1 1 .2s.1.7-.2.9L2.4 4.7l5.2 3.4c.3.2.4.6.2.9-.2.2-.4.3-.6.3z") 
-          path(d="M13.2 9.3c-.1 0-.3 0-.4-.1L6 4.7 12.8.1c.3-.2.7-.1.9.2.3.3.2.7-.1.9L8.4 4.7l5.2 3.4c.3.2.4.6.2.9-.2.2-.4.3-.6.3z") 
+          path(d="M7.2 9.3c-.1 0-.3 0-.4-.1L0 4.7 6.8.1c.4-.2.8-.1 1 .2s.1.7-.2.9L2.4 4.7l5.2 3.4c.3.2.4.6.2.9-.2.2-.4.3-.6.3z")
+          path(d="M13.2 9.3c-.1 0-.3 0-.4-.1L6 4.7 12.8.1c.3-.2.7-.1.9.2.3.3.2.7-.1.9L8.4 4.7l5.2 3.4c.3.2.4.6.2.9-.2.2-.4.3-.6.3z")
       symbol(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 27" id="heart_fill")
-          path(d="M14.4 4.8C15.6 2 18.3 0 21.4 0c4.2 0 7.2 3.6 7.6 7.9 0 0 .2 1.1-.2 3-.6 2.6-2.1 5-4 6.8L14.4 27 4.3 17.7c-1.9-1.8-3.4-4.1-4-6.8-.5-1.9-.3-3-.3-3C.4 3.6 3.4 0 7.6 0c3.1 0 5.6 2 6.8 4.8z") 
+          path(d="M14.4 4.8C15.6 2 18.3 0 21.4 0c4.2 0 7.2 3.6 7.6 7.9 0 0 .2 1.1-.2 3-.6 2.6-2.1 5-4 6.8L14.4 27 4.3 17.7c-1.9-1.8-3.4-4.1-4-6.8-.5-1.9-.3-3-.3-3C.4 3.6 3.4 0 7.6 0c3.1 0 5.6 2 6.8 4.8z")
       symbol(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 25" id="heart_stroke")
           path(d="M26.5 7.7v-.2l-.2 2.6c.2-.8.3-1.5.3-1.9-.1-.2-.1-.3-.1-.5z" fill="#fff")
           path(d="M27 7.5C26.6 3.1 23.6 0 19.7 0h-.2c-2.5 0-4.8 1.3-6.1 3.6C12.3 1.5 10.2.1 7.8 0h-.5C3.4 0 .4 3.1 0 7.5c0 .2-.2 1.2.2 2.8.6 2.4 1.9 4.5 3.7 6.2l9.6 8.5 9.6-8.5c1.9-1.7 3.2-3.8 3.7-6.2.4-1.6.3-2.6.2-2.8zM25.7 10c-.1 0-.1 0 0 0 0 .1 0 .2-.1.2-.5 2.1-1.7 4-3.4 5.6l-8.7 7.9-8.7-7.9c-1.7-1.5-2.9-3.5-3.4-5.6V10c-.4-1.5-.2-2.4-.2-2.4v-.1C1.5 3.8 4.1 1.1 7.3 1h.1c1.3 0 2.6.5 3.6 1.4 1 .9 1.3 1.2 1.6 1.7.1.1.2.3.2.4.1.1.1.3.2.4l.5 1.1.5-1c.1-.2.1-.3.2-.5.1-.1.1-.3.2-.4.3-.6.6-.9 1.6-1.7 1-.9 2.3-1.4 3.6-1.4h.1c3.3 0 5.9 2.8 6.2 6.5v.1c-.1 0 .1.9-.2 2.4z")
@@ -4869,7 +4869,7 @@ block main
           circle(cx="8" cy="8.857" r="7.5" fill="#6897FF" stroke="#6897FF")
           path(d="M7.486 11.032a.244.244 0 0 1-.252-.252v-.48c.016-.424.124-.788.324-1.092.2-.304.492-.652.876-1.044.312-.32.54-.584.684-.792.144-.208.216-.436.216-.684 0-.368-.156-.66-.468-.876a1.796 1.796 0 0 0-1.068-.324c-.952 0-1.512.48-1.68 1.44-.04.176-.144.264-.312.264H5.23a.26.26 0 0 1-.192-.072.26.26 0 0 1-.072-.192c.016-.44.14-.844.372-1.212.24-.376.576-.676 1.008-.9.432-.224.928-.336 1.488-.336.592 0 1.088.104 1.488.312.408.2.708.464.9.792.192.32.288.664.288 1.032 0 .408-.092.76-.276 1.056-.184.296-.46.64-.828 1.032-.304.32-.532.592-.684.816-.152.216-.24.46-.264.732a7.744 7.744 0 0 0-.024.504c-.04.184-.14.276-.3.276h-.648zM7.39 13a.303.303 0 0 1-.204-.072.303.303 0 0 1-.072-.204v-.732a.26.26 0 0 1 .072-.192.278.278 0 0 1 .204-.084h.78c.08 0 .148.028.204.084a.24.24 0 0 1 .084.192v.732c0 .08-.028.148-.084.204A.303.303 0 0 1 8.17 13h-.78z" fill="#fff")
       symbol(viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg" id="search")
-          circle(cx="10.945" cy="10.945" r="10.445" stroke="#000") 
+          circle(cx="10.945" cy="10.945" r="10.445" stroke="#000")
           path(d="M10.945 6.299v9.29m4.645-4.646H6.299m11.232 8.377l5.757 6.874" stroke="#000" stroke-linecap="round")
       symbol(viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg" id="yellow_arrow_bottom")
           path(d="M5.5 7L.737.25h9.526L5.5 7z" fill="#F9C300")
