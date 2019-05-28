@@ -1,6 +1,6 @@
 import '../../js/base.js';
-import './catalog.scss';
-//
+import './catalog.sass';
+
 import '../../sass/catalog/_bootstrap-slider.scss';
 import '../../sass/catalog/_chosenpage__styles.sass';
 import '../../sass/catalog/ui/ui.sass';
@@ -15,7 +15,6 @@ $(document).ready(function () {
       } else {
           _parent.toggleClass('active');
       }
-
   });
 
   $(document).on('click', '.filter-mobile:not(".active")', function () {
