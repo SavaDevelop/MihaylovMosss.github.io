@@ -47,12 +47,12 @@ const common = merge([
         new HtmlWebpackPlugin({
             filename: 'index.html',
             chunks: ['index'],
-            template: PATHS.source + '/desktop.bundles/index.pug'
+            template: PATHS.source + '/desktop.bundles/index/index.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'delivery.html',
             chunks: ['delivery'],
-            template: PATHS.source + '/desktop.bundles/delivery.pug'
+            template: PATHS.source + '/desktop.bundles/delivery/delivery.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'catalog.html',
@@ -62,12 +62,12 @@ const common = merge([
         new HtmlWebpackPlugin({
             filename: 'news-section.html',
             chunks: ['news-section'],
-            template: PATHS.source + '/desktop.bundles/news-section.pug'
+            template: PATHS.source + '/desktop.bundles/news-section/news-section.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'blank.html',
             chunks: ['blank'],
-            template: PATHS.source + '/desktop.bundles/blank.pug'
+            template: PATHS.source + '/desktop.bundles/blank/blank.pug'
         }),
         // данный плагин может объеденять общие для шаблона js
         // new webpack.optimize.CommonsChunkPlugin({
