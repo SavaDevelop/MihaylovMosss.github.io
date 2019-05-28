@@ -242,16 +242,4 @@ $(document).ready(function(){
       .addClass('active').siblings().removeClass('active')
       .closest('section.quick-view-block').find('div.tab-pane').removeClass('active').removeClass('show').eq($(this).index()).addClass('active').addClass('show');
   });
-
-  $('#footer-pokupatelyam .footer_heading').on('click', function() {
-    $('#footer-pokupatelyam .footer_nav').toggleClass('active');
-  });
-
-  $('#footer-partneram .footer_heading').on('click', function() {
-    $('#footer-partneram .footer_nav').toggleClass('active');
-  });
-
-  $('#footer-informatsiya .footer_heading').on('click', function() {
-    $('#footer-informatsiya .footer_nav').toggleClass('active');
-  });
 });
