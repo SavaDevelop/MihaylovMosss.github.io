@@ -1,5 +1,7 @@
-import './base.sass';
-import '../../sass/ui-kit';
-import '../header/header';
-import '../breadcrumb/breadcrumb';
-import '../footer/_footer.sass';
+// import './base.sass';
+// import '../../sass/ui-kit.sass';
+import '../header/header.js';
+// import '../breadcrumb/breadcrumb.sass';
+import '../footer/footer.js';
+
+alert('i basde');
