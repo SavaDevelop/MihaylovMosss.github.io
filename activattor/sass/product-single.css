@@ -931,7 +931,7 @@
   z-index: 5;
   content: 'Перейти';
   font-family: 'SF UI Display Medium', sans-serif;
-  background-image: url("../img/right_icns.svg");
+  background-image: url("../../img/right_icns.svg");
   -webkit-transform: translateY(0px) translateX(60px) scale(1);
           transform: translateY(0px) translateX(60px) scale(1);
   background-position: 64px 1px;

@@ -1,4 +1,4 @@
-import './_footer.sass';
+import './footer.sass';
 
 $(document).ready(function(){
     $('#footer-pokupatelyam .footer_heading').on('click', function() {

@@ -1,36 +1,17 @@
-.top-product-block
-    padding: 70px 0%
+.single-product__crossell_block
+    padding: 90px 0 100px
     position: relative
-    background: linear-gradient(245.36deg, rgba(117, 180, 255, 0.57) 3.79%, rgba(117, 180, 255, 0.3705) 119%)
-    overflow: hidden
-    &::before
-        position: absolute
-        content: ''
-        height: 493px
-        width: 279px
-        left: 0%
-        top: -20%
-        background-image: url(../img/top-product-block-Left.png)
-        background-repeat: no-repeat
-        z-index: -1
-    &::after
-        position: absolute
-        content: ''
-        height: 400px
-        width: 267px
-        right: 0%
-        bottom: -0%
-        z-index: -1
-        background-image: url(../img/top-product-block-Right.png)
-        background-repeat: no-repeat
-    .title
-        margin-bottom: 4rem
-        margin-left: 4.4rem
-        padding-bottom: 6px
-        border-bottom: 2px solid #FFFFFF
+    h2
+        padding: 0 60px
+        font-size: 35px
+        width: 100%
+    p
+        margin-bottom: 40px
+        padding: 0 60px
+        font-size: 18px
+        color: #808080
     .catalog-top
-        margin-left: 0
-        margin-right: 0
+        margin: 0 -10px
         padding: 0 60px
         position: relative
         .slick-next
@@ -59,29 +40,30 @@
                         cursor: pointer
                         font-size: 12px
                         min-height: 30px
-                        padding: 4px 15px
+                        padding: 0px 8px
                         line-height: 20px
-                    .top-product-item-wishlist
-                        margin-bottom: 10px
-                        svg path
-                            stroke: #353535
-                            stroke-width: 1px
-                            fill: transparent
-                        a:hover
+                        .top-product-item-wishlist
+                            margin-bottom: 10px
                             svg path
-                                stroke: #EB5757
-                        a:focus
-                            svg path
-                                stroke: #E57E71
-                                fill: #E57E71
-                        a.active_wishlist
-                            svg path
-                                stroke: #D75A4A
-                                fill: #D75A4A
+                                stroke: #353535
+                                stroke-width: 1px
+                                fill: transparent
+                            a:hover
+                                svg path
+                                    stroke: #EB5757
+                            a:focus
+                                svg path
+                                    stroke: #E57E71
+                                    fill: #E57E71
+                            a.active_wishlist
+                                svg path
+                                    stroke: #D75A4A
+                                    fill: #D75A4A
                     &:hover
                         border: 2px solid #F9C300
                     .top-product-item
                         display: block
+                        box-sizing: border-box
                         padding-top: 0
                         width: 100%
                         border: 0px solid transparent
@@ -92,7 +74,7 @@
                             z-index: 5
                             content: 'Перейти'
                             font-family: 'SF UI Display Medium', sans-serif
-                            background-image: url('../img/right_icns.svg')
+                            background-image: url('../../img/right_icns.svg')
                             transform: translateY(0px) translateX(60px) scale(1)
                             background-position: 64px 1px
                             background-repeat: no-repeat
@@ -120,11 +102,8 @@
                             position: relative
                             margin-bottom: 15px
                             transition: all 300ms ease
-                        &-testimonials
-                            display: flex
-                            margin-top: 20px
-                            margin-bottom: 10px
-                            justify-content: space-between
+                        .top-product-item-info-container
+                            position: relative
 
 .top-product-item-image-original,
 .top-product-item-image-alternative
@@ -230,7 +209,7 @@
 	width: 36px
 	height: 36px
 	border-radius: 50%
-	background: calc(50% + 1px) center var(--primary) url(images/arrow.svg) no-repeat
+	background: calc(50% + 1px) center var(--primary) url(../../img/arrow_left.svg) no-repeat
 	background-size: 15px auto
 	opacity: 0
 	cursor: pointer
@@ -299,11 +278,9 @@
 
 /*Title*/
 .top-product-item-title
-	margin-top: 0
-	padding: 0 0px
-	margin-bottom: 10px
+	margin: 0
+	padding: 0
 	line-height: 16px
-	+SF-UI-Display-Medium
 
 .top-product-item-title a
 	font-size: 14px
@@ -343,9 +320,9 @@
 
 /*Price*/
 .top-product-item-price-container
+	margin-top: 40px
 	text-align: left
-	line-height: 1
-	margin-top: 20px
+	line-height: 2
 
 .top-product-item-price-current
 	font-family: 'SF UI Display Medium', sans-serif
@@ -370,7 +347,7 @@
 
 /*Info*/
 .top-product-item-info-container 
-	margin-bottom: 8px
+	margin-bottom: 0px
 
 .top-product-item-info-container-title
 	font-size: 12px

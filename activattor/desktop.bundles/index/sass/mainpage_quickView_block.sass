@@ -1,4 +1,6 @@
 
+$color-white: #FFFFFF
+
 .quick-view-block
     background: linear-gradient(242.35deg, #4244E3 -4.81%, #6897FF 116.58%)
     padding: 62px 0 68px
@@ -12,7 +14,7 @@
         width: 320px
         left: -4%
         top: -32%
-        background: url(../img/blue-block-Left.png) no-repeat
+        background: url(../../../img/blue-block-Left.png) no-repeat
         z-index: -1
     &:after
         position: absolute
@@ -21,7 +23,7 @@
         width: 417px
         right: 0%
         top: -0%
-        background: url(../img/blue-block-Right.png) no-repeat
+        background: url(../../../img/blue-block-Right.png) no-repeat
         z-index: -1
     .title_section
         z-index: 1
@@ -29,7 +31,7 @@
         margin-bottom: 30px
         h2
             color: $color-white
-            +Montserrat-Regular
+            font-family: 'Montserrat Regular', sans-serif
             padding-bottom: 6px
             display: inline-block
             border-bottom: 2px solid #FFF500
@@ -109,9 +111,9 @@
                         color: #202020
                         position: relative
                         text-transform: uppercase
-                        +SF-UI-Display-Semibold
+                        font-family: 'SF UI Display Semibold', sans-serif
                     .presets-tile-stitle
-                        +SF-UI-Display-Regular
+                        font-family: 'SF UI Display Regular', sans-serif
                         position: relative
                         line-height: 16px
                         font-size: 14px
@@ -129,14 +131,14 @@
                         height: 25px
                         line-height: 25px
                         border-radius: 17px
-                        +SF-UI-Display-Medium
+                        font-family: 'SF UI Display Medium', sans-serif
             &-content
                 position: relative
                 &::after
                     z-index: 5
                     content: "Перейти"
                     font-family: 'SF UI Display Medium', sans-serif
-                    background-image: url('../img/right_icns.svg')
+                    background-image: url('../../../img/right_icns.svg')
                     transform: translateY(10px) translateX(120px) scale(1)
                     background-position: 64px 1px
                     background-repeat: no-repeat

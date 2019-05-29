@@ -1,17 +1,37 @@
-.single_product__crossell_block
-    padding: 90px 0 100px
+
+.top-product-block
+    padding: 70px 0%
     position: relative
-    h2
-        padding: 0 60px
-        font-size: 35px
-        width: 100%
-    p
-        margin-bottom: 40px
-        padding: 0 60px
-        font-size: 18px
-        color: #808080
+    background: linear-gradient(245.36deg, rgba(117, 180, 255, 0.57) 3.79%, rgba(117, 180, 255, 0.3705) 119%)
+    overflow: hidden
+    &::before
+        position: absolute
+        content: ''
+        height: 493px
+        width: 279px
+        left: 0%
+        top: -20%
+        background-image: url(../../../img/top-product-block-Left.png)
+        background-repeat: no-repeat
+        z-index: -1
+    &::after
+        position: absolute
+        content: ''
+        height: 400px
+        width: 267px
+        right: 0%
+        bottom: -0%
+        z-index: -1
+        background-image: url(../../../img/top-product-block-Right.png)
+        background-repeat: no-repeat
+    .title
+        margin-bottom: 4rem
+        margin-left: 4.4rem
+        padding-bottom: 6px
+        border-bottom: 2px solid #FFFFFF
     .catalog-top
-        margin: 0 -10px
+        margin-left: 0
+        margin-right: 0
         padding: 0 60px
         position: relative
         .slick-next
@@ -31,11 +51,38 @@
                     border: 2px solid #81BADB
                     border-radius: 10px
                     padding: 24px
+                    .top-product-item-compare-container
+                        position: absolute
+                        right: 0
+                        top: 14px
+                        margin: 0
+                        z-index: 12
+                        cursor: pointer
+                        font-size: 12px
+                        min-height: 30px
+                        padding: 4px 15px
+                        line-height: 20px
+                    .top-product-item-wishlist
+                        margin-bottom: 10px
+                        svg path
+                            stroke: #353535
+                            stroke-width: 1px
+                            fill: transparent
+                        a:hover
+                            svg path
+                                stroke: #EB5757
+                        a:focus
+                            svg path
+                                stroke: #E57E71
+                                fill: #E57E71
+                        a.active_wishlist
+                            svg path
+                                stroke: #D75A4A
+                                fill: #D75A4A
                     &:hover
                         border: 2px solid #F9C300
                     .top-product-item
                         display: block
-                        box-sizing: border-box
                         padding-top: 0
                         width: 100%
                         border: 0px solid transparent
@@ -46,7 +93,7 @@
                             z-index: 5
                             content: 'Перейти'
                             font-family: 'SF UI Display Medium', sans-serif
-                            background-image: url('../img/right_icns.svg')
+                            background-image: url('../../../img/right_icns.svg')
                             transform: translateY(0px) translateX(60px) scale(1)
                             background-position: 64px 1px
                             background-repeat: no-repeat
@@ -64,35 +111,6 @@
                         &:hover::after
                             transform: translateY(0) translateX(0) scale(1)
                             opacity: 1
-                        /*Compare*/
-                        &-compare-container
-                            position: absolute
-                            right: 0
-                            top: 14px
-                            margin: 0
-                            z-index: 12
-                            cursor: pointer
-                            font-size: 12px
-                            min-height: 30px
-                            padding: 4px 15px
-                            line-height: 20px
-                        &-wishlist
-                            margin-bottom: 10px
-                            svg path
-                                stroke: #353535
-                                stroke-width: 1px
-                                fill: transparent
-                            a:hover
-                                svg path
-                                    stroke: #EB5757
-                            a:focus
-                                svg path
-                                    stroke: #E57E71
-                                    fill: #E57E71
-                            a.active_wishlist
-                                svg path
-                                    stroke: #D75A4A
-                                    fill: #D75A4A
                         /*Image*/
                         &-image-wrapper
                             width: 80%
@@ -103,8 +121,11 @@
                             position: relative
                             margin-bottom: 15px
                             transition: all 300ms ease
-                        .top-product-item-info-container
-                            position: relative
+                        &-testimonials
+                            display: flex
+                            margin-top: 20px
+                            margin-bottom: 10px
+                            justify-content: space-between
 
 .top-product-item-image-original,
 .top-product-item-image-alternative
@@ -210,7 +231,7 @@
 	width: 36px
 	height: 36px
 	border-radius: 50%
-	background: calc(50% + 1px) center var(--primary) url(images/arrow.svg) no-repeat
+	background: calc(50% + 1px) center var(--primary) url(../../../img/arrow_left.svg) no-repeat
 	background-size: 15px auto
 	opacity: 0
 	cursor: pointer
@@ -279,9 +300,11 @@
 
 /*Title*/
 .top-product-item-title
-	margin: 0
-	padding: 0
+	margin-top: 0
+	padding: 0 0px
+	margin-bottom: 10px
 	line-height: 16px
+	font-family: 'SF UI Display Medium', sans-serif
 
 .top-product-item-title a
 	font-size: 14px
@@ -321,9 +344,9 @@
 
 /*Price*/
 .top-product-item-price-container
-	margin-top: 40px
 	text-align: left
-	line-height: 2
+	line-height: 1
+	margin-top: 20px
 
 .top-product-item-price-current
 	font-family: 'SF UI Display Medium', sans-serif
@@ -348,7 +371,7 @@
 
 /*Info*/
 .top-product-item-info-container 
-	margin-bottom: 0px
+	margin-bottom: 8px
 
 .top-product-item-info-container-title
 	font-size: 12px
@@ -400,7 +423,7 @@
 	display: block
 	width: 100%
 	height: 100%
-	background: #f3f3f3 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjk3LjYxMyAyOTcuNjEzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjxjaXJjbGUgY3g9IjE1LjI3OSIgY3k9IjE0LjgzIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjU5LjMyIiBjeT0iNTkuNzY5IiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjU5LjMyIiBjeT0iMTQuODMiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTA0LjI2MSIgY3k9IjU5Ljc2OSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxMDQuMjYxIiBjeT0iMTAzLjgxIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEwNC4yNjEiIGN5PSIxNC44MyIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iNTkuNzY5IiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE0OC4zMDIiIGN5PSIxMDMuODEiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTQ4LjMwMiIgY3k9IjE0LjgzIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE5Mi4zNDMiIGN5PSI1OS43NjkiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkyLjM0MyIgY3k9IjEwMy44MSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxOTIuMzQzIiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxMDQuMjYxIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxOTIuMzQzIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI1OS4zMiIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTA0LjI2MSIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTQ4LjMwMiIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkyLjM0MyIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjM4LjIzOCIgY3k9IjEwMy44MSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyMzguMjM4IiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyMzguMjM4IiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNS4yNzkiIGN5PSIyODIuNzgyIiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI1OS4zMiIgY3k9IjI4Mi43ODIiIHI9IjE0LjgzMSIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEwNC4yNjEiIGN5PSIyODIuNzgyIiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMjgyLjc4MiIgcj0iMTQuODMxIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjgyLjMzNCIgY3k9IjE0Ny44NTIiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjwvc3ZnPg==) no-repeat center
+	background: #F3F3F3 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjk3LjYxMyAyOTcuNjEzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjxjaXJjbGUgY3g9IjE1LjI3OSIgY3k9IjE0LjgzIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjU5LjMyIiBjeT0iNTkuNzY5IiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjU5LjMyIiBjeT0iMTQuODMiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTA0LjI2MSIgY3k9IjU5Ljc2OSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxMDQuMjYxIiBjeT0iMTAzLjgxIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEwNC4yNjEiIGN5PSIxNC44MyIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iNTkuNzY5IiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE0OC4zMDIiIGN5PSIxMDMuODEiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTQ4LjMwMiIgY3k9IjE0LjgzIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE5Mi4zNDMiIGN5PSI1OS43NjkiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkyLjM0MyIgY3k9IjEwMy44MSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxOTIuMzQzIiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxMDQuMjYxIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxOTIuMzQzIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI1OS4zMiIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTA0LjI2MSIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTQ4LjMwMiIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkyLjM0MyIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjM4LjIzOCIgY3k9IjEwMy44MSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyMzguMjM4IiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyMzguMjM4IiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNS4yNzkiIGN5PSIyODIuNzgyIiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI1OS4zMiIgY3k9IjI4Mi43ODIiIHI9IjE0LjgzMSIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEwNC4yNjEiIGN5PSIyODIuNzgyIiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMjgyLjc4MiIgcj0iMTQuODMxIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjgyLjMzNCIgY3k9IjE0Ny44NTIiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjwvc3ZnPg==) no-repeat center
 	background-size: 50%
 	opacity: .7
 	transition: opacity 300ms ease

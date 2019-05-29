@@ -1288,7 +1288,7 @@ form input[name="author"] {
   z-index: 5;
   content: "Перейти";
   font-family: 'SF UI Display Medium', sans-serif;
-  background-image: url("../img/right_icns.svg");
+  background-image: url("../../img/right_icns.svg");
   transform: translateY(10px) translateX(120px) scale(1);
   background-position: 64px 1px;
   background-repeat: no-repeat;
@@ -1455,7 +1455,7 @@ form input[name="author"] {
   z-index: 5;
   content: 'Перейти';
   font-family: 'SF UI Display Medium', sans-serif;
-  background-image: url("../img/right_icns.svg");
+  background-image: url("../../img/right_icns.svg");
   transform: translateY(0px) translateX(60px) scale(1);
   background-position: 64px 1px;
   background-repeat: no-repeat;

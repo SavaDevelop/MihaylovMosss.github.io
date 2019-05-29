@@ -1,4 +1,4 @@
-.single-product__crossell_block
+.single_product__crossell_block
     padding: 90px 0 100px
     position: relative
     h2
@@ -31,34 +31,6 @@
                     border: 2px solid #81BADB
                     border-radius: 10px
                     padding: 24px
-                    .top-product-item-compare-container
-                        position: absolute
-                        right: 0
-                        top: 14px
-                        margin: 0
-                        z-index: 12
-                        cursor: pointer
-                        font-size: 12px
-                        min-height: 30px
-                        padding: 0px 8px
-                        line-height: 20px
-                        .top-product-item-wishlist
-                            margin-bottom: 10px
-                            svg path
-                                stroke: #353535
-                                stroke-width: 1px
-                                fill: transparent
-                            a:hover
-                                svg path
-                                    stroke: #EB5757
-                            a:focus
-                                svg path
-                                    stroke: #E57E71
-                                    fill: #E57E71
-                            a.active_wishlist
-                                svg path
-                                    stroke: #D75A4A
-                                    fill: #D75A4A
                     &:hover
                         border: 2px solid #F9C300
                     .top-product-item
@@ -92,6 +64,35 @@
                         &:hover::after
                             transform: translateY(0) translateX(0) scale(1)
                             opacity: 1
+                        /*Compare*/
+                        &-compare-container
+                            position: absolute
+                            right: 0
+                            top: 14px
+                            margin: 0
+                            z-index: 12
+                            cursor: pointer
+                            font-size: 12px
+                            min-height: 30px
+                            padding: 4px 15px
+                            line-height: 20px
+                        &-wishlist
+                            margin-bottom: 10px
+                            svg path
+                                stroke: #353535
+                                stroke-width: 1px
+                                fill: transparent
+                            a:hover
+                                svg path
+                                    stroke: #EB5757
+                            a:focus
+                                svg path
+                                    stroke: #E57E71
+                                    fill: #E57E71
+                            a.active_wishlist
+                                svg path
+                                    stroke: #D75A4A
+                                    fill: #D75A4A
                         /*Image*/
                         &-image-wrapper
                             width: 80%
@@ -209,7 +210,7 @@
 	width: 36px
 	height: 36px
 	border-radius: 50%
-	background: calc(50% + 1px) center var(--primary) url(images/arrow.svg) no-repeat
+	background: calc(50% + 1px) center var(--primary) url(../../img/arrow_left.svg) no-repeat
 	background-size: 15px auto
 	opacity: 0
 	cursor: pointer
