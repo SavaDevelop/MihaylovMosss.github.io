@@ -53,7 +53,8 @@ const common = merge([
         'site-map':  PATHS.source + '/desktop.bundles/site-map/site-map.js',
         'stock':  PATHS.source + '/desktop.bundles/stock/stock.js',
         'stocks':  PATHS.source + '/desktop.bundles/stocks/stocks.js',
-        'base':    PATHS.source + '/js/base.js'
+        'base':    PATHS.source + '/js/base.js',
+        'test':    PATHS.source + '/desktop.bundles/test/test.js'
         // 'bootstrap': bootstrapConfig
     },
     output: {
@@ -204,6 +205,11 @@ const common = merge([
             filename: 'stocks.html',
             chunks: ['stocks'],
             template: PATHS.source + '/desktop.bundles/stocks/stocks.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'test.html',
+            chunks: ['test'],
+            template: PATHS.source + '/desktop.bundles/test/test.pug'
         }),
         // данный плагин может объеденять общие для шаблона js
         // new webpack.optimize.CommonsChunkPlugin({
