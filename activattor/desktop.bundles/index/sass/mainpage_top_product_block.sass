@@ -433,3 +433,121 @@
 	text-align: center
 	text-overflow: ellipsis
 	white-space: nowrap
+
+@media (max-width: 1440px)
+    .catalog-top
+        .slick-prev
+            left: -5px
+        .slick-next
+            right: -5px
+
+@media (max-width: 1280px)
+    .top-product-block .catalog-top
+        padding: 0 30px
+        .product-item-list .slick-list
+            margin: 0 
+            .product-item-big-card
+                padding-left: 5px
+                padding-right: 5px
+            .main-top-product-container
+                padding: 24px 14px
+        .slick-prev
+            left: -40px
+        .slick-next
+            right: -40px
+
+@media (max-width: 992px) 
+    .catalog-top
+        padding-left: 0
+        padding-right: 0
+        margin-left: 0px
+        margin-right: 0px
+        .product-item-list
+            .slick-prev
+                left: 15px
+            .slick-next
+                right: 15px
+
+    .top-product-block
+        &:before
+            top: auto
+            bottom: -32%
+            transform: rotate(-90deg)
+        &:after
+            top: -12%
+            right: 6%
+            bottom: auto
+            transform: rotate(-90deg)
+        .catalog-top
+            padding: 0 0
+
+@media (max-width: 992px) and (min-width: 769px)
+    .catalog-top
+        .product-item-list
+            padding-left: 20px
+            padding-right: 20px
+
+@media (max-width: 768px)
+    .catalog-top
+        .product-item-list
+            padding-left: 40px
+            padding-right: 40px
+            .slick-prev
+                left: 35px
+            .slick-next
+                right: 35px
+
+@media (max-width: 640px)
+    .top-product-block
+        .title
+            margin: 0 auto 4rem
+            border-bottom: 0 solid transparent
+        .catalog-top
+            padding-left: 40px
+            padding-right: 20px
+            .product-item-list
+                padding-left: 0px
+                padding-right: 20px
+                .slick-prev
+                    left: -20px
+                .slick-next
+                    right: -5px
+        .slick-prev, .slick-next
+            width: 58px
+            height: 58px
+            border-radius: 100px
+            background-color: #FFD84F
+            z-index: 2
+        .slick-slide .main-top-product-container
+            background: #DFF5FF
+        .slick-slide.slick-active .main-top-product-container
+            background: #FFFFFF
+
+@media (max-width: 480px)
+    .top-product-block
+        padding: 50px 0
+        &:before
+            opacity: 0
+        &:after
+            opacity: 0
+        .title
+            width: 80%
+            font-size: 1.4rem
+            text-align: center
+            margin: 0 auto 30px
+            border-bottom: 0px solid #FFFFFF
+        .catalog-top
+            padding-left:  0px
+            padding-right: 0px
+            .product-item-list
+                padding-right: 10px
+                .slick-prev
+                    left: 35px
+                .slick-next
+                    right: 35px
+
+@media (max-width: 320px)
+    .top-product-block
+        .title
+            width: 92%
+            font-size: 1.2rem

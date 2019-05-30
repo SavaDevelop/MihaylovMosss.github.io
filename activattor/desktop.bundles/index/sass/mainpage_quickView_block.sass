@@ -153,3 +153,83 @@ $color-white: #FFFFFF
                     opacity: 0
                     right: 0px
                     padding: 0
+
+@media (min-width: 1441px)
+    .quick-view-block .nav-item
+        font-size: 16px
+        margin: 0 0px
+
+@media (max-width: 1550px)
+    .quick-view-block .tab-content .presets-tiles .presets-tile
+        -ms-flex: 0 0 33%
+        flex: 0 0 33%
+        max-width: 33%
+
+@media (max-width: 1300px)
+    .quick-view-block
+        .nav-pills
+            .slick-prev, .slick-next
+                display: none
+
+@media (max-width: 1201px)
+    .quick-view-block
+        .tab-content .presets-tiles .presets-tile
+            -ms-flex: 0 0 33%
+            flex: 0 0 33%
+            max-width: 33%
+
+@media (max-width: 992px) 
+    .quick-view-block .tab-content .presets-tiles .presets-tile
+        -ms-flex: 0 0 50.0%
+        flex: 0 0 50.0%
+        max-width: 50.0%
+
+@media (max-width: 768px)
+    .quick-view-block .container
+        width: 92%
+
+@media (min-width: 641px)
+    .quick-view-block .tab-content .presets-tiles .presets-tile-inner
+        height: 163px
+
+@media (max-width: 640px)
+    .quick-view-block
+        .slick-prev, .slick-next
+            display: none !important
+        .tab-content .presets-tiles .presets-tile
+            margin: 0px 0px 10px
+            padding-bottom: 0px
+            -ms-flex: 0 0 100%
+            flex: 0 0 100%
+            max-width: 100%
+            a.presets-tile-inner
+                &:hover:after
+                    content: ''
+            a.presets-tile-inner .presets-tile-image img
+                height: 74px
+            a.presets-tile-inner .presets-tile-content .presets-tile-stitle
+                font-size: 16px
+                padding-top: 6px
+            a.presets-tile-inner .presets-tile-content .presets-tile-counter
+                right: -15px
+                bottom: -10px
+                color: #383838
+                font-size: 13px
+                position: absolute
+                border-radius: 6px 6px 6px 6px
+
+@media (max-width: 480px)
+    .quick-view-block:before, .quick-view-block:after
+        display: none
+
+@media (max-width: 375px)
+    .quick-view-block
+        padding: 42px 0 48px
+        .title_section h2
+            font-size: 24px
+
+@media (max-width: 320px)
+    .quick-view-block .tab-content .presets-tiles .presets-tile a.presets-tile-inner
+        padding: 10px 5px
+        .presets-tile-content
+            padding: 0px 0 20px 0px

@@ -1,11 +1,1065 @@
 extends ../../common.blocks/base/base
 block head
-  //- link(rel="stylesheet" type="text/css" href="../sass/main.css")
-  //- link(rel="stylesheet" type="text/css" href="../catalog/catalog.sass")
-  //- link(rel="stylesheet" type="text/css" href="../sass/catalog/media.css")
-  //- link(rel="stylesheet" type="text/css" href="../js/ion.rangeSlider/ion.rangeSlider.min.css")
-  //- link(rel="stylesheet" type="text/css" href="../sass/theme.css")
 block title
   | Главная страница
 block main
-  h1 Главнп
+  main
+    section.slider-block
+      div.container
+        div.row
+          div.col-lg-4
+          div.col-lg-8
+            div.row
+              div.slider-lists
+                img.img-fluid(src="img/sliders-item.png" alt="")
+                img.img-fluid(src="img/sliders-item.png" alt="")
+                img.img-fluid(src="img/sliders-item.png" alt="")
+              div.banners-day-week
+                div.sale_day
+                  img.img-fluid(src="img/акция (1).png" alt="")
+                div.sale_week
+                  img.img-fluid(src="img/акция (2).png" alt="")
+
+    section.quick-view-block
+      div.container
+        div.row
+          div.title_section
+            h2.text-uppercase Быстрый подбор
+          ul.nav.nav-pills#pills-tab
+            li.nav-item
+              a.nav-link#pills-lodki-pvkh-tab(href="#pills-lodki-pvkh") Лодки ПВХ
+            li.nav-item
+              a.nav-link#pills-lodki-rib-tab(href="#pills-lodki-rib") Лодки РИБ
+            li.nav-item
+              a.nav-link#pills-lodochnye-motory-tab(href="#pills-lodochnye-motory") Лодочные моторы
+            li.nav-item
+              a.nav-link#pills-sup-doski-tab(href="#pills-sup-doski") SUP-доски
+            li.nav-item
+              a.nav-link#pills-mototekhnika-tab(href="#pills-mototekhnika") Мототехника
+            li.nav-item
+              a.nav-link#pills-silovaya-tekhnika-tab(href="#pills-silovaya-tekhnika") Силовая техника
+            li.nav-item
+              a.nav-link#pills-aksessuary-tab(href="#pills-aksessuary") Аксессуары
+            li.nav-item
+              a.nav-link#pills-okhota-i-rybalka-tab(href="#pills-okhota-i-rybalka") Охота и рыбалка
+            li.nav-item
+              a.nav-link#pills-tekhnika-tab(href="#pills-tekhnika") Техника Б/У
+          div.tab-content#pills-tabContent
+            .tab-pane.fade.show.active(id="")
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+            .tab-pane.fade
+              .presets-tiles.row
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3.png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (1).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (2).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (3).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="1" data-sort-t="1" data-sort-p="1")
+                  a.presets-tile-inner(href="/pod-motor")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (4).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Под небольшой мотор
+                      .presets-tile-stitle Под мотор до 5 л.с.
+                      .presets-tile-counter 28 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="2" data-sort-t="2" data-sort-p="2")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&max_price=16000&slan=есть|доп.опция&preset=Бюджетная со сланью")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (5).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Бюджетная со сланью
+                      .presets-tile-stitle До 16 000 р.
+                      .presets-tile-counter 24 позиции
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="3" data-sort-t="3" data-sort-p="3")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&min_dlina-mm=3500&max_dlina-mm=4000&max_maxmotorpower=15&preset=Большие килевые")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (6).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Большие килевые
+                      .presets-tile-stitle До 4 метров под мотор до 15 л.с.
+                      .presets-tile-counter 8 позиций
+                .presets-tile.col-lg-3.col-md-4.col-sm-6.col-xs-12(data-sort-d="4" data-sort-t="41" data-sort-p="4")
+                  a.presets-tile-inner(href="/pod-motor/?filter=1&tip-dna=НДНД&preset=Лодки НДНД")
+                    .presets-tile-image.col-3
+                      img(src="img/2800-m-chs-3 (7).png" alt="" width="" height="")
+                    .presets-tile-content.col-9
+                      .presets-tile-title Лодки НДНД
+                      .presets-tile-stitle С надувным дном низкого давления
+                      .presets-tile-counter 35 позиций
+
+    section.feauters-block
+      .container
+        .row.align-items-center
+          .feauter-item.d-flex.align-items-center.col-lg.col-md-4.col-sm-6.col-xs-12
+            svg(width="52" height="52" viewbox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M46.7988 30.3333H40.7321V0.866667C40.7321 0.38805 40.3441 0 39.8655 0H12.1321C11.6535 0 11.2655 0.38805 11.2655 0.866667V30.3333H5.1988C4.96253 30.3333 4.73643 30.4298 4.57296 30.6004C4.24178 30.946 4.25348 31.4946 4.59907 31.8257L25.3991 51.7591C25.5605 51.9137 25.7753 52 25.9988 52C26.2223 52 26.4372 51.9137 26.5985 51.7591L47.3985 31.8257C47.5692 31.6623 47.6656 31.4362 47.6656 31.1999C47.6655 30.7213 47.2774 30.3333 46.7988 30.3333ZM25.9988 49.933L7.35507 32.0667H12.1321C12.6108 32.0667 12.9988 31.6786 12.9988 31.2V1.73333H38.9988V31.2C38.9988 31.6786 39.3869 32.0667 39.8655 32.0667H44.6425L25.9988 49.933Z" fill="#F9C300")
+              path(d="M26.0008 12.9999C27.9154 12.9999 29.4674 14.552 29.4674 16.4665H31.2008C31.1961 13.9319 29.3663 11.7691 26.8674 11.3445V9.5332H25.1341V11.3445C22.3053 11.8398 20.4135 14.5345 20.9088 17.3634C21.3424 19.8403 23.4863 21.652 26.0008 21.6665C27.9154 21.6665 29.4674 23.2186 29.4674 25.1332C29.4674 27.0478 27.9154 28.5999 26.0008 28.5999C24.0862 28.5999 22.5341 27.0478 22.5341 25.1332H20.8008C20.8054 27.6679 22.6353 29.8306 25.1341 30.2552V32.0665H26.8674V30.2552C29.6962 29.7599 31.5881 27.0652 31.0928 24.2363C30.6591 21.7595 28.5153 19.9477 26.0008 19.9332C24.0862 19.9332 22.5341 18.3811 22.5341 16.4665C22.5341 14.552 24.0862 12.9999 26.0008 12.9999Z" fill="#F9C300")
+              path(d="M16.4638 3.46655H14.7305V5.19989H16.4638V3.46655Z" fill="#F9C300")
+              path(d="M19.9326 3.4668H18.1992V5.20013H19.9326V3.4668Z" fill="#F9C300")
+              path(d="M23.3974 3.4668H21.6641V5.20013H23.3974V3.4668Z" fill="#F9C300")
+              path(d="M26.8661 3.4668H25.1328V5.20013H26.8661V3.4668Z" fill="#F9C300")
+              path(d="M30.331 3.4668H28.5977V5.20013H30.331V3.4668Z" fill="#F9C300")
+              path(d="M33.7997 3.4668H32.0664V5.20013H33.7997V3.4668Z" fill="#F9C300")
+              path(d="M37.2646 3.4668H35.5312V5.20013H37.2646V3.4668Z" fill="#F9C300")
+            p
+              b Цены ниже
+              br
+              |  чем в магазинах
+          .feauter-item.d-flex.align-items-center.col-lg.col-md-4.col-sm-6.col-xs-12
+            svg(width="52" height="52" viewbox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M49.0527 4.69174C47.2478 2.94172 44.8261 1.96216 42.3044 1.96216C39.7828 1.96216 37.3611 2.94172 35.5562 4.69174C35.2886 4.95468 35.0362 5.23252 34.8003 5.52389C31.3931 3.74801 27.6032 2.82042 23.7559 2.82075C10.6568 2.82075 0 13.4114 0 26.4292C0 39.447 10.6568 50.0376 23.7559 50.0376C36.855 50.0376 47.5117 39.447 47.5117 26.4292C47.512 24.5112 47.278 22.6004 46.8148 20.7385L49.1972 18.2668C50.1592 17.2913 50.9096 16.13 51.4019 14.8547C51.8692 13.6283 52.0664 12.3165 51.9803 11.0078C51.8152 8.61733 50.7735 6.37007 49.0527 4.69174ZM23.7559 4.55958C24.6026 4.56053 25.4486 4.60992 26.2897 4.70751C23.612 6.55283 21.2803 8.85012 19.4005 11.4952C18.634 11.2689 17.8118 11.3176 17.0777 11.6328C16.3437 11.9479 15.7444 12.5094 15.3847 13.2191C14.6213 13.157 13.853 13.1247 13.092 13.1247C10.5398 13.1226 7.99974 13.4728 5.54453 14.1652C7.55966 11.2076 10.2732 8.78563 13.4479 7.11113C16.6226 5.43664 20.1617 4.56059 23.7559 4.55958ZM20.1039 14.7526C20.1039 14.9705 20.0608 15.1863 19.9769 15.3876C19.8931 15.5889 19.7701 15.7718 19.6151 15.9259C19.4601 16.0799 19.276 16.2021 19.0734 16.2855C18.8709 16.3688 18.6538 16.4117 18.4345 16.4116C18.2153 16.4118 17.9981 16.369 17.7955 16.2857C17.5929 16.2024 17.4088 16.0802 17.2537 15.9262C17.0987 15.7721 16.9758 15.5891 16.892 15.3877C16.8081 15.1864 16.7651 14.9706 16.7653 14.7526C16.7691 14.3152 16.9467 13.8969 17.2593 13.5889C17.572 13.2808 17.9944 13.108 18.4346 13.108C18.8748 13.108 19.2972 13.2808 19.6099 13.5889C19.9225 13.8969 20.1001 14.3152 20.1039 14.7526ZM23.7559 48.2988C11.6216 48.2988 1.7497 38.4881 1.7497 26.4292C1.74578 22.9268 2.59362 19.4754 4.22101 16.3688L4.23689 16.412C7.07443 15.3841 10.0718 14.8602 13.092 14.8642C13.7325 14.8642 14.3786 14.889 15.022 14.9366C15.0451 15.402 15.1651 15.8576 15.3745 16.2745C15.5839 16.6914 15.8781 17.0605 16.2385 17.3585C14.3802 22.1442 13.9033 27.3505 14.8617 32.3909C14.1679 32.7699 13.6283 33.3768 13.3351 34.1076C13.0419 34.8384 13.0135 35.6478 13.2545 36.3971C13.4956 37.1465 13.9913 37.7894 14.6567 38.2156C15.3221 38.6419 16.1159 38.8251 16.9022 38.7338C18.612 42.4226 21.1252 45.6876 24.26 48.2931C24.0923 48.2962 23.9245 48.2988 23.7559 48.2988ZM16.0902 33.7571C16.427 33.6665 16.784 33.683 17.1109 33.8043C17.4378 33.9257 17.7183 34.1458 17.9128 34.4337C18.1073 34.7217 18.2062 35.063 18.1954 35.4096C18.1847 35.7563 18.0649 36.0909 17.8529 36.3664C17.6409 36.6418 17.3473 36.8444 17.0135 36.9455C16.6797 37.0466 16.3224 37.0413 15.9918 36.9301C15.6612 36.819 15.374 36.6077 15.1705 36.326C14.967 36.0442 14.8575 35.7062 14.8573 35.3594C14.8583 34.9951 14.9795 34.6412 15.2021 34.3518C15.4248 34.0625 15.7367 33.8536 16.0902 33.7571ZM38.8702 42.3099C35.5605 45.4306 31.3545 47.4488 26.8371 48.0839C23.2584 45.5157 20.4008 42.0798 18.5364 38.1035C19.118 37.6839 19.5516 37.0926 19.7754 36.4139C19.9993 35.7352 20.0021 35.0036 19.7833 34.3232C19.5646 33.6429 19.1354 33.0484 18.557 32.6245C17.9786 32.2005 17.2804 31.9687 16.5617 31.9619C16.2736 30.4137 16.1287 28.8426 16.1289 27.2682C16.1236 24.1331 16.6996 21.024 17.8279 18.0963C18.5583 18.2282 19.3121 18.1199 19.975 17.7876C20.6378 17.4554 21.1736 16.9175 21.5011 16.2554C25.252 17.5423 28.6552 19.6685 31.448 22.47C34.2407 25.2714 36.3485 28.6731 37.6084 32.4125C36.9842 32.7645 36.4873 33.3029 36.1881 33.9513C35.889 34.5997 35.8029 35.3253 35.9419 36.0251C36.081 36.7249 36.4382 37.3634 36.9628 37.8501C37.4875 38.3369 38.1531 38.6471 38.8651 38.7369C38.9073 39.3401 38.9301 39.947 38.9301 40.5503C38.9301 41.1339 38.9098 41.7238 38.8702 42.3099ZM39.5344 37.0093C39.4555 37.0211 39.3759 37.0268 39.2962 37.0265C38.8882 37.0267 38.4944 36.8783 38.189 36.6096C37.8836 36.3408 37.6879 35.9703 37.6386 35.5679C37.5894 35.1654 37.6902 34.7591 37.9219 34.4254C38.1536 34.0918 38.5002 33.854 38.8962 33.757C39.027 33.7246 39.1614 33.7084 39.2962 33.7087C39.7183 33.7085 40.1247 33.8673 40.4338 34.1531C40.7428 34.4389 40.9314 34.8304 40.9616 35.2488C40.9918 35.6672 40.8613 36.0814 40.5965 36.4081C40.3317 36.7347 39.9522 36.9496 39.5344 37.0093ZM40.6778 40.3948C40.6743 39.7656 40.65 39.1331 40.6028 38.505C41.3333 38.2049 41.9364 37.6624 42.3096 36.9699C42.6828 36.2774 42.8029 35.4778 42.6495 34.7072C42.4961 33.9367 42.0786 33.2427 41.4682 32.7437C40.8578 32.2446 40.0922 31.9712 39.3018 31.9701C37.9559 27.9158 35.6775 24.2292 32.6474 21.2029C29.6174 18.1766 25.9191 15.8939 21.8463 14.5362C21.7929 13.7358 21.4574 12.9797 20.8987 12.4007C23.0083 9.4614 25.7119 6.99198 28.8367 5.15042C30.5657 5.5567 32.2385 6.17028 33.8185 6.97769C33.1324 8.21947 32.7263 9.59473 32.6286 11.0081C32.5426 12.3167 32.7399 13.6285 33.2071 14.855C33.6993 16.1303 34.4496 17.2916 35.4117 18.2671L41.6731 24.7618C41.7548 24.8465 41.8528 24.9139 41.9614 24.96C42.07 25.006 42.1868 25.0298 42.3049 25.0298C42.4229 25.0298 42.5398 25.006 42.6483 24.96C42.7569 24.9139 42.855 24.8465 42.9366 24.7618L45.3581 22.2499C45.6264 23.627 45.7616 25.0265 45.762 26.4292C45.7668 31.5326 43.9672 36.4759 40.6778 40.3948ZM49.7622 14.2489C49.3528 15.3018 48.7305 16.2602 47.9338 17.0647L42.3045 22.9041L36.6751 17.0643C35.8785 16.2598 35.2563 15.3014 34.8469 14.2485C34.4667 13.2534 34.3055 12.1888 34.3741 11.1266C34.5103 9.1603 35.3673 7.31195 36.783 5.93165C38.2606 4.50145 40.2418 3.70111 42.3044 3.70111C44.3671 3.70111 46.3483 4.50145 47.8259 5.93165C49.2416 7.31195 50.0986 9.1603 50.2348 11.1266C50.3035 12.1888 50.1424 13.2538 49.7622 14.2489Z" fill="#F9C300")
+              path(d="M42.2119 5.88678C41.2406 5.88184 40.2897 6.16534 39.4797 6.70137C38.6697 7.2374 38.037 8.00182 37.6619 8.89776C37.2867 9.79371 37.186 10.7808 37.3725 11.7341C37.5589 12.6873 38.0242 13.5638 38.7092 14.2523C39.3943 14.9409 40.2684 15.4106 41.2206 15.6019C42.1729 15.7933 43.1606 15.6976 44.0584 15.327C44.9563 14.9565 45.7239 14.3277 46.2641 13.5205C46.8042 12.7132 47.0926 11.7638 47.0926 10.7924C47.0944 9.49514 46.5816 8.25008 45.6666 7.33041C44.7516 6.41074 43.5092 5.89157 42.2119 5.88678V5.88678ZM42.2119 13.8776C41.6006 13.8826 41.0016 13.7059 40.491 13.3699C39.9803 13.0339 39.5809 12.5538 39.3436 11.9905C39.1062 11.4272 39.0415 10.806 39.1577 10.2059C39.2739 9.60574 39.5658 9.05365 39.9963 8.61965C40.4268 8.18565 40.9765 7.88931 41.5757 7.76823C42.1748 7.64715 42.7965 7.70678 43.3617 7.93957C43.9269 8.17235 44.4103 8.56779 44.7504 9.07572C45.0905 9.58364 45.2721 10.1812 45.2721 10.7924C45.2744 11.6071 44.9536 12.3894 44.3799 12.9678C43.8062 13.5462 43.0265 13.8734 42.2119 13.8776V13.8776Z" fill="#F9C300")
+            p
+              b Более 40
+              |  лучших
+              br
+              |  магазинов России у нас
+          .feauter-item.d-flex.align-items-center.col-lg.col-md-4.col-sm-6.col-xs-12
+            svg(width="52" height="52" viewbox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg")
+              g(clip-path="")
+                path(d="M23.8929 35.2084C23.2066 35.2136 22.3679 34.9446 21.8422 34.457L14.2782 27.4397C12.7679 25.9293 13.6224 24.0377 14.1302 23.4903C15.178 22.3608 16.9498 22.2941 18.0793 23.3423L23.28 28.1669L32.5983 14.7079C33.4759 13.4411 35.2203 13.1241 36.4867 14.0009C37.7538 14.8781 38.0708 16.6221 37.194 17.8892C37.194 17.8892 26.0527 33.9813 26.0404 33.9992C25.5112 34.7633 24.7784 35.2017 23.8929 35.2084ZM15.247 24.5265C14.7575 25.0157 14.8078 25.8532 15.3141 26.3229L22.8781 33.3402C23.1479 33.5902 23.5156 33.7124 23.8806 33.6719C24.2472 33.6318 24.5781 33.435 24.7879 33.1319L35.9412 17.022C36.3403 16.446 36.1959 15.6525 35.6198 15.2538C35.0434 14.8547 34.2499 14.9987 33.8508 15.5751L24.0326 29.757C23.9068 29.9383 23.7085 30.0565 23.4887 30.0807C23.2693 30.1041 23.0503 30.0319 22.888 29.8816C22.888 29.8816 17.0506 24.4662 17.0434 24.4591C16.8101 24.2429 15.9258 23.8473 15.247 24.5265Z" fill="#F9C300")
+                path(d="M26.0762 52C25.8731 52 25.6692 51.9548 25.4855 51.8687C16.7507 47.7772 10.0988 41.1634 5.71455 32.2108C2.09163 24.8126 1.0887 17.8135 0.825665 15.1475C0.710614 13.9783 1.35807 12.8873 2.43797 12.4331C6.75398 10.6172 9.67549 6.58847 10.0627 1.91937C10.1531 0.825195 11.0446 0 12.1356 0H40.0169C41.0916 0 42.0017 0.834717 42.0882 1.90073C42.4687 6.573 45.3862 10.6065 49.7022 12.4279C50.7893 12.8869 51.4419 13.9799 51.3268 15.1483C51.0634 17.8143 50.0605 24.8138 46.4375 32.2116C42.0533 41.1638 35.4013 47.7772 26.6666 51.8687C26.4829 51.9548 26.279 52 26.0762 52ZM12.1356 1.52344C11.844 1.52344 11.6056 1.74799 11.581 2.04553C11.1466 7.28235 7.86958 11.8007 3.0287 13.8375C2.56849 14.0311 2.29237 14.4973 2.34196 14.9983C2.59666 17.5818 3.56904 24.3655 7.08287 31.5407C11.3009 40.1545 17.691 46.5208 26.0762 50.4631C34.4607 46.5212 40.8512 40.1549 45.0692 31.5419C48.5834 24.3667 49.5558 17.5826 49.8105 14.9991C49.8601 14.4984 49.5784 14.0295 49.1103 13.8315C44.269 11.7888 40.9964 7.2645 40.5699 2.02411C40.5469 1.74322 40.3041 1.52344 40.0169 1.52344H12.1356Z" fill="#F9C300")
+                path(d="M41.9367 31.5494C41.5661 31.3503 41.4118 30.9008 41.6018 30.5259C42.5048 28.7461 43.2792 26.9029 43.933 25.0181C44.496 23.3943 44.9704 21.7399 45.3577 20.0657C45.6409 18.8414 45.8782 17.606 46.0599 16.3622C46.0626 16.3432 46.0654 16.3242 46.0682 16.3047C41.7601 13.9343 38.6351 9.85431 37.4715 5.08008H14.681C14.2311 6.92606 13.4912 8.67444 12.4808 10.2792C12.2566 10.6351 11.7865 10.7418 11.4302 10.518C11.0744 10.2939 10.9672 9.82336 11.1914 9.4675C12.1348 7.96985 12.8196 6.33414 13.2278 4.60678C13.3738 3.98828 13.9205 3.55664 14.5572 3.55664H37.5949C38.2316 3.55664 38.7783 3.98868 38.9247 4.60678C39.9733 9.04895 42.8781 12.8445 46.8938 15.0201C47.3913 15.2891 47.6718 15.8489 47.5916 16.4118C47.3949 17.802 47.1338 19.1834 46.8156 20.5505C46.4153 22.2695 45.9226 23.9675 45.3382 25.6334C44.6757 27.5214 43.8636 29.4289 42.9606 31.215C42.9606 31.215 42.9697 31.1967 42.9606 31.215C42.8261 31.4796 42.3707 31.7827 41.9367 31.5494Z" fill="#F9C300")
+                path(d="M26.0761 48.035C25.8583 48.035 25.6409 47.983 25.4425 47.8795C18.2217 44.103 12.6591 38.3048 8.90846 30.6464C6.19841 25.112 5.04829 19.851 4.56032 16.4118C4.48057 15.8488 4.76106 15.289 5.25816 15.02C6.66456 14.2583 7.94362 13.2959 9.0608 12.16C9.35557 11.8597 9.83799 11.8557 10.1379 12.1509C10.4378 12.4457 10.4418 12.9281 10.147 13.228C8.95012 14.4448 7.58378 15.4795 6.08415 16.3047C6.48286 19.0635 7.55165 24.4114 10.2768 29.9763C13.8688 37.3118 19.1841 42.8676 26.0761 46.4913C31.7747 43.4948 36.416 39.1582 39.8715 33.6008C40.0937 33.2434 40.5634 33.1339 40.9209 33.356C41.2779 33.5782 41.3874 34.0479 41.1653 34.4054C37.5495 40.2202 32.686 44.7537 26.7097 47.8795C26.5113 47.983 26.2935 48.035 26.0761 48.035Z" fill="#F9C300")
+              defs
+                clippath#clip0
+                  rect(width="52" height="52" fill="white")
+            p
+              b Проверка и гарантия
+              br
+              |  качества брендов
+          .feauter-item.d-flex.align-items-center.col-lg.col-md-4.col-sm-6.col-xs-12
+            svg(width="55" height="55" viewbox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg")
+              g(clip-path="")
+                path(d="M52.8229 12.1356L27.8508 0.080083C27.6294 -0.0266943 27.3716 -0.0266943 27.1503 0.080083L2.17802 12.1356C1.89958 12.27 1.72266 12.552 1.72266 12.8611V42.1389C1.72266 42.448 1.89958 42.73 2.17802 42.8644L27.1502 54.9199C27.2608 54.9733 27.3807 55 27.5005 55C27.6202 55 27.74 54.9733 27.8508 54.9199L52.8229 42.8644C53.1014 42.73 53.2783 42.448 53.2783 42.1389V12.8612C53.2783 12.5519 53.1012 12.2701 52.8229 12.1356ZM27.5005 1.70033L50.6195 12.8611L43.9178 16.0965C43.8753 16.0641 43.8305 16.0343 43.7813 16.0105L20.8194 4.92567L27.5005 1.70033ZM18.9999 5.83661L42.0852 16.9812L37.3571 19.2638L14.2812 8.12372L18.9999 5.83661ZM42.6254 18.5096V26.9471L38.2089 29.0793V20.6417L42.6254 18.5096ZM51.667 41.6333L28.3061 52.9107V25.4223L33.8784 22.7322C34.2791 22.5388 34.4471 22.0572 34.2537 21.6564C34.0602 21.2558 33.5786 21.0876 33.1778 21.2812L27.5005 24.0221L25.2665 22.9435C24.8657 22.7499 24.3842 22.9181 24.1907 23.3188C23.9972 23.7194 24.1652 24.2011 24.5659 24.3946L26.6948 25.4223V52.9107L3.33398 41.6331V14.1447L21.123 22.7326C21.2359 22.7871 21.3553 22.8129 21.4727 22.8129C21.7722 22.8129 22.0599 22.6451 22.1988 22.3573C22.3922 21.9567 22.2242 21.475 21.8235 21.2815L4.38146 12.8611L12.3849 8.99739L36.5864 20.6809C36.59 20.6859 36.5939 20.6903 36.5976 20.6951V30.3629C36.5976 30.6402 36.7401 30.8979 36.975 31.0454C37.1054 31.1273 37.2542 31.1686 37.4034 31.1686C37.5228 31.1686 37.6426 31.1421 37.7536 31.0885L43.7813 28.1785C44.0598 28.0441 44.2367 27.7623 44.2367 27.453V17.7319L51.667 14.1448V41.6333Z" fill="#F9C300")
+                path(d="M9.98101 38.5085L6.31631 36.7394C5.91541 36.5457 5.43395 36.7139 5.24048 37.1146C5.04701 37.5153 5.21502 37.9969 5.6157 38.1904L9.2804 39.9595C9.3933 40.0141 9.51265 40.0399 9.63006 40.0399C9.92955 40.0399 10.2172 39.8721 10.3561 39.5843C10.5497 39.1835 10.3817 38.7021 9.98101 38.5085Z" fill="#F9C300")
+                path(d="M13.3564 36.3132L6.32406 32.9182C5.92326 32.7247 5.44169 32.8928 5.24822 33.2935C5.05487 33.6942 5.22287 34.1759 5.62356 34.3694L12.6559 37.7643C12.7688 37.8188 12.8882 37.8447 13.0056 37.8447C13.3051 37.8447 13.5928 37.6769 13.7317 37.3891C13.9251 36.9882 13.7571 36.5065 13.3564 36.3132Z" fill="#F9C300")
+              defs
+                clippath#clip0
+                  rect(width="55" height="55" fill="white")
+            p
+              b Бесплатная доставка
+              br
+              |  и бонусы каждому покупателю
+
+    section.top-product-block
+      .container
+        .row
+          .col-md-12
+            .row
+              h2.title.text-uppercase Самые популярные товары
+          #obbx_2662763187_FyyThF.mb-4.catalog-top.col-md-12(data-entity="catalog-top-container")
+            // items-container
+            #bx-catalog-top-row-0-IrwHzW.row.product-item-list.catalog-top-slide(data-entity="items-row")
+              .product-item-big-card
+                #bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586.main-top-product-container(data-entity="item")
+                  .top-product-item-compare-container
+                    .top-product-item-wishlist
+                      a(href="#")
+                        svg(width="29" height="27" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(d="M14.4133 4.76961C15.5838 1.9622 18.2576 0.000586914 21.3676 0.000586914C25.5571 0.000586914 28.5743 3.62739 28.9536 7.94974C28.9536 7.94974 29.1583 9.0227 28.7077 10.9544C28.094 13.5851 26.6515 15.9224 24.7068 17.7061L14.4133 27L4.29325 17.7055C2.34847 15.9224 0.905979 13.5845 0.292327 10.9538C-0.158342 9.02211 0.0464022 7.94915 0.0464022 7.94915C0.42573 3.6268 3.44295 0 7.63237 0C10.743 0 13.2428 1.9622 14.4133 4.76961Z" fill="#D75A4A")
+                    .top-product-item-compare
+                      .checkbox
+                        a#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_compare_link
+                          img(src="img/compare.svg" width="100%" height="auto" data-entity="compare-checkbox")
+                  .top-product-item
+                    a.top-product-item-image-wrapper(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="картинка Лодка ПВХ Stormline Adventure Standard 340 copy 1 являющийся официальным дистрибьютором в России " data-entity="image-wrapper")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider.top-product-item-image-slider-slide-container.slide(style="display: none;" data-slider-interval="3000" data-slider-wrap="true")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict.top-product-item-image-original(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_secondpict.top-product-item-image-alternative(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider_indicator.top-product-item-image-slider-control-container(style="display: none;")
+                    .top-product-item-testimonials
+                      img(src="img/star.svg" alt="")
+                      a(href="#reviews") 32 отзыва
+                    h3.top-product-item-title
+                      a(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="Лодка ПВХ Stormline Adventure Standard 340 copy 1") Лодка ПВХ Stormline Adventure Standard 340 copy 1
+                    .top-product-item-info-container.top-product-item-price-container(data-entity="price-block")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_price.top-product-item-price-current 44 990 р.
+              .product-item-big-card
+                #bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586.main-top-product-container(data-entity="item")
+                  .top-product-item-compare-container
+                    .top-product-item-wishlist
+                      a(href="#")
+                        svg(width="29" height="27" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(d="M14.4133 4.76961C15.5838 1.9622 18.2576 0.000586914 21.3676 0.000586914C25.5571 0.000586914 28.5743 3.62739 28.9536 7.94974C28.9536 7.94974 29.1583 9.0227 28.7077 10.9544C28.094 13.5851 26.6515 15.9224 24.7068 17.7061L14.4133 27L4.29325 17.7055C2.34847 15.9224 0.905979 13.5845 0.292327 10.9538C-0.158342 9.02211 0.0464022 7.94915 0.0464022 7.94915C0.42573 3.6268 3.44295 0 7.63237 0C10.743 0 13.2428 1.9622 14.4133 4.76961Z" fill="#D75A4A")
+                    .top-product-item-compare
+                      .checkbox
+                        a#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_compare_link
+                          img(src="img/compare.svg" width="100%" height="auto" data-entity="compare-checkbox")
+                  .top-product-item
+                    a.top-product-item-image-wrapper(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="картинка Лодка ПВХ Stormline Adventure Standard 340 copy 1 являющийся официальным дистрибьютором в России " data-entity="image-wrapper")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider.top-product-item-image-slider-slide-container.slide(style="display: none;" data-slider-interval="3000" data-slider-wrap="true")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict.top-product-item-image-original(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_secondpict.top-product-item-image-alternative(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider_indicator.top-product-item-image-slider-control-container(style="display: none;")
+                    .top-product-item-testimonials
+                      img(src="img/star.svg" alt="")
+                      a(href="#reviews") 32 отзыва
+                    h3.top-product-item-title
+                      a(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="Лодка ПВХ Stormline Adventure Standard 340 copy 1") Лодка ПВХ Stormline Adventure Standard 340 copy 1
+                    .top-product-item-info-container.top-product-item-price-container(data-entity="price-block")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_price.top-product-item-price-current 44 990 р.
+              .product-item-big-card
+                #bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586.main-top-product-container(data-entity="item")
+                  .top-product-item-compare-container
+                    .top-product-item-wishlist
+                      a(href="#")
+                        svg(width="29" height="27" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(d="M14.4133 4.76961C15.5838 1.9622 18.2576 0.000586914 21.3676 0.000586914C25.5571 0.000586914 28.5743 3.62739 28.9536 7.94974C28.9536 7.94974 29.1583 9.0227 28.7077 10.9544C28.094 13.5851 26.6515 15.9224 24.7068 17.7061L14.4133 27L4.29325 17.7055C2.34847 15.9224 0.905979 13.5845 0.292327 10.9538C-0.158342 9.02211 0.0464022 7.94915 0.0464022 7.94915C0.42573 3.6268 3.44295 0 7.63237 0C10.743 0 13.2428 1.9622 14.4133 4.76961Z" fill="#D75A4A")
+                    .top-product-item-compare
+                      .checkbox
+                        a#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_compare_link
+                          img(src="img/compare.svg" width="100%" height="auto" data-entity="compare-checkbox")
+                  .top-product-item
+                    a.top-product-item-image-wrapper(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="картинка Лодка ПВХ Stormline Adventure Standard 340 copy 1 являющийся официальным дистрибьютором в России " data-entity="image-wrapper")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider.top-product-item-image-slider-slide-container.slide(style="display: none;" data-slider-interval="3000" data-slider-wrap="true")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict.top-product-item-image-original(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_secondpict.top-product-item-image-alternative(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider_indicator.top-product-item-image-slider-control-container(style="display: none;")
+                    .top-product-item-testimonials
+                      img(src="img/star.svg" alt="")
+                      a(href="#reviews") 32 отзыва
+                    h3.top-product-item-title
+                      a(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="Лодка ПВХ Stormline Adventure Standard 340 copy 1") Лодка ПВХ Stormline Adventure Standard 340 copy 1
+                    .top-product-item-info-container.top-product-item-price-container(data-entity="price-block")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_price.top-product-item-price-current 44 990 р.
+              .product-item-big-card
+                #bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586.main-top-product-container(data-entity="item")
+                  .top-product-item-compare-container
+                    .top-product-item-wishlist
+                      a(href="#")
+                        svg(width="29" height="27" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(d="M14.4133 4.76961C15.5838 1.9622 18.2576 0.000586914 21.3676 0.000586914C25.5571 0.000586914 28.5743 3.62739 28.9536 7.94974C28.9536 7.94974 29.1583 9.0227 28.7077 10.9544C28.094 13.5851 26.6515 15.9224 24.7068 17.7061L14.4133 27L4.29325 17.7055C2.34847 15.9224 0.905979 13.5845 0.292327 10.9538C-0.158342 9.02211 0.0464022 7.94915 0.0464022 7.94915C0.42573 3.6268 3.44295 0 7.63237 0C10.743 0 13.2428 1.9622 14.4133 4.76961Z" fill="#D75A4A")
+                    .top-product-item-compare
+                      .checkbox
+                        a#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_compare_link
+                          img(src="img/compare.svg" width="100%" height="auto" data-entity="compare-checkbox")
+                  .top-product-item
+                    a.top-product-item-image-wrapper(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="картинка Лодка ПВХ Stormline Adventure Standard 340 copy 1 являющийся официальным дистрибьютором в России " data-entity="image-wrapper")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider.top-product-item-image-slider-slide-container.slide(style="display: none;" data-slider-interval="3000" data-slider-wrap="true")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict.top-product-item-image-original(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_secondpict.top-product-item-image-alternative(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider_indicator.top-product-item-image-slider-control-container(style="display: none;")
+                    .top-product-item-testimonials
+                      img(src="img/star.svg" alt="")
+                      a(href="#reviews") 32 отзыва
+                    h3.top-product-item-title
+                      a(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="Лодка ПВХ Stormline Adventure Standard 340 copy 1") Лодка ПВХ Stormline Adventure Standard 340 copy 1
+                    .top-product-item-info-container.top-product-item-price-container(data-entity="price-block")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_price.top-product-item-price-current 44 990 р.
+              .product-item-big-card
+                #bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586.main-top-product-container(data-entity="item")
+                  .top-product-item-compare-container
+                    .top-product-item-wishlist
+                      a(href="#")
+                        svg(width="29" height="27" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(d="M14.4133 4.76961C15.5838 1.9622 18.2576 0.000586914 21.3676 0.000586914C25.5571 0.000586914 28.5743 3.62739 28.9536 7.94974C28.9536 7.94974 29.1583 9.0227 28.7077 10.9544C28.094 13.5851 26.6515 15.9224 24.7068 17.7061L14.4133 27L4.29325 17.7055C2.34847 15.9224 0.905979 13.5845 0.292327 10.9538C-0.158342 9.02211 0.0464022 7.94915 0.0464022 7.94915C0.42573 3.6268 3.44295 0 7.63237 0C10.743 0 13.2428 1.9622 14.4133 4.76961Z" fill="#D75A4A")
+                    .top-product-item-compare
+                      .checkbox
+                        a#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_compare_link
+                          img(src="img/compare.svg" width="100%" height="auto" data-entity="compare-checkbox")
+                  .top-product-item
+                    a.top-product-item-image-wrapper(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="картинка Лодка ПВХ Stormline Adventure Standard 340 copy 1 являющийся официальным дистрибьютором в России " data-entity="image-wrapper")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider.top-product-item-image-slider-slide-container.slide(style="display: none;" data-slider-interval="3000" data-slider-wrap="true")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict.top-product-item-image-original(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_secondpict.top-product-item-image-alternative(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider_indicator.top-product-item-image-slider-control-container(style="display: none;")
+                    .top-product-item-testimonials
+                      img(src="img/star.svg" alt="")
+                      a(href="#reviews") 32 отзыва
+                    h3.top-product-item-title
+                      a(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="Лодка ПВХ Stormline Adventure Standard 340 copy 1") Лодка ПВХ Stormline Adventure Standard 340 copy 1
+                    .top-product-item-info-container.top-product-item-price-container(data-entity="price-block")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_price.top-product-item-price-current 44 990 р.
+              .product-item-big-card
+                #bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586.main-top-product-container(data-entity="item")
+                  .top-product-item-compare-container
+                    .top-product-item-wishlist
+                      a(href="#")
+                        svg(width="29" height="27" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(d="M14.4133 4.76961C15.5838 1.9622 18.2576 0.000586914 21.3676 0.000586914C25.5571 0.000586914 28.5743 3.62739 28.9536 7.94974C28.9536 7.94974 29.1583 9.0227 28.7077 10.9544C28.094 13.5851 26.6515 15.9224 24.7068 17.7061L14.4133 27L4.29325 17.7055C2.34847 15.9224 0.905979 13.5845 0.292327 10.9538C-0.158342 9.02211 0.0464022 7.94915 0.0464022 7.94915C0.42573 3.6268 3.44295 0 7.63237 0C10.743 0 13.2428 1.9622 14.4133 4.76961Z" fill="#D75A4A")
+                    .top-product-item-compare
+                      .checkbox
+                        a#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_compare_link
+                          img(src="img/compare.svg" width="100%" height="auto" data-entity="compare-checkbox")
+                  .top-product-item
+                    a.top-product-item-image-wrapper(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="картинка Лодка ПВХ Stormline Adventure Standard 340 copy 1 являющийся официальным дистрибьютором в России " data-entity="image-wrapper")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider.top-product-item-image-slider-slide-container.slide(style="display: none;" data-slider-interval="3000" data-slider-wrap="true")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict.top-product-item-image-original(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_secondpict.top-product-item-image-alternative(style="background-image: url('img/2800-m-chs-3 (7).png'); ")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_pict_slider_indicator.top-product-item-image-slider-control-container(style="display: none;")
+                    .top-product-item-testimonials
+                      img(src="img/star.svg" alt="")
+                      a(href="#reviews") 32 отзыва
+                    h3.top-product-item-title
+                      a(href="/catalog/lodochnye-motory-2-h-taktnye/lodka_pvkh_stormline_adventure_standard_340_copy_1/" title="Лодка ПВХ Stormline Adventure Standard 340 copy 1") Лодка ПВХ Stormline Adventure Standard 340 copy 1
+                    .top-product-item-info-container.top-product-item-price-container(data-entity="price-block")
+                      span#bx_2662763187_319_47f9a11bbec53337b5bc4a92e419e586_price.top-product-item-price-current 44 990 р.
+            // items-container
+
+    section.main-consultation.container
+      .row
+        .main-consultation-block
+          .manager.position-absolute
+          .section.position-relative.d-flex.justify-content-center
+            .form-block
+              .manager.d-flex
+              p.p1 Получите
+              p.p2.text-uppercase.Montserrat-SemiBold бесплатную консультацию
+              p.p3 эксперта по подбору лучшей модели
+              form.consultation-form(action="")
+                input#form_name(type="text" placeholder="Имя" name="form_name" value="")
+                input#form_phone(type="tel" placeholder="Телефон" name="form_phone" value="")
+                input.text-uppercase(type="submit" value="Получить помощь")
+              .person-data
+                span
+                  input(type="radio")
+                span
+                  | Нажимая на кнопку, "Получить помощь" вы даете согласие на обработку своих
+                  br
+                  |  персональных данных в соотвествии с политикой конфиденциальности
+            .badge
+              | Мы подберем варианты,
+              br
+              |  наиболее походящие именно Вам
+
+    section.main-text-block
+      .container
+        .row.text
+          .main-text-block__sidebar.col-md-3.col-sm-12.col-xs-12
+            span(style="font-size: 80px; line-height: 80px; color: #202020;") NordKit
+            a.video-popup(data-fancybox="" href="https://www.youtube.com/watch?v=3QSbPdRyQSM")
+              img.img-fluid(src="img/video_youtube.png" alt="")
+            a.video-link(href="https://www.youtube.com/watch?v=3QSbPdRyQSM" target="_blank") Просмотреть на YouTube
+          .main-text-block__content.col-md-9.col-sm-12.col-xs-12
+            p
+              | Это новый маркетплейс от Сбербанка и Яндекса. Здесь всё устроено так, чтобы вам было удобно покупать онлайн: все продавцы проверены, заказы доставляются быстро и когда вам удобно, а на популярные товары всегда можно найти скидки.
+            p
+              | При оформлении заказа с курьерской доставкой выберите удобную вам дату и временной интервал. Курьер позвонит за час до приезда. Услуга подъёма заказа на этаж уже включена в стоимость доставки. Если курьер просит у вас дополнительную оплату, звоните в службу поддержки: 8 800 234-27-12. Пожалуйста, убедитесь, что ширина лестницы или дверного проёма позволяет занести заказ в помещение. Позаботьтесь также о том, чтобы автомобиль службы доставки смог подъехать к вашему подъезду.
+            p
+              | При оформлении заказа с курьерской доставкой выберите удобную вам дату и временной интервал. Курьер позвонит за час до приезда. Услуга подъёма заказа на этаж уже включена в стоимость доставки. Если курьер просит у вас дополнительную оплату, звоните в службу поддержки: 8 800 234-27-12. Пожалуйста, убедитесь, что ширина лестницы или дверного проёма позволяет занести заказ в помещение. Позаботьтесь также о том, чтобы автомобиль службы доставки смог.
+            .section-counts.d-flex
+              .section-count
+                img(src="img/14 000 +.svg" alt="")
+                p Товаров для активного отдыха
+              .section-count
+                img(src="img/160 +.svg" alt="")
+                p Покутелей каждый день
+              .section-count
+                img(src="img/70 +.svg" alt="")
+                p Брендов со всего мира
+              .section-count
+                img(src="img/40 +.svg" alt="")
+                p Лучших магазинов России
+
+    section.client-block
+      .container
+        .row.client-list.d-flex
+          .client-item
+            img(src="img/1.png" alt="")
+          .client-item
+            img(src="img/2.png" alt="")
+          .client-item
+            img(src="img/3.png" alt="")
+          .client-item
+            img(src="img/4.png" alt="")
+          .client-item
+            img(src="img/5.png" alt="")
+          .client-item
+            img(src="img/6.png" alt="")
+          .client-item
+            img(src="img/3.png" alt="")
+          .client-item
+            img(src="img/4.png" alt="")
+          .client-item
+            img(src="img/5.png" alt="")
+          .client-item
+            img(src="img/6.png" alt="")
+
+    section.last-news-block
+      .container
+        .row
+          .col-12
+            h2.text-center Последние новости из мира Активного отдыха
+        .news-list-main.d-flex.row
+          .news-item.col-md-12
+            .news-item-content
+              a.img(href="/")
+                img(src="img/new1.png" alt="")
+              .inform
+                .date
+                  span 28.03.18
+                  span 16:30
+                a(href="#") В Осиповичах планируют организовать охоту из лука на лося и оленя
+                p
+                  | Во многих странах мира охота из лука запрещена. Ведущий инженер по охотничьему хозяйству Осипова, а именно в районе принадлежащ...
+                .news-item-content-action-block.d-flex.justify-content-center
+                  .item
+                    img(src="img/view.svg")
+                    span 14
+                  .item
+                    img(src="img/comment_icns.svg")
+                    span 52
+                  .item
+                    img(src="img/like.svg")
+                    span 0
+          .news-item.col-md-12
+            .news-item-content
+              a.img(href="/")
+                img(src="img/new2.png" alt="")
+              .inform
+                .date
+                  span 28.03.18
+                  span 16:30
+                a(href="#") В Осиповичах планируют организовать охоту из лука на лося и оленя
+                p
+                  | Во многих странах мира охота из лука запрещена. Ведущий инженер по охотничьему хозяйству Осипова, а именно в районе принадлежащ...
+                .news-item-content-action-block.d-flex.justify-content-center
+                  .item
+                    img(src="img/view.svg")
+                    span 14
+                  .item
+                    img(src="img/comment_icns.svg")
+                    span 52
+                  .item
+                    img(src="img/like.svg")
+                    span 0
+          .news-item.col-md-12
+            .news-item-content
+              a.img(href="/")
+                img(src="img/new1.png" alt="")
+              .inform
+                .date
+                  span 28.03.18
+                  span 16:30
+                a(href="#") В Осиповичах планируют организовать охоту из лука на лося и оленя
+                p
+                  | Во многих странах мира охота из лука запрещена. Ведущий инженер по охотничьему хозяйству Осипова, а именно в районе принадлежащ...
+                .news-item-content-action-block.d-flex.justify-content-center
+                  .item
+                    img(src="img/view.svg")
+                    span 14
+                  .item
+                    img(src="img/comment_icns.svg")
+                    span 52
+                  .item
+                    img(src="img/like.svg")
+                    span 0
+          .news-item.col-md-12
+            .news-item-content
+              a.img(href="/")
+                img(src="img/new2.png" alt="")
+              .inform
+                .date
+                  span 28.03.18
+                  span 16:30
+                a(href="#") В Осиповичах планируют организовать охоту из лука на лося и оленя
+                p
+                  | Во многих странах мира охота из лука запрещена. Ведущий инженер по охотничьему хозяйству Осипова, а именно в районе принадлежащ...
+                .news-item-content-action-block.d-flex.justify-content-center
+                  .item
+                    img(src="img/view.svg")
+                    span 14
+                  .item
+                    img(src="img/comment_icns.svg")
+                    span 52
+                  .item
+                    img(src="img/like.svg")
+                    span 0
+          .news-item.col-md-12
+            .news-item-content
+              a.img(href="/")
+                img(src="img/new1.png" alt="")
+              .inform
+                .date
+                  span 28.03.18
+                  span 16:30
+                a(href="#") Дешёвые рейсы откроют в Приангарье новое направление массового туризма
+                p
+                  | Организованные туристические поездки в Тофаларию начнутся весной этого года в городе Новоси...
+                .news-item-content-action-block.d-flex.justify-content-center
+                  .item
+                    img(src="img/view.svg")
+                    span 14
+                  .item
+                    img(src="img/comment_icns.svg")
+                    span 52
+                  .item
+                    img(src="img/like.svg")
+                    span 0
+          .news-item.col-md-12
+            .news-item-content
+              a.img(href="/")
+                img(src="img/new2.png" alt="")
+              .inform
+                .date
+                  span 28.03.18
+                  span 16:30
+                a(href="#") Охотникам и рыболовам
+                p
+                  | Глава Правительства отметил, что выставка объединила специалистов и любителей активного отдыха из самых разных регионов страны и ближнего зару...
+                .news-item-content-action-block.d-flex.justify-content-center
+                  .item
+                    img(src="img/view.svg")
+                    span 86
+                  .item
+                    img(src="img/comment_icns.svg")
+                    span 125
+                  .item
+                    img(src="img/like.svg")
+                    span 14
+        .d-flex.justify-content-center
+          a.all-news.btn.text-uppercase(href="/news/") Все новости

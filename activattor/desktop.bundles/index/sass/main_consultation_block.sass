@@ -1,4 +1,3 @@
-
 .main-consultation
     margin-bottom: 50px
     &-block
@@ -94,3 +93,114 @@
                 align-items: center
                 justify-content: center
                 transform: rotate(35.4deg)
+
+@media (max-width: 1201px)
+    .main-consultation-block
+        .manager
+            left: -50px
+        .section
+            .form-block
+                margin-left: 36%
+                -ms-flex: 0 0 82%
+                flex: 0 0 82%
+                max-width: 82%
+            .badge
+                display: none
+
+@media (max-width: 992px) 
+    .main-consultation
+        position: relative
+        &:after
+            top: 0
+            right: 0
+            content: ''
+            width: 320px
+            height: 243px
+            position: absolute
+            background-repeat: no-repeat
+            background-image: url(../../../img/main-consultation-block-Right.png)
+        &.container
+            max-width: 100%
+        &-block
+            display: flex
+            margin-top: 0
+            border-radius: 0
+            justify-content: center
+            background: linear-gradient(267.66deg, #9F3EFF -57.34%, rgba(147, 62, 255, 0) 165.6%), #54C1FF
+            .manager
+                display: none
+
+            .section
+                padding: 45px 55px
+                width: 100%
+                .form-block
+                    margin-left: 0%
+                    -ms-flex: 0 0 100%
+                    flex: 0 0 100%
+                    max-width: 100%
+                    padding-left: 0
+                    padding-right: 0
+                    z-index: 3
+                    .manager
+                        left: 0
+                        float: left
+                        bottom: 10px
+                        width: 100px
+                        height: 100px
+                        position: relative
+                        margin-right: 20px
+                        border-radius: 100%
+                        background-size: 165px
+                        display: flex !important
+                        background-color: #FFFFFF
+                        background-position: -30px 5px
+                    .p1, .p2, .p3
+                    form
+                        display: flex
+                        margin-top: 40px
+                        justify-content: space-between
+                        input
+                            width: 33%
+                            margin-right: 15px
+                            &[type="submit"]
+                                margin-right: 0
+
+@media (max-width: 768px)
+    .main-consultation-block
+        form input
+            width: 32%
+            margin-right: 5px
+            &[type="submit"]
+                font-size: 10px
+                margin-right: 0
+
+@media (max-width: 640px)
+    .main-consultation
+        &.container
+            max-width: 95%
+            margin-top: 30px
+        &:after
+            display: none
+        &-block
+            background: linear-gradient(269.27deg, #9F3EFF -57.34%, rgba(147, 62, 255, 0) 165.6%), #54C1FF
+            border-radius: 20px
+            text-align: center
+            .section
+                padding: 25px 20px
+                .form-block
+                    .manager
+                        display: none !important
+                    .p1, .p3
+                        font-size: 14px
+                    .p2
+                        font-size: 15px
+                    form
+                        margin-top: 20px
+                        flex-wrap: wrap
+                        input
+                            width: 100%
+                            margin-right: 0
+                            line-height: 42px
+                            margin-bottom: 15px
+                            &[type="submit"]
+                                font-size: 16px

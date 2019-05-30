@@ -1,6 +1,4 @@
-
 .last-news-block
-    overflow: hidden
     position: relative
     padding: 89px 0 61px
     background: rgba(255, 247, 242, 0.5)
@@ -73,3 +71,21 @@
                             font-family: 'SF UI Display Regular', sans-serif
                             font-size: 10px
                             color: #202020
+
+@media (max-width: 992px) 
+    .last-news-block
+        .container
+            max-width: 100%
+            padding-left: 0
+            padding-right: 0
+            .slick-prev
+                left: 25px
+            .slick-next
+                right: 25px
+
+@media (max-width: 640px)    
+    .last-news-block
+        h2
+            padding: 0 10px
+            font-size: 24px
+            letter-spacing: -1px

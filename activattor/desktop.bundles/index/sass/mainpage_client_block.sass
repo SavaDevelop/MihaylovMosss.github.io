@@ -15,3 +15,17 @@
     .client-item
         display: flex
         flex-wrap: wrap
+
+@media (max-width: 1440px)
+    .client-list
+        .slick-next
+            right: 0px
+        .slick-prev
+            left: -5px
+
+@media (max-width: 480px)
+    .client-block
+        .client-list
+            padding: 0 10px
+            .slick-prev, .slick-next
+                display: none !important

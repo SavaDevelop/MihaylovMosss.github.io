@@ -1,4 +1,3 @@
-
 .main-text-block
     .video-popup
         display: flex
@@ -44,3 +43,37 @@
                 line-height: 22px
                 margin-top: 10px
                 font-size: 17px
+
+
+@media (max-width: 1201px)
+    .main-text-block
+        &__sidebar
+            order: 2
+            flex: 0 0 100%
+            max-width: 100%
+        &__content
+            order: 1
+            flex: 0 0 100%
+            max-width: 100%
+
+@media (max-width: 992px) 
+    .main-text-block
+        &__content
+            .section-counts
+                flex-wrap: wrap
+                .section-count
+                    flex: 0 0 50%
+                    max-width: 50%
+                    margin-right: 0
+                    margin-bottom: 30px
+
+@media (max-width: 640px)
+    .main-text-block__content
+        .section-counts
+            .section-count
+                img
+                    max-width: 100%
+                p
+                    padding-right: 0
+                    padding-left: 0
+                    font-size: 15px

@@ -1,4 +1,4 @@
-import '../../js/base.js';
+import '../../common.blocks/base/base.js';
 import './index.sass';
 
 import './sass/mainpage_slider_block.sass';
