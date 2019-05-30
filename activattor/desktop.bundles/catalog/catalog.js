@@ -1,10 +1,10 @@
 import '../../js/base.js';
 import './catalog.sass';
 
-import '../../sass/catalog/_bootstrap-slider.scss';
-import '../../sass/catalog/_chosenpage__styles.sass';
-import '../../sass/catalog/ui/ui.sass';
-import '../../sass/catalog/ui/ui-2.sass';
+import './sass/_bootstrap-slider.scss';
+import './sass/_chosenpage__styles.sass';
+import './sass/ui/ui.sass';
+import './sass/ui/ui-2.sass';
 
 $(document).ready(function () {
 
