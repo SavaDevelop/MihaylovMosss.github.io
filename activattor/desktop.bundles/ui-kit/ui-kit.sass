@@ -1,0 +1,1263 @@
+/* ui Kit
+
+.ui-kit
+  background-color: #E5E5E5
+  button, a, svg
+    cursor: pointer
+.form-top
+    display: flex
+.form-input
+    position: relative
+    margin-right: 10px
+    .input-default
+        border: 1px solid rgba(68, 95, 239, 0)
+        transition: all .3s
+        &:hover
+            border: 1px solid rgba(68, 95, 239, 0.37)
+        &:focus
+            border: 1px solid #445FEF
+        &.error
+            color: #EB3939
+            border: 1px solid #EB3939
+            &::placeholder
+                color: #EB3939
+            + span svg.icon
+                stroke: #EB3939
+    .name-icon
+        position: absolute
+        left: 1.4rem
+        top: 50%
+        transform: translateY(-50%)
+        svg
+            height: 15px
+            width: 15px
+
+.button
+  border-radius: 8px
+  font-size: 13px
+  letter-spacing: 0.03em
+  line-height: 13px
+  font-family: 'SF UI Display', sans-serif
+  color: #000
+  height: auto !important
+  padding: 0.844rem
+  font-weight: 600
+  margin: 0 auto
+  max-width: 225px
+  text-align: center
+  text-transform: uppercase
+
+.button--yellow
+  background-color: #FFF73F
+  transition: .3s ease-in-out
+  color: #303030
+  &:hover
+    background-color: #FFE600
+  &:active, &:focus
+    background-color: #FFD53F
+    color: #B48D00
+
+.button-play
+  transform: translateY(-50%) translateX(-50%)
+  position: relative
+  top: 50%
+  left: 50%
+  background-color: #FFD702
+  width: 44px
+  height: 50%
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  border: none
+  padding: 22px
+  box-sizing: border-box
+  transition: .3s ease-in-out
+  svg
+    width: 19px
+    height: 17px
+    position: absolute
+    top: 30%
+    left: 34%
+  &:before
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    padding: 24px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:after
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    padding: 28px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:hover
+    background-color: #FFB802
+    &:before
+      border: 2px solid rgba(255, 184, 2, 0.57)
+    &:after
+      border: 2px solid rgba(255, 184, 2, 0.13)
+  &:active
+    outline: none
+    background-color: #FFD569
+    &:before
+      border: 2px solid rgba(255, 215, 2, 0.35)
+    &:after
+      border: 2px solid rgba(255, 238, 148, 0.35)
+  &:focus
+    background-color: #FFD569
+    outline: none
+    &:before
+      border: 2px solid rgba(255, 215, 2, 0.35)
+    &:after
+      border: 2px solid rgba(255, 238, 148, 0.35)
+
+.slide-button-prev-default
+  background-color: #ffffff
+  border-radius: 50%
+  width: 58px
+  height: 58px
+  transition: .3s ease-in-out
+  border: none
+  padding: 0
+  svg
+    fill: #008AD8
+  &:hover
+    background-color: #FFB802
+    svg
+      fill: #fff
+    &:active
+      background-color: #FFE49F
+      outline: none
+      svg
+        fill: #fff
+    &:focus
+      background-color: #FFE49F
+      svg
+        fill: #fff
+
+.slide-button-prev
+  background-color: #FFD84F
+  border-radius: 50%
+  width: 58px
+  height: 58px
+  transition: .3s ease-in-out
+  border: none
+  padding: 0
+  svg
+    fill: #fff
+  &:hover
+    background-color: #FFB802
+  &:active, &:focus
+    outline: none
+    background-color: #FFE49F
+
+.button-heart
+  border: none
+  background: transparent
+  transition: .3s ease-in-out
+  svg
+    stroke: #353535
+    fill: transparent
+    stroke-width: 1px
+
+.button-heart--selected svg
+  stroke: transparent
+  fill: #D75A4A
+
+.button-heart
+  &:hover svg
+    stroke: #EB5757
+  &:active svg, &:focus svg
+    stroke: #E57E71
+    fill: #E57E71
+
+.button-balance
+  border: none
+  background: transparent
+  transition: .3s ease-in-out
+  svg
+    stroke: #353535
+    fill: transparent
+    stroke-width: 1px
+
+.button-balance--selected svg
+  stroke: #FFB802
+  fill: transparent
+
+.button-balance
+  &:hover svg
+    stroke: #FFE03F
+  &:active svg, &:focus svg
+    stroke: #EBD292
+
+.button-prev
+  border: none
+  height: 43px
+  width: 23px
+  border-radius: 9px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgba(53, 53, 53, 0.25)
+  padding: 0
+  transition: .3s ease-in-out
+  &:hover
+    background-color: #F9C300
+  &:active, &:focus
+    background-color: #FCDD6E
+  svg
+    fill: #FFFFFF
+
+.button-golden-outline
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  border: 2px solid #FEDC64
+  border-radius: 8px
+  background: transparent
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-golden-bg
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  background: #FFE03F
+  border: 1px solid #FFE03F
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-blue-bg
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #fff
+  background: #008AD8
+  border: 1px solid #008AD8
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-blue-outline
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  background: transparent
+  border: 1px solid #008AD8
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-bookmark
+  background: transparent
+  border: none
+  svg
+    display: block
+  .bookmark_fill
+    display: none
+
+.button-bookmark-active .bookmark_fill
+  display: block
+
+.button-bookmark
+  &:active
+    .bookmark_stroke
+      display: none
+    .bookmark_fill
+      display: block
+  &:hover svg
+    stroke: #D34545
+
+.button-close
+  background: transparent
+  border: none
+  transition: .3s ease-in-out
+  svg
+    stroke: #000000
+  &:hover svg
+    stroke: #FFB802
+  &:active, &:focus
+    outline: none
+  &:active svg, &:focus svg
+    stroke: #FCDD6E
+
+.button-plus
+  display: block
+  background-color: #0073DC
+  width: 20px
+  height: 20px
+  position: relative
+  border-radius: 6px
+  border: none
+  transition: .3s ease-in-out
+  &:hover
+    background-color: #F9C300
+  &:active, &:focus
+    background-color: #FCDD6E
+  &:disabled
+    background-color: rgba(0, 115, 220, 0.2)
+    cursor: not-allowed
+    &:hover, &:active, &:focus
+      background-color: rgba(0, 115, 220, 0.2)
+  span
+    display: block
+    font-size: 20px
+    color: #FFF
+    position: absolute
+    top: .54rem
+    left: 4px
+    line-height: 0
+
+.more
+  text-decoration: underline
+  font-size: 15px
+  line-height: 20px
+  color: #008AD8
+  transition: .3s ease-in-out
+  &:hover
+    color: #00B2FF
+    text-decoration: underline
+
+.more-v1
+  color: #202020
+  text-decoration: #FFE03F underline
+  &:hover
+    color: #F9C300
+    text-decoration: #F9C300 underline
+
+.rate_row .star_stat li .hovered-star_stroke
+  fill: #EB3939
+
+.radio_input
+  display: block
+  position: relative
+  padding-left: 25px
+  margin-bottom: 12px
+  cursor: pointer
+  font-size: 22px
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  transition: .3s ease-in-out
+  input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    width: 20px
+    height: 20px
+    left: 0
+    &:disabled
+      cursor: not-allowed
+      ~ .radio-check
+        &:after
+          display: none
+        &:focus, &:hover, &:active
+          border: 2px solid #CCE3F8
+    &:checked ~ .radio-check
+      border: 2px solid #0073DC
+      opacity: unset
+      &:after
+        display: block
+        opacity: unset
+  &:hover input ~ .radio-check
+    border-color: #55BAFF
+    &:after
+      display: block
+      top: 3px
+      left: 3px
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #55BAFF
+  &:active, &:focus
+    outline: none
+  &:active input ~ .radio-check, &:focus input ~ .radio-check
+    border: 2px solid #0073DC
+    opacity: 0.5
+  &:active input ~ .radio-check:after, &:focus input ~ .radio-check:after
+    display: block
+    background: #0073DC
+
+.radio_input-selected
+  border: 2px solid #0073DC
+  &:after
+    display: block
+
+.radio_input-disabled
+  cursor: not-allowed
+  input ~ .radio-check
+    border-color: #CCE3F8
+    opacity: unset
+  &:hover, &:focus, &:active
+    outline: none
+  &:hover input ~ .radio-check, &:focus input ~ .radio-check, &:active input ~ .radio-check
+    border-color: #CCE3F8
+    opacity: unset
+  &:hover input ~ .radio-check:after, &:focus input ~ .radio-check:after, &:active input ~ .radio-check:after
+    display: none
+
+/* custom radio button
+
+.radio-check
+  position: absolute
+  top: 0
+  left: 0
+  height: 20px
+  width: 20px
+  border-radius: 50%
+  border: 2px solid rgba(0, 115, 220, 0.5)
+  &:after
+    content: ""
+    position: absolute
+    display: none
+
+/* Create the indicator (the dot/circle - hidden when not checked)
+
+/* Style the indicator (dot/circle)
+
+.radio_input .radio-check:after
+  top: 3px
+  left: 3px
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background: #0073DC
+
+.choose-cnt
+  display: flex
+  justify-content: space-between
+  align-items: center
+  p
+    font-size: 23px
+    line-height: 34px
+    color: #fff
+  .close-icon
+    cursor: pointer
+    svg
+      fill: #fff
+      width: 18px
+      height: 18px
+
+.choose-cities
+  width: 1522px
+  font-family: "SF UI Display Regular", sans-serif
+  margin: 25px auto
+
+.choose-top
+  padding: 25px 55px 30px
+  background: #6897FF
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+  input
+    width: 100%
+    height: 46px
+
+.cities-listed
+  list-style: none
+  padding: 0 50px
+  li
+    margin: 5px 0 10px
+    font-size: 18px
+  .letter
+    margin-top: 35px
+    &:before
+      content: attr(data-letter)
+      position: absolute
+      width: 27px
+      height: 27px
+      left: 55px
+      border-radius: 50%
+      background-color: #6897FF
+      text-transform: uppercase
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #fff
+
+.choose-bottom
+  background-color: #fff
+  padding: 25px 55px
+  position: relative
+  max-height: 1027px
+
+.choose-city
+  margin: 0 auto
+  max-width: 283px
+  width: 100%
+  max-height: 151px
+  background: #fff
+  border: 1px solid #6897FF
+  border-radius: 10px
+  padding: 30px 20px
+  text-align: center
+
+.choose-city-auth
+  max-height: 93px
+  padding: 23px 20px
+
+.choose-city p
+  font-size: 15px
+  color: #ABABAB
+  margin-bottom: 25px
+  font-family: "SF UI Display Regular", sans-serif
+
+#city-modal .modal-dialog, #auth-modal .modal-dialog
+  max-width: 283px
+
+.bold-text
+  font-weight: 600
+  color: #000
+
+.choose-buttons
+  display: flex
+  justify-content: space-between
+  button
+    min-width: 71px
+    padding: 0 15px
+    height: 45px
+    background: #FFD53F
+    border-radius: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 13px
+    line-height: 16px
+    font-weight: 600
+    border: none
+    text-transform: uppercase
+    outline: 0
+
+.close-icon
+  position: absolute
+  right: 30px
+  top: 30px
+  svg
+    width: 18px
+    height: 18px
+    stroke: #fff
+
+.popup-title
+  font-size: 40px
+  line-height: 62px
+  color: #fff
+  text-transform: uppercase
+  margin-bottom: 0
+
+.popup-text
+  font-size: 16px
+  line-height: 25px
+  color: #fff
+  text-transform: uppercase
+  margin-bottom: 0
+  font-family: "SF UI Display Regular", sans-serif
+
+.popup-info-text
+  font-size: 19px
+  line-height: 25px
+  color: #fff
+  font-family: "SF UI Display Regular", sans-serif
+  max-width: 435px
+  width: 100%
+  margin: 0 auto
+
+.yellow-title
+  color: #FFF73F
+
+.yellow-check
+  width: 43px
+  height: 43px
+  background: #FFF73F
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 35px auto
+  svg
+    width: 24px
+    height: 16px
+
+.popup-bottom-text
+  font-size: 18px
+  line-height: 22px
+  color: #fff
+  margin-bottom: 0
+  font-family: "SF UI Display Regular", sans-serif
+  letter-spacing: 0.5px
+  a
+    border-bottom: 1px solid #FFF73F
+    color: #fff
+    padding-bottom: 2px
+
+.popup-form-title
+  margin: 40px auto 15px
+  color: #fff
+  font-size: 16px
+  line-height: 22px
+
+.popup-inputs-content
+  margin: 0 auto
+  .help_main-btn
+    margin: 18px auto 30px
+    .button--fill_btn_yellow
+      height: 45px
+  .form-top
+    justify-content: space-between
+  .form-input
+    margin-right: 0
+    min-width: 262px
+    input
+      padding: 0 2rem
+  .help_main-btn
+    height: auto
+    .button
+      min-width: 224px
+      margin: 0 auto
+      font-weight: 600
+      letter-spacing: 0.03em
+      font-family: "SF UI Display Regular", sans-serif
+      padding: 1rem
+
+.buy-content
+  display: flex
+  align-items: center
+  margin: 0 auto 30px
+
+.left-buy
+  width: 83px
+  height: 111px
+  background: #fff
+  border: 1px solid #A3BFDF
+  border-radius: 10px
+
+.right-buy
+  text-align: left
+  width: 70%
+  margin-left: 40px
+
+.ui-main
+  margin: 0 auto
+
+.popup-loan-content
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    width: 35px
+
+.popup-loan-title
+  margin-left: 15px
+
+.modal-content
+  border-radius: 24px
+  background-color: transparent
+  border: none
+  .button
+    border: none
+  .close-icon
+    background-color: transparent !important
+    border: none !important
+    &:focus
+      outline: none
+
+.blue-popup
+  background: url(../../img/blue-back.png) no-repeat
+  background-size: cover
+  width: 100%
+  height: 100%
+  border-radius: 20px
+  padding: 50px
+  text-align: center
+  position: relative
+
+.thanks-bottom
+  padding-top: 100px
+  max-width: 375px
+  width: 100%
+  text-align: center
+  margin: 0 auto
+  p
+    font-size: 18px
+    color: #fff
+    font-family: "SF UI Display Regular", sans-serif
+
+.purple-popup
+  background: url(../../img/purple-back.png) no-repeat
+  background-size: cover
+  border-radius: 20px
+  padding: 60px 0
+  text-align: center
+  position: relative
+  .popup-title
+    font-size: 36px
+    line-height: 53px
+  .popup-alpha-title
+    font-size: 34px
+  .popup-info-text
+    margin: 20px auto 50px
+  .form-input input
+    margin-right: 0
+  .popup-form-bottom
+    a
+      border-bottom: 1px solid #FFF73F
+      color: #fff
+      cursor: pointer
+    p
+      color: #fff
+      font-family: "SF UI Display Regular", sans-serif
+    .checkbox_cnt
+        display: flex
+        min-height: 28px
+        height: auto
+        p
+            margin-left: 10px
+            user-select: none
+            width: calc(100% - 25px)
+        label
+            display: flex
+    .radio_parent
+        opacity: 0.6
+        &.active
+            opacity: 1
+    .check_cnt
+        width: 18px
+        height: 18px
+        border: 1px solid #A3BFDF
+        border-radius: 3px
+        display: block
+        position: relative
+        svg
+            width: 12px
+            height: 12px
+            fill: #008AD8
+            display: none
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            left: 0
+            margin: 0 auto
+    .checkbox_cnt_active svg
+        display: block
+
+    .check-yellow
+        border: 1px solid #FFF73F
+
+.purple-main
+  max-width: 552px
+  margin: 0 auto
+  .popup-form-bottom
+    text-align: left
+
+.custom-modal-purple
+  .modal-dialog
+    max-width: 837px
+    max-height: 436px
+  .modal-content
+    border: none
+
+.custom-modal-blue
+  .modal-dialog
+    max-width: 728px
+    max-height: 364px
+  .modal-content
+    border: none
+
+.ui-main
+  margin-top: 50px
+  .btn
+    display: block
+    margin: 25px auto
+
+.search-popup-top
+  position: relative
+  input
+    background: #fff
+    border: 2px solid #FFD84F
+    border-radius: 10px
+    box-shadow: none
+    width: 100%
+    padding: 0.188rem 1rem
+    &::placeholder
+      color: #000
+      \:-ms-input-placeholder, ::-ms-input-placeholder
+        color: #000
+
+.clear-icon
+  position: absolute
+  right: 80px
+  top: 50%
+  transform: translateY(-50%)
+  background: #fff
+  border: none
+  svg
+    stroke: #898989
+    width: 15px
+    height: 15px
+
+.search-icon
+  position: absolute
+  width: 74px
+  height: 50px
+  right: 0
+  top: 0
+  border: none
+  border-radius: 10px
+  background-color: #FFD84F
+  svg
+    width: 14px
+    height: 15px
+
+.search-popup-bottom
+  max-height: 300px
+  padding: 10px 10px
+  margin-top: -10px
+  border: 1px solid #FFD84F
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  background-color: #fff
+
+.scrollbar-popup
+  overflow-y: scroll
+
+.search-item-content
+  padding: 12px 0
+  display: flex
+  justify-content: space-around
+  border-bottom: 1px solid #C8D3DF
+  &:last-child
+    border-bottom: none
+
+.search-left
+  max-width: 50px
+  img
+    width: 100%
+
+.search-right
+  margin-left: 15px
+
+.search-popup-info
+  display: flex
+  justify-content: space-between
+
+.search-popup-price
+  margin-bottom: 0
+  font-size: 14px
+  color: #000
+  font-weight: 600
+
+.search-popup-feedback
+  margin-bottom: 0
+  font-size: 13px
+  text-align: right
+  color: #6C6C6C
+
+.search-popup-title
+  margin-bottom: 10px
+  color: #000
+
+#scroll-popup
+  &::-webkit-scrollbar-track
+    border-radius: 5px
+    border: 1px solid #FFF5D1
+    background-color: #FFF5D1
+  &::-webkit-scrollbar
+    width: 10px
+    height: 18px
+    background-color: #fff
+  &::-webkit-scrollbar-thumb
+    border-radius: 10px
+    background-color: #F9C300
+
+.custom-modal-search
+  .modal-dialog
+    max-width: 383px
+  .modal-content
+    border: none
+
+.basket-popup-top
+  background: linear-gradient(267.47deg, #9F3EFF -57.34%, rgba(147, 62, 255, 0) 165.6%), #54C1FF
+  border-top-right-radius: 20px
+  border-top-left-radius: 20px
+  padding: 25px 50px
+
+.basket-added-desc
+  display: flex
+  p
+    font-size: 22px
+    color: #fff
+
+.basket-added-info
+  background: #fff
+  border-radius: 15px
+  padding: 25px
+
+.basket-added-info-content
+  display: flex
+
+.basket-added-left
+  width: 120px
+  max-height: 134px
+  img
+    width: 100%
+
+.basket-added-right
+  margin-left: 25px
+
+.basket-added-title
+  margin-bottom: 0
+  font-size: 17px
+  color: #000
+
+.backet-added-price
+  font-size: 16px
+  color: #000
+  margin: 8px 0 20px
+  max-width: 98px
+  background: rgba(255, 247, 63, 0.5)
+  text-align: center
+  padding: 0.188rem
+  border-radius: 50px
+  font-weight: 600
+
+.basket-popup-bottom
+  padding: 30px 50px
+  border: 1px solid #A3BFDF
+  border-bottom-left-radius: 20px
+  border-bottom-right-radius: 20px
+  background-color: #fff
+
+.slick-slide
+  outline: 0
+
+.basket-popup-title
+  font-size: 21px
+  color: #272727
+
+.basket-popup-access
+  max-width: 117px
+  margin: 0 auto
+  p
+    font-size: 13px
+    color: #272727
+    padding-bottom: 4px
+    border-bottom: 1px solid #F9C300
+    margin-bottom: 0
+    text-transform: uppercase
+
+.slider-single-main
+  margin: 0 13px
+  padding: 20px
+  border: 1px solid #A3BFDF
+  border-radius: 15px
+  position: relative
+  img
+    max-height: 118px
+    margin: 0 auto
+
+.popup-slider
+  margin: 30px auto
+
+.popup-slider-title
+  font-size: 14px
+  line-height: 17px
+  color: #000
+  margin: 15px 0
+
+.popup-slider-price
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 20px auto
+
+.slider-new-price
+  font-size: 12px
+  color: #000
+  background: rgba(255, 247, 63, 0.5)
+  text-align: center
+  padding: 0.188rem 0.7rem
+  border-radius: 50px
+  font-weight: 600
+  margin-bottom: 0
+
+.slider-old-price
+  margin-bottom: 0
+  font-size: 12px
+  color: #ABABAB
+  text-decoration: line-through
+
+.next-btn
+  position: absolute
+  z-index: 9
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  border: none
+
+.previous-btn
+  position: absolute
+  z-index: 9
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  border: none
+
+.slider-top-icons
+  position: absolute
+  top: 5px
+  right: 5px
+  button
+    border: none
+    background: none
+    padding: 0 3px
+    svg
+      width: 18px
+      height: 18px
+      fill: #ABABAB
+
+.custom-modal-basket .modal-dialog
+  max-width: 788px
+
+.basket-continue-button, .order-btn
+  display: none
+
+.basket-added-buttons
+  display: flex
+  .button
+    margin: 0 0 0 17px !important
+    min-width: 199px
+    background-color: #FFE03F
+    font-family: "SF UI Display Bold", sans-serif
+    color: #000
+
+.search-popup-feedback-cnt
+  display: flex
+  align-items: center
+
+.search-popup-rate
+  margin: 0 15px 0 0
+  width: auto
+
+.popup-bottom-content
+  max-width: 390px
+  margin: 0 auto
+
+.slider-popup-btn .button
+  margin: 0
+  max-width: 121px
+  background-color: #FFE03F
+  font-family: "SF UI Display Bold", sans-serif
+  color: #000
+
+@media all and (max-width: 768px)
+  .modal-dialog
+    margin: 1.75rem
+  .custom-modal-purple .modal-dialog, .custom-modal-basket .modal-dialog, .custom-modal-blue .modal-dialog
+    max-width: 700px
+  .basket-popup-bottom
+    padding: 30px 35px
+  .slider-single-main
+    margin: 0 8px
+    padding: 10px
+  .popup_body .form-top
+    display: block
+    .form-input
+      width: 100%
+      margin: 15px 0
+
+@media all and (max-width: 600px)
+  .basket-added-desc
+    margin-top: 15px
+  .popup-inputs-content .form-top
+    display: block
+    .form-input
+      width: 100%
+      margin: 15px 0
+      min-width: unset
+  .basket-added-info .button
+    padding: 1rem
+    margin: 0
+    width: 100%
+    max-width: unset
+  .blue-popup
+    padding: 60px 25px 50px
+  .purple-popup
+    background: url(../../img/mobile-purple-back.png) no-repeat
+    background-size: cover
+    padding: 60px 25px 20px
+    .popup-info-text
+      margin: 20px auto
+      font-size: 16px
+  .popup-title
+    font-size: 21px
+    line-height: 22px
+  .purple-popup .popup-title
+    font-size: 24px
+    line-height: 37px
+  .popup-text
+    margin-top: 10px
+    font-size: 14px
+  .bottom-text
+    font-size: 16px
+  .yellow-check
+    margin: 30px auto
+  .button
+    min-width: unset
+    padding: 1.282rem
+  .popup-inputs-content .help_main-btn
+    margin: 18px auto
+  .basket-added-title
+    font-size: 16px
+  .popup-slider
+    .slick-prev
+      width: 37px
+      height: 37px
+      left: 20px
+    .slick-next
+      width: 37px
+      height: 37px
+      right: 20px
+  .buy-content
+    flex-direction: column-reverse
+    justify-content: center
+    text-align: center
+    margin: 0 auto 25px
+  .basket-continue-button
+    display: block
+    font-size: 14px
+    text-align: center
+    color: rgba(255, 255, 255, 0.94)
+    margin: 20px 0
+  .right-buy
+    text-align: center
+    width: 100%
+    margin-left: 0
+  .left-buy
+    width: 169px
+    margin-top: 15px
+  .popup-loan-content img
+    display: none
+  .popup-loan-content-title
+    margin-left: 0
+  .popup-form-title
+    margin: 25px auto 15px
+  .custom-modal-search .modal-dialog
+    max-width: 349px
+    margin: 0.5rem auto
+  .basket-popup-top
+    padding: 40px 15px 5px
+  .popup-slider-single
+    opacity: 0.2 !important
+    button svg
+      fill: #ABABAB
+  .slick-current
+    opacity: 1 !important
+  .basket-popup-bottom
+    background: linear-gradient(0deg, #F5F5F8, #F5F5F8), linear-gradient(269.59deg, #9F3EFF -57.34%, rgba(147, 62, 255, 0) 165.6%), #54C1FF
+  .slider-single-main
+    background-color: #fff
+  .search-popup-rate
+    margin: 0 10px 0 0
+  .custom-modal-basket .modal-dialog
+    max-width: 350px
+    margin: 0.5rem auto
+  .basket-added-info
+    padding: 20px 15px
+  .basket-added-buttons
+    display: none
+    .button
+      width: 100%
+      padding: 1rem
+      border: none
+  .button
+    height: auto
+  .order-btn
+    display: block
+  .basket-popup-bottom
+    padding: 30px 0
+  .popup-slider
+    margin: 30px auto 10px
+    .slick-prev, .slick-next
+      top: 40%
+  .basket-popup-title
+    font-size: 18px
+    text-align: center
+  .slider-popup-btn
+    max-width: 120px
+    .button
+      padding: 0.844rem
+  .popup-slider-single .slider-top-icons
+    display: flex
+    flex-direction: column-reverse
+    button
+      margin-bottom: 10px
+      svg
+        width: 30px
+        height: 30px
+  .basket-added-right
+    margin-left: 15px
+
+@media all and (max-width: 400px)
+  .popup-inputs-content .help_main-btn .button
+    min-width: auto
+    width: 100%
