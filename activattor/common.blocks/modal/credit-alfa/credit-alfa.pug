@@ -1,0 +1,44 @@
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#alfa-modal")
+  | Модальное окно - КРЕДИТ ОТ АЛЬФА-БАНК
+#alfa-modal.modal.fade.custom-modal-purple(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  .modal-dialog(role="document")
+    .modal-content
+      .purple-popup
+        .purple-main
+          button.close-icon(type="button" data-dismiss="modal" aria-label="Close")
+            svg.icon
+              use(xlink:href="#close-white")
+          .popup-loan-content
+            img(src="img/red-a.png")
+            p.popup-title.popup-loan-title.popup-alpha-title кредит от АЛьфа-банк
+          p.popup-info-text
+            | Чтобы оформить кредит через Альфа-банк,оставьте свои данные. Мы
+            | перезвоним и
+            | проконсультурем Вас.
+          .popup-inputs-content
+            form(action="" method="")
+              .form-top
+                .form-input
+                  input.input-default(type="text" placeholder="Имя")
+                  span.name-icon
+                    svg.icon
+                      use(xlink:href="#name-icon")
+                .form-input
+                  input.input-default(type="text" placeholder="Телефон")
+                  span.name-icon
+                    svg.icon
+                      use(xlink:href="#phone-icon")
+              .help_main-btn
+                button.button.button--yellow(type="button")
+                  | оставить заявку
+          .popup-form-bottom
+            .checkbox_cnt
+              input#check81(style="display: none" type="checkbox")
+              label(for="check81")
+                span.check_cnt.check-yellow
+                  svg.icon
+                    use(xlink:href="#yellow-check")
+                p
+                  | Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих
+                  | персональных данных в соотвествии с
+                  a(href="#") политикой конфиденциальности

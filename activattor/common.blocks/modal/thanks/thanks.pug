@@ -1,0 +1,18 @@
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#thanks-modal")
+  | Модальное окно - СПАСИБО!
+#thanks-modal.modal.fade.custom-modal-blue(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  .modal-dialog(role="document")
+    .modal-content
+      .blue-popup
+        button.close-icon(type="button" data-dismiss="modal" aria-label="Close")
+          svg.icon
+            use(xlink:href="#close-white")
+        p.popup-title Спасибо!
+        p.popup-text Ваша заявка принята
+        span.yellow-check
+          svg.icon
+            use(xlink:href="#check-blue")
+        .popup-bottom-content
+          p.popup-bottom-text.bottom-text
+            | Мы свяжемся с вами в ближайшее время и проконсультируем
+            | по возникшему вопросу

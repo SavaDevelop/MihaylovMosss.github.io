@@ -32,3 +32,340 @@
 .btn-size_l
 .btn-size_xl
 .btn-size_xxl
+
+
+.button
+  border-radius: 8px
+  font-size: 13px
+  letter-spacing: 0.03em
+  line-height: 13px
+  font-family: 'SF UI Display', sans-serif
+  color: #000
+  height: auto !important
+  padding: 0.844rem
+  font-weight: 600
+  margin: 0 auto
+  max-width: 225px
+  text-align: center
+  text-transform: uppercase
+
+.button--yellow
+  background-color: #FFF73F
+  transition: .3s ease-in-out
+  color: #303030
+  &:hover
+    background-color: #FFE600
+  &:active, &:focus
+    background-color: #FFD53F
+    color: #B48D00
+
+.button-play
+  transform: translateY(-50%) translateX(-50%)
+  position: relative
+  top: 50%
+  left: 50%
+  background-color: #FFD702
+  width: 44px
+  height: 50%
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  border: none
+  padding: 22px
+  box-sizing: border-box
+  transition: .3s ease-in-out
+  svg
+    width: 19px
+    height: 17px
+    position: absolute
+    top: 30%
+    left: 34%
+  &:before
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    padding: 24px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:after
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    padding: 28px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:hover
+    background-color: #FFB802
+    &:before
+      border: 2px solid rgba(255, 184, 2, 0.57)
+    &:after
+      border: 2px solid rgba(255, 184, 2, 0.13)
+  &:active
+    outline: none
+    background-color: #FFD569
+    &:before
+      border: 2px solid rgba(255, 215, 2, 0.35)
+    &:after
+      border: 2px solid rgba(255, 238, 148, 0.35)
+  &:focus
+    background-color: #FFD569
+    outline: none
+    &:before
+      border: 2px solid rgba(255, 215, 2, 0.35)
+    &:after
+      border: 2px solid rgba(255, 238, 148, 0.35)
+
+.slide-button-prev-default
+  background-color: #ffffff
+  border-radius: 50%
+  width: 58px
+  height: 58px
+  transition: .3s ease-in-out
+  border: none
+  padding: 0
+  svg
+    fill: #008AD8
+  &:hover
+    background-color: #FFB802
+    svg
+      fill: #fff
+    &:active
+      background-color: #FFE49F
+      outline: none
+      svg
+        fill: #fff
+    &:focus
+      background-color: #FFE49F
+      svg
+        fill: #fff
+
+.slide-button-prev
+  background-color: #FFD84F
+  border-radius: 50%
+  width: 58px
+  height: 58px
+  transition: .3s ease-in-out
+  border: none
+  padding: 0
+  svg
+    fill: #fff
+  &:hover
+    background-color: #FFB802
+  &:active, &:focus
+    outline: none
+    background-color: #FFE49F
+
+.button-heart
+  border: none
+  background: transparent
+  transition: .3s ease-in-out
+  svg
+    stroke: #353535
+    fill: transparent
+    stroke-width: 1px
+
+.button-heart--selected svg
+  stroke: transparent
+  fill: #D75A4A
+
+.button-heart
+  &:hover svg
+    stroke: #EB5757
+  &:active svg, &:focus svg
+    stroke: #E57E71
+    fill: #E57E71
+
+.button-balance
+  border: none
+  background: transparent
+  transition: .3s ease-in-out
+  svg
+    stroke: #353535
+    fill: transparent
+    stroke-width: 1px
+
+.button-balance--selected svg
+  stroke: #FFB802
+  fill: transparent
+
+.button-balance
+  &:hover svg
+    stroke: #FFE03F
+  &:active svg, &:focus svg
+    stroke: #EBD292
+
+.button-prev
+  border: none
+  height: 43px
+  width: 23px
+  border-radius: 9px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgba(53, 53, 53, 0.25)
+  padding: 0
+  transition: .3s ease-in-out
+  &:hover
+    background-color: #F9C300
+  &:active, &:focus
+    background-color: #FCDD6E
+  svg
+    fill: #FFFFFF
+
+.button-golden-outline
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  border: 2px solid #FEDC64
+  border-radius: 8px
+  background: transparent
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-golden-bg
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  background: #FFE03F
+  border: 1px solid #FFE03F
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-blue-bg
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #fff
+  background: #008AD8
+  border: 1px solid #008AD8
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-blue-outline
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  background: transparent
+  border: 1px solid #008AD8
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-bookmark
+  background: transparent
+  border: none
+  svg
+    display: block
+  .bookmark_fill
+    display: none
+
+.button-bookmark-active .bookmark_fill
+  display: block
+
+.button-bookmark
+  &:active
+    .bookmark_stroke
+      display: none
+    .bookmark_fill
+      display: block
+  &:hover svg
+    stroke: #D34545
+
+.button-close
+  background: transparent
+  border: none
+  transition: .3s ease-in-out
+  svg
+    stroke: #000000
+  &:hover svg
+    stroke: #FFB802
+  &:active, &:focus
+    outline: none
+  &:active svg, &:focus svg
+    stroke: #FCDD6E
+
+.button-plus
+  display: block
+  background-color: #0073DC
+  width: 20px
+  height: 20px
+  position: relative
+  border-radius: 6px
+  border: none
+  transition: .3s ease-in-out
+  &:hover
+    background-color: #F9C300
+  &:active, &:focus
+    background-color: #FCDD6E
+  &:disabled
+    background-color: rgba(0, 115, 220, 0.2)
+    cursor: not-allowed
+    &:hover, &:active, &:focus
+      background-color: rgba(0, 115, 220, 0.2)
+  span
+    display: block
+    font-size: 20px
+    color: #FFF
+    position: absolute
+    top: .54rem
+    left: 4px
+    line-height: 0

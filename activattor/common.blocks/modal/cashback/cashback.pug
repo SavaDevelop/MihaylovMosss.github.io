@@ -1,0 +1,41 @@
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#offer-modal")
+  | Модальное окно - Верните 5%
+#offer-modal.modal.fade.custom-modal-purple(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  .modal-dialog(role="document")
+    .modal-content
+      .purple-popup
+        .purple-main
+          button.close-icon(type="button" data-dismiss="modal" aria-label="Close")
+            svg.icon
+              use(xlink:href="#close-white")
+          p.popup-title Верните 5%
+          p.popup-text
+            | от стоимости покупки в виде 
+            span.yellow-title акусессуаров
+          p.popup-form-title Оставьте заявку, чтобы воспользаваться данным предложением
+          .popup-inputs-content
+            form(action="" method="")
+              .form-top
+                .form-input
+                  input.input-default(type="text" placeholder="Имя")
+                  span.name-icon
+                    svg.icon
+                      use(xlink:href="#name-icon")
+                .form-input
+                  input.input-default(type="text" placeholder="Телефон")
+                  span.name-icon
+                    svg.icon
+                      use(xlink:href="#phone-icon")
+              .help_main-btn
+                button.button.button--yellow(type="button") оставить заявку
+            .popup-form-bottom
+              .checkbox_cnt
+                input#check70(style="display: none" type="checkbox")
+                label(for="check70")
+                  span.check_cnt.check-yellow
+                    svg.icon
+                      use(xlink:href="#yellow-check")
+                  p
+                    | Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих
+                    | персональных данных в соотвествии с
+                    a(href="#") политикой конфиденциальности

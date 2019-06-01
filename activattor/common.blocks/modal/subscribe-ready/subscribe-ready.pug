@@ -1,0 +1,17 @@
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#subscribe-modal")
+  | Модальное окно - подписка оформлена!
+#subscribe-modal.modal.fade.custom-modal-blue(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  .modal-dialog(role="document")
+    .modal-content
+      .blue-popup
+        button.close-icon(type="button" data-dismiss="modal" aria-label="Close")
+          svg.icon
+            use(xlink:href="#close-white")
+        p.popup-title подписка оформлена!
+        p.popup-info-text Вы будете получать новости об акциях и скидках одним из первых
+        span.yellow-check
+          svg.icon
+            use(xlink:href="#check-blue")
+        p.popup-bottom-text
+          | Чтобы отписаться от рассылки нажмите
+          a(href="#") сюда

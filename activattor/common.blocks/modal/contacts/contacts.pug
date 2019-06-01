@@ -1,0 +1,53 @@
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#call-modal")
+  | Модальное окно - Оставьте ваши контактные данные
+#call-modal.modal.fade.custom-modal-call(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+  .modal-dialog(role="document")
+    .modal-content
+      .popup_body(data-size="mid")
+        .row
+          button.close-icon(type="button" data-dismiss="modal" aria-label="Close")
+            svg.icon
+              use(xlink:href="#close-white")
+          .col-lg-4.man-block
+            img.consultant-img(src="img/man_blue.png" alt="")
+          .col-lg-8.man-info-block
+            .help-right-content
+              .mobile-help-right
+                .man-mobile-left
+                  img(src="img/circle-man-mobile.png")
+                .man-mobile-right
+                  p.mobile-help-title
+                    | Остались вопросы по этому товару?
+                  p.mobile-help-text
+                    | Заполните эту форму и наш эксперт проконсультирует вас по подбору
+              p.help-title
+                span.upper-title Оставьте ваши контактные данные 
+              p.help-text Мы перезвоним и прококонсультируем вас по возникшему вопросу
+              .help-form
+                form(action="" method="")
+                  .form-top
+                    .form-input
+                      input(type="text" placeholder="Имя")
+                      span.name-icon
+                        svg.icon
+                          use(xlink:href="#name-icon")
+                    .form-input
+                      input.input-default(type="text" placeholder="Телефон")
+                      span.name-icon
+                        svg.icon
+                          use(xlink:href="#phone-icon")
+                    button.button.button--yellow(type="button")
+                      | Получить консультацию
+                  .form-bottom
+                    .checkbox_cnt
+                      input#check91.input-default(style="display: none" type="checkbox")
+                      label(for="check91")
+                        span.check_cnt.check-yellow
+                          svg.icon
+                            use(xlink:href="#yellow-check")
+                        p
+                          | Нажимая на кнопку, “Получить помощь” вы даете согласие на
+                          | обработку своих персональных данных в соотвествии с 
+                          a.politic-text(href="#")
+                            | политикой
+                            | конфиденциальности
