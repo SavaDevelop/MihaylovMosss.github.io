@@ -3,6 +3,7 @@ import '../base/sass/bootstrap-slider.scss';
 
 $(document).ready(function(){
   $('.stock-slider').slick({
+    rows: 0, // delete empty div
     dots: false,
     arrow: true,
     speed: 300,

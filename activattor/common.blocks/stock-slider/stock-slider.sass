@@ -1,57 +1,87 @@
 .stock-slider
-  display: flex
-  z-index: 100
-  padding: 0 63px
-  .slick-slide
-    padding: 0 20px
   &__wrap
     position: relative
     width: 100%
-    background: #f4f9ff
+    background: linear-gradient(239.6deg, rgba(117, 180, 255, 0.15) 3.79%, rgba(117, 180, 255, 0.0975) 119%)
     padding: 50px 0
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: -50px
+      width: 250px
+      height: 250px
+      z-index: -1
+      opacity: .5
+      background: url(../../img/slider/left.png) 0px 0px no-repeat
+      @media (max-width: 992px)
+        top: 0px
+        background: url(../../img/slider/left_2.png) -43px 20px no-repeat
+    &::after
+      content: ''
+      position: absolute
+      right: 0
+      bottom: 0
+      width: 250px
+      height: 250px
+      z-index: -1
+      opacity: .5
+      background: url(../../img/slider/right.png) 10px -150px no-repeat
+      @media (max-width: 992px)
+        top: 0px
+        background: url(../../img/slider/right_2.png) -100px 0px no-repeat
+    &_title
+      padding-bottom: 38px
+.stock-slider
+  display: flex
+  padding: 0 15px
+  .slick-list, 
+  .slick-track
+    display: flex
+  .slick-slide
+    padding: 0 15px
   &__item
     display: flex
-    background: #fff
-    border: 2px solid #e2e2e2
-    border-radius: 5px
+    flex-wrap: wrap
+  &__content
+    background: #ffffff
+    border: 2px solid #E2E2E2
+    border-radius: 10px
+    overflow: hidden
     &:hover
-      border: 2px solid #f9c300!important
+      border: 2px solid #F9C300
+    .img
+      height: 160px
   &__image
     width: 100%
+  &__inform
   &__title
-    background: #d2dfff
-    padding: 17px 0px 38px 0px
+    background: rgba(104, 151, 255, 0.3)
+    padding: 8px 18px
+    font-family: 'SF UI Display SemiBold', sans-serif
+    font-size: 18px
+    line-height: 20px
+    color: #000000
+    display: flex
+    align-items: center
+    justify-content: center
     width: 100%
+    @media (max-width: 1400px)
+      font-size: 16px
   &__text
     color: #767676
-    font-size: 13px
-    line-height: 20px
-  &__market
-    float: left
-  &__date
-    float: right
-  &__bg1
-    position: absolute
-    left: -50px
-    bottom: 0
-    width: 250px
-    height: 250px
-    z-index: 50
-    opacity: .5
-    background: url(../../img/slider/left.png) 0px 0px no-repeat
-    @media (max-width: 992px)
-      top: 0px
-      background: url(../../img/slider/left_2.png) -43px 20px no-repeat
+    font-size: 14px
+    line-height: 19px
+    margin-bottom: 0px
+    padding: 12px 22px 18px
+  &__info-text
+    justify-content: space-between
+    display: flex
+    padding: 0 22px
+    p
+      @media (max-width: 1400px)
+        font-size: 14px
 
-  &__bg2
-    position: absolute
-    right: 0
-    bottom: 0
-    width: 250px
-    height: 250px
-    z-index: 50
-    opacity: .5
-    background: url(../../img/slider/right.png) 10px -150px no-repeat
-    @media (max-width: 992px)
-      top: 0px
-      background: url(../../img/slider/right_2.png) -100px 0px no-repeat
+.slick-initialized .slick-slide
+  display: flex
