@@ -1,0 +1,34 @@
+.stock-slider
+  z-index: 100
+  &__wrap
+    position: relative
+    width: 100%
+    background: #f4f9ff
+    padding: 50px 0
+  &__item
+    float: left
+  &__content
+  &__bg1
+    position: absolute
+    left: -50px
+    bottom: 0
+    width: 250px
+    height: 250px
+    z-index: 50
+    opacity: .5
+    background: url(../../img/slider/left.png) 0px 0px no-repeat
+    @media (max-width: 992px)
+      top: 0px
+      background: url(../../img/slider/left_2.png) -43px 20px no-repeat
+  &__bg2
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 250px
+    height: 250px
+    z-index: 50
+    opacity: .5
+    background: url(../../img/slider/right.png) 10px -150px no-repeat
+    @media (max-width: 992px)
+      top: 0px
+      background: url(../../img/slider/right_2.png) -100px 0px no-repeat

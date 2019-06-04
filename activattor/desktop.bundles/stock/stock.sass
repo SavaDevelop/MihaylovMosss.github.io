@@ -42,32 +42,34 @@
       font-size: 16px
       line-height: 30px
   &_ol
-    list-style: none
-    padding: 0px
-    list-style-type: none; /* Убираем исходные маркеры */
-    counter-reset:  item; /* Обнуляем счетчик списка */
-    list-style-position: outside;  /* текст если длинный сбоку от цыфр а не под ними */
-    li
-      margin-left: 0px /* и тут */
-    li:before
-      content: counter(item) ') '; /* Добавляем числа к списку и к числам скобку */
-      content: counter(item);      /* Добавляем числа к списку, если нужны числа без скобки */
-      counter-increment: item;     /* Задаём подсчет +1 цифр в списке */
-      background: #0091fa
-      color: #fff
-      box-shadow: 0.0em 0.3em 0.9em 0em rgba(0,0,0,0.25)
-      border-radius: 2.5em
-      padding: 0 10px 0 0.49em;  /* если тут менять, потом еще нужно margin-left чтоб вторая строчка текста была в ровень с первой */
-      font-size: 1.0em
-      text-align: center
-      width: 1.4em
-      height: 1.4em
-      display: inline-block
-      margin-left: 0px
-      margin-right: 1.0em
-      margin-top: 0.2em
-
-      // padding-left: 30px
-      // background: url(../../img/news/news_list_num2.png) no-repeat 0 5px
-      // @media (max-width: 992px)
-      //   background: url(../../img/news/news_list_num1.png) no-repeat 0 5px
+    @media (max-width: 992px)
+      padding: 0
+      list-style: none
+      li
+        padding-left: 30px
+        background: url(../../img/news/news_list_num1.png) no-repeat 0 5px
+    @media (min-width: 992px) /* https://codepen.io/VadymVolos/pen/OEyENK */
+      list-style: none
+      padding: 0px
+      list-style-type: none; /* Убираем исходные маркеры */
+      counter-reset:  item; /* Обнуляем счетчик списка */
+      list-style-position: outside;  /* текст если длинный сбоку от цыфр а не под ними */
+      li
+        margin-left: 0px /* и тут */
+      li:before
+        content: counter(item) ') '; /* Добавляем числа к списку и к числам скобку */
+        content: counter(item);      /* Добавляем числа к списку, если нужны числа без скобки */
+        counter-increment: item;     /* Задаём подсчет +1 цифр в списке */
+        background: #0091fa
+        color: #fff
+        box-shadow: 0.0em 0.3em 0.9em 0em rgba(0,0,0,0.25)
+        border-radius: 2.5em
+        padding: 0 10px 0 0.49em;  /* если тут менять, потом еще нужно margin-left чтоб вторая строчка текста была в ровень с первой */
+        font-size: 1.0em
+        text-align: center
+        width: 1.4em
+        height: 1.4em
+        display: inline-block
+        margin-left: 0px
+        margin-right: 1.0em
+        margin-top: 0.2em
