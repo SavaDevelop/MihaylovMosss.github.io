@@ -1,15 +1,20 @@
 .bx-breadcrumb
+    width: 100%
     display: flex
     margin-bottom: 40px
     padding: 13px 0 15px 0px
     border-bottom: 0.75px solid #C8D3DF
     &-item
-        i
+        align-items: center
+        display: flex
+        svg, i
             margin: 0 10px
             color: #9EACBB
         a
             color: #9EACBB
             border-bottom: 1px solid transparent
+            @media (max-width: 375px)
+                font-size: 14px
             &:hover
                 border-bottom: 1px solid #9EACBB
 

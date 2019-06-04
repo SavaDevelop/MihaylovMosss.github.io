@@ -1,2 +1,1 @@
-import '../../js/base.js';
-alert('Shaloms1');
+import '../../common.blocks/base/base.js';

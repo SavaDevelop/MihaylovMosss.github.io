@@ -111,12 +111,17 @@ body
 
     h1, h2, h3, h4, h5, h6
         +Montserrat-Medium
+        line-height: 40px
 
     main p,
     main ul li,
     main ol li
         font-size: 18px
         line-height: 30px
+        letter-spacing: -0.02em
+        @media (max-width: 1440px)
+            font-size: 16px
+            line-height: 26px
 
     input, textarea
         border: 0
@@ -128,10 +133,15 @@ body
         background: #FFFFFF
         box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.07)
 
+// laptop layout
 @media (max-width: 1440px)
     .container
         max-width: 95%
 
+// mobile layout
 @media (max-width: 640px)
+    .header-top .container,
+    .header-content-section .container
+        max-width: 95%
     .container
-        max-width: 100%
+        max-width: 90%
