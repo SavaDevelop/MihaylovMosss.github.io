@@ -1,0 +1,73 @@
+.stock
+  width: 100%
+  border: 1px solid green
+
+  &__image
+    border-radius: 5px
+    width: 100%
+  &_imag_display
+    @media (max-width: 1000px)
+      display: none
+  &_imag_mobil
+    display: none
+    @media (max-width: 1000px)
+      display: block
+  &__date-mobile
+    padding-bottom: 9px
+    @media (min-width: 641px)
+      display: none
+  &__block-image
+    width: 100%
+  &_subtitle_correct
+    display: block
+    width: 100%
+    padding-bottom: 15px
+
+  &__date
+    width: 100%
+    padding-bottom: 9px
+
+  &__date-off-wrapp
+    padding: 20px 0px
+    width: 100%
+
+  &__date-off
+    font-size: 20px
+    font-family: 'SF UI Display Bold', sans-serif
+    letter-spacing: -0.02em
+    color: #1D1D1D
+    @media (max-width: 414px)
+      background: none
+      padding: 6px 9px 5px 0px
+      font-size: 16px
+      line-height: 30px
+  &_ol
+    list-style: none
+    padding: 0px
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset:  item; /* Обнуляем счетчик списка */
+    list-style-position: outside;  /* текст если длинный сбоку от цыфр а не под ними */
+    li
+      margin-left: 0px /* и тут */
+    li:before
+      content: counter(item) ') '; /* Добавляем числа к списку и к числам скобку */
+      content: counter(item);      /* Добавляем числа к списку, если нужны числа без скобки */
+      counter-increment: item;     /* Задаём подсчет +1 цифр в списке */
+      background: #0091fa
+      color: #fff
+      box-shadow: 0.0em 0.3em 0.9em 0em rgba(0,0,0,0.25)
+      border-radius: 2.5em
+      padding: 0 10px 0 0.49em;  /* если тут менять, потом еще нужно margin-left чтоб вторая строчка текста была в ровень с первой */
+      font-size: 1.0em
+      text-align: center
+      width: 1.4em
+      height: 1.4em
+      display: inline-block
+      margin-left: 0px
+      margin-right: 1.0em
+      margin-top: 0.2em
+
+      // padding-left: 30px
+      // background: url(../../img/news/news_list_num2.png) no-repeat 0 5px
+      // @media (max-width: 992px)
+      //   background: url(../../img/news/news_list_num1.png) no-repeat 0 5px
