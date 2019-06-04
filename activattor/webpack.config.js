@@ -53,7 +53,6 @@ const common = merge([
         'site-map':  PATHS.source + '/desktop.bundles/site-map/site-map.js',
         'stock':  PATHS.source + '/desktop.bundles/stock/stock.js',
         'stocks':  PATHS.source + '/desktop.bundles/stocks/stocks.js',
-        'base':    PATHS.source + '/js/base.js',
         'test':    PATHS.source + '/desktop.bundles/test/test.js',
         'ui-kit':    PATHS.source + '/desktop.bundles/ui-kit/ui-kit.js'
         // 'bootstrap': bootstrapConfig
