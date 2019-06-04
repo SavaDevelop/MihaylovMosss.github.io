@@ -11,7 +11,11 @@
   background: #fff
   text-transform: uppercase
   border: 2px solid #ffdc64
-
+  @media (max-width: 414px)
+    background: none
+    border: none
+    border-bottom: 1px dashed #ffdc64
+    border-radius: 0
 .btn-position_right
   float: right
 
@@ -21,9 +25,16 @@
 .btn-position_middle
   text-align: center
 
+/* на мобильном растягивается в 100% */
+.btn-mob_100
+  @media (max-width: 414px)
+    width: 100%
+
 .btn-size_xs
   padding: 11px 55px
   font-size: 13px
+  @media (max-width: 414px)
+    padding: 3px 5px
 
 .btn-size_s
   padding: 13px 38px

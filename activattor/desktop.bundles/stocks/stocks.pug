@@ -6,11 +6,12 @@ block main
     .container.contaner_padding-left_zero
       div.row
         include ../../common.blocks/breadcrumb/breadcrumb
-      .trafarets
+      //- .trafarets
       h1.title_h1 Акции магазинов
       .stocks__item
         .stocks__block-image
-          img(src=require('../../img/news/boats.jpg') alt='Доски')
+          img(src=require('../../img/news/ships.jpg') alt='Доски').stocks__image.stocks_imag_display
+          img(src=require('../../img/news/ships_m.jpg') alt='Доски').stocks__image.stocks_imag_mobil
         .stocks__content
           .stocks__date 28.03.2019 16:30
           h2.title_h1 Cкидки на все 20%
@@ -18,10 +19,11 @@ block main
           p Это изделие относится к малогабаритным водным транспортным средствам. Оно кардинально отличается от резиновых аналогов прочным материалом, не подверженным гниению. Для создания корпуса применяют синтетические волокна в качестве основы, которые обволакивают поливинилхлоридом. Чтобы придать ему мягкость, в состав добавляют полиуретан.
           .stocks__date-off-wrapp
             .stocks__date-off Акция действует до: 29.06.2019
-          a.btn.btn-theme_sanny.set_alert.btn-size_s(href="stock.html") Подробнее об акции
+          a.btn.btn-theme_sanny.set_alert.btn-size_s.btn-mob_100(href="stock.html") Подробнее об акции
       .stocks__item.stocks_item_padding-correct
         .stocks__block-image
-          img(src=require('../../img/news/boats.jpg') alt='Доски')
+          img(src=require('../../img/news/boats.jpg') alt='Доски').stocks__image.stocks_imag_display
+          img(src=require('../../img/news/boats_m.jpg') alt='Доски').stocks__image.stocks_imag_mobil
         .stocks__content
           .stocks__date 28.03.2019 16:30
           h2.title_h1 Скидки 20% на Надувную доску для sup-бординга Stormline Powermax 10.6 
@@ -29,6 +31,6 @@ block main
           p Это изделие относится к малогабаритным водным транспортным средствам. Оно кардинально отличается от резиновых аналогов прочным материалом, не подверженным гниению. Для создания корпуса применяют синтетические волокна в качестве основы, которые обволакивают поливинилхлоридом. Чтобы придать ему мягкость, в состав добавляют полиуретан.
           .stocks__date-off-wrapp
             .stocks__date-off Акция действует до: 29.06.2019
-          a.btn.btn-theme_sanny.btn-size_s(href="stock.html") Подробнее об акции
+          a.btn.btn-theme_sanny.btn-size_s.btn-mob_100(href="stock.html") Подробнее об акции
       .btn-wrapp.stocks__load-more.btn-position_middle
         button.btn.btn-theme_snow.btn-size_xs Загрузить ещё
