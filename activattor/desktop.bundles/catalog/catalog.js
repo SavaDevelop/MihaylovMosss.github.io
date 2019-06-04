@@ -2,7 +2,7 @@ import '../../common.blocks/base/base.js';
 import './catalog.sass';
 
 import './sass/bootstrap-slider.scss';
-import './sass/chosenpage__styles.sass';
+// import './sass/chosenpage__styles.sass';
 import './sass/ui/ui.sass';
 import './sass/ui/ui-2.sass';
 

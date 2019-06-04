@@ -11,7 +11,7 @@ block main
           div.col-lg-12
             div.catal_section_title
               h2 Лодки ПВХ
-          div.col-lg-12.col-sm-12.boats-main-content
+          div.boats-main-content
             div.boat_buttons_cnt
               div.boat_button
                 a(href="javascript:void(0)") Все лодки
@@ -31,60 +31,59 @@ block main
                 a(href="javascript:void(0)") Недорогие килевые
               div.boat_button
                 a(href="javascript:void(0)") Из толстой ткани
-          div.col-lg-12.col-sm-12
-            div.blue_sorting.row
-              div.sort_action
-                div.sort_cnt
-                  div.sort_separated
-                    label Сортировать:
-                    div.input-main
-                      div(tabindex="0").input_cnt
-                        p По убыванию цены
-                        input(placeholder="По убыванию цены" type="hidden" readonly)
-                        svg.icon
-                          use(xlink:href="#yellow_arrow_bottom")
-                      div.input-menu
-                        ul.boat_menu
-                          li Все лодки
-                          li Под небольшой мотор
-                          li Бюджетная со сланью
-                          li Большие килевые
-                          li Лодки НДНД
-                          li Легкие лодки
-                          li Популярные килевые
-                          li Недорогие килевые
-                          li Из толстой ткани
-                  div.sort_separated
-                    label Показывать:
-                    div.input-main
-                      div(tabindex="0").input_cnt
-                        p По 12 на странице
-                        input(placeholder="По убыванию цены" type="hidden" readonly)
-                        svg.icon
-                          use(xlink:href="#yellow_arrow_bottom")
-                      div.input-menu
-                        ul
-                          li По 12 на странице
-                          li Под небольшой мотор
-                          li Бюджетная со сланью
-                          li Большие килевые
-                          li Лодки НДНД
-                          li Легкие лодки
-                          li Популярные килевые
-                          li Недорогие килевые
-                          li Из толстой ткани
-                  div.sort_separated.switcher
-                    label Показать характеристики
-                    div.white_bar
-                      div.grey_round
-              div.filter_panel
-                div.sort_right
-                  div.sort_separated
-                    label Фильтры
-                    div.white_icon.open-filter
+          div.blue_sorting
+            div.sort_action
+              div.sort_cnt
+                div.sort_separated
+                  label Сортировать:
+                  div.input-main
+                    div(tabindex="0").input_cnt
+                      p По убыванию цены
+                      input(placeholder="По убыванию цены" type="hidden" readonly)
                       svg.icon
-                        use(xlink:href="#plus_icon")
-            div.blue-sorting_mobile
+                        use(xlink:href="#yellow_arrow_bottom")
+                    div.input-menu
+                      ul.boat_menu
+                        li Все лодки
+                        li Под небольшой мотор
+                        li Бюджетная со сланью
+                        li Большие килевые
+                        li Лодки НДНД
+                        li Легкие лодки
+                        li Популярные килевые
+                        li Недорогие килевые
+                        li Из толстой ткани
+                div.sort_separated
+                  label Показывать:
+                  div.input-main
+                    div(tabindex="0").input_cnt
+                      p По 12 на странице
+                      input(placeholder="По убыванию цены" type="hidden" readonly)
+                      svg.icon
+                        use(xlink:href="#yellow_arrow_bottom")
+                    div.input-menu
+                      ul
+                        li По 12 на странице
+                        li Под небольшой мотор
+                        li Бюджетная со сланью
+                        li Большие килевые
+                        li Лодки НДНД
+                        li Легкие лодки
+                        li Популярные килевые
+                        li Недорогие килевые
+                        li Из толстой ткани
+                div.sort_separated.switcher
+                  label Показать характеристики
+                  div.white_bar
+                    div.grey_round
+            div.filter_panel
+              div.sort_right
+                div.sort_separated
+                  label Фильтры
+                  div.white_icon.open-filter
+                    svg.icon
+                      use(xlink:href="#plus_icon")
+          div.blue-sorting_mobile
               div.blue-sorting-top
                 div.mobile-select-content
                   div.mobile-select(tabindex="0")

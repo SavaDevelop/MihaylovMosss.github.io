@@ -503,6 +503,7 @@ $color-goldenrod: pink
   justify-content: flex-start
 
 .blue_sorting
+  width: 100%
   display: flex
   flex-wrap: wrap
   background: #0073DC
@@ -594,7 +595,6 @@ $color-goldenrod: pink
 
 .rotated
   transform: translateY(-50%) rotate(180deg) !important
-
 
 .white_bar
   width: 84px
@@ -1967,7 +1967,9 @@ body.active
 
 .catal_section_title
   width: 100%
-  padding: 42px 0 47px
+  padding: 0px 0 20px
+  @media all and (max-width: 375px)
+    padding: 0px 0 20px
 
 .sort_action
   width: calc(100% - 365px)
@@ -1996,9 +1998,6 @@ body.active
   .lower-main-block
     width: 90%
   nav .justify-content-between
-    justify-content: flex-start !important
-    div
-      margin: 5px
 
 @media all and (max-width: 1490px)
   .yellow-rotated
@@ -2047,9 +2046,6 @@ body.active
       left: calc(100% - 26px)
 
 @media all and (max-width: 768px)
-  .catal_section_title
-    padding: 29px 0 23px
-
   #character-main.active:after
     content: ""
     position: absolute
