@@ -17,12 +17,31 @@ block main
               .form-group.col-md-6.col-sm-12
                 input(type='text' name='mail' value='' placeholder='E-mail').form-control.input_theme_blue-sky
               .form-group.col-md-6.col-sm-12
-                input(type='text' name='city' value='' placeholder='Город').form-control.input_theme_blue-sky
+                select.form-control(name='city')
+                  option(value='0' selected) Город
+                  option(value='1') Астрахань
+                  option(value='2') Саратов
+                  option(value='3') Воронеж
+                  option(value='4') Балашиха))
+                  option(value='5') Москва
+                  option(value='6') Питер
+                  option(value='7') Шмитер
+                  option(value='8') Жопск
+                  option(value='9') Мухосранск
             .row
               .form-group.col-12
                 input(type='text' name='address' value='' placeholder='Адрес').form-control.input_theme_blue-sky
             .row
               .form-group.col-12
+                .popup-form-bottom
+                  .checkbox_cnt
+                    input#check70(style="display: none" type="checkbox")
+                    label(for="check70")
+                      span.check_cnt.check-yellow
+                        svg.icon
+                          use(xlink:href="#yellow-check")
+                      p Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих персональных данных в соотвествии с
+                        a(href="#") политикой конфиденциальности
                 .check-in__agreements
                   label.radio_input(for="radio")
                     input#radio(type="radio")
