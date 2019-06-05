@@ -1,4 +1,5 @@
 import '../../common.blocks/base/base.js';
+import '../../common.blocks/card-product/card-product.js';
 import './card-product.sass';
 import './sass/product_gallery.scss';
 import './sass/single-product__properties.sass';
