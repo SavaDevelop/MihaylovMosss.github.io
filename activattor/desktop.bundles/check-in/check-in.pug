@@ -1,0 +1,18 @@
+extends ../../common.blocks/base/base
+block title
+  | Регистрация
+block main
+  main
+    .container 
+      div.row
+        h1.title_h1.title_center Регистрация
+        .form
+          form
+            input(type='text' name='name' value='' placeholder='Ваше имя')
+            input(type='text' name='phone' value='' placeholder='Телефон')
+            input(type='text' name='mail' value='' placeholder='E-mail')
+            input(type='text' name='city' value='' placeholder='Город')
+            input(type='text' name='address' value='' placeholder='Адрес')
+            .agreements
+            buuton Регистрация
+            a(href="#") Войти
