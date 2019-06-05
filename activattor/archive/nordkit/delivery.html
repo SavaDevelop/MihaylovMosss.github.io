@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>NordKit</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
+        <a class="navbar-brand" href="#" role="banner">NordKit</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">index <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">about <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="credit.html">credit <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="partnership.html">partnership <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="delivery.html">delivery <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="installment.html">installment <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="tm-data tm-delivery">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Назад</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Доставка</li>
+            </ol>
+        </nav>
+
+        <section class="pl-0 pr-0">
+            <h2>Доставка</h2>
+            <ul class="nav nav-tabs mt-3" id="tm-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="individual-tab" data-toggle="tab" href="#individual" role="tab" aria-controls="individual" aria-selected="true">Физических лицам</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="entity-tab" data-toggle="tab" href="#entity" role="tab" aria-controls="entity" aria-selected="false">Юридическим лицам</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="tm-container">
+
+        <div class="tab-content" id="tm-TabContent">
+            <div class="tab-pane fade show active" id="individual" role="tabpanel" aria-labelledby="individual-tab">
+
+                <section class="p-0">
+                    <div class="tm-media mt-0" style="background-image: url('img/delivery-1.png')">
+                        <div class="tm-media-flex">
+                            <div class="tm-media-text">
+                                Физическим<br> лицам
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tm-delivery-section-1">
+                    <div class="row">
+                        <div class="tm-delivery-section-1-item col-lg-2 col-md-4">
+                            <div>
+                                <span class="tm-delivery-icon-1"></span>
+                                <span class="tm-delivery-icon-arrow"></span>
+                            </div>
+                            <div>Вы вносите минимальную предоплату чтобы <b>зарезервировать товар</b> на складе на ваше имя</div>
+                        </div>
+                        <div class="tm-delivery-section-1-item col-lg-2 col-md-4">
+                            <div>
+                                <span class="tm-delivery-icon-2"></span>
+                                <span class="tm-delivery-icon-arrow"></span>
+                            </div>
+                            <div>Мы подбираем товар в магазине, расположенном <b>ближе всего к вам</b></div>
+                        </div>
+                        <div class="tm-delivery-section-1-item col-lg-2 col-md-4">
+                            <div>
+                                <span class="tm-delivery-icon-3"></span>
+                                <span class="tm-delivery-icon-arrow"></span>
+                            </div>
+                            <div>Вы вносите минимальную предоплату чтобы <b>зарезервировать товар</b> на складе на ваше имя</div>
+                        </div>
+                        <div class="tm-delivery-section-1-item col-lg-2 col-md-4 mt-lg-0 mt-md-5">
+                            <div>
+                                <span class="tm-delivery-icon-4"></span>
+                                <span class="tm-delivery-icon-arrow"></span>
+                            </div>
+                            <div>Мы <b>тестируем и упаковываем</b> ваш заказ</div>
+                        </div>
+                        <div class="tm-delivery-section-1-item col-lg-2 col-md-4 mt-lg-0 mt-md-5">
+                            <div>
+                                <span class="tm-delivery-icon-5"></span>
+                                <span class="tm-delivery-icon-arrow"></span>
+                            </div>
+                            <div>Вы вносите <b>полную сумму</b> оплаты</div>
+                        </div>
+                        <div class="tm-delivery-section-1-item col-lg-2 col-md-4 mt-lg-0 mt-md-5">
+                            <div>
+                                <span class="tm-delivery-icon-6"></span>
+                            </div>
+                            <div>Мы доставляем заказ и предоставляем <b>гарантию</b> на продукцию до <b>5 лет</b></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Условия доставки</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-5 mt-md-4 mt-4">
+                        <div class="col-lg-3">
+                            <img src="img/about-1.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-9">
+                            <p class="ml-lg-5 mt-lg-0 mt-md-4 mt-4">Сейчас морской транспорт стал более доступным для частных нужд как никогда раньше. Сконструировано множество лодок больших и малых размеров, которые используются для туризма, развлечения или рыбалки. Очень популярны среди них модели из ПВХ, отличающиеся малым весом, компактными.</p>
+                            <ol class="ml-lg-5 tm-list-number">
+                                <li>Рыбалка на крупных озерах</li>
+                                <li>Морские прогулки</li>
+                                <li>Охота по заболоченным местам</li>
+                                <li>Экстремальные спуски по рекам</li>
+                                <li>Троллинг</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Условия оплаты</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-5 mt-md-4 mt-4">
+                        <div class="col-lg-12 tm-mobile-hide">
+                            <ul class="nav nav-tabs mt-3 tm-round-tabs" id="tm-payments-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="cash-tab" data-toggle="tab" href="#cash" role="tab" aria-controls="cash" aria-selected="true">Наличный расчет</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="card-tab" data-toggle="tab" href="#card" role="tab" aria-controls="card" aria-selected="false">Банковская карта</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="online-tab" data-toggle="tab" href="#online" role="tab" aria-controls="online" aria-selected="false">Электронные платежи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="bank-tab" data-toggle="tab" href="#bank" role="tab" aria-controls="bank" aria-selected="false">Безналичный расчет</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="postpay-tab" data-toggle="tab" href="#postpay" role="tab" aria-controls="postpay" aria-selected="false">Наложенный платеж</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="credit-tab" data-toggle="tab" href="#credit" role="tab" aria-controls="credit" aria-selected="false">Кредит</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="postcredit-tab" data-toggle="tab" href="#postcredit" role="tab" aria-controls="postcredit" aria-selected="false">Рассрочка</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="tm-payments-TabContent">
+                                <div class="tab-pane tm-tab-pane fade" id="cash" role="tabpanel" aria-labelledby="cash-tab">
+                                    Наличный расчет
+                                </div>
+                                <div class="tab-pane tm-tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <img src="img/delivery-2.png" class="img-fluid">
+                                        </div>
+                                        <div class="col-lg-9 pl-lg-4">
+                                            <div>
+                                                <h4>Банковские карты</h4>
+                                            </div>
+                                            <div class="mt-3">
+                                                <span class="tm-icon-bank-1 mr-1"></span>
+                                                <span class="tm-icon-bank-2 mr-1"></span>
+                                                <span class="tm-icon-bank-3 mr-1"></span>
+                                                <span class="tm-icon-bank-4 mr-1"></span>
+                                                <span class="tm-icon-bank-5 mr-1"></span>
+                                            </div>
+                                            <div class="mt-3">
+                                                <p>Сейчас морской транспорт стал более доступным для частных нужд как никогда раньше. Сконструировано множество лодок больших и малых размеров, которые используются для туризма, развлечения или рыбалки. Очень популярны среди них модели из ПВХ, отличающиеся малым весом, компактными транспортировочными размерами и высокой скоростью, благодаря подсоединенному мотору.  Сейчас морской.</p>
+                                            </div>
+                                            <div class="mt-5">
+                                                <a href="#" class="tm-banner-button">Перейти в магазин</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane tm-tab-pane fade" id="online" role="tabpanel" aria-labelledby="online-tab">
+                                    Электронные платежи
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 tm-mobile">
+                            <div class="accordion" id="accordionDelivery">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Наличный расчет
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionDelivery">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Банковская карта
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionDelivery">
+                                        <div class="card-body">
+                                            <p class="pt-3">
+                                                <span class="tm-icon-bank-1 mr-1"></span>
+                                                <span class="tm-icon-bank-2 mr-1"></span>
+                                                <span class="tm-icon-bank-3 mr-1"></span>
+                                                <span class="tm-icon-bank-4 mr-1"></span>
+                                                <span class="tm-icon-bank-5 mr-1"></span>
+                                            </p>
+                                            <p>
+                                                Сейчас морской транспорт стал более доступным для частных нужд как никогда раньше. Сконструировано множество лодок больших и малых размеров, которые используются для туризма, развлечения или рыбалки. Очень популярны среди них модели из ПВХ, отличающиеся малым весом, компактными транспортировочными размерами и высокой скоростью, благодаря подсоединенному мотору.
+                                            </p>
+                                            <p class="pt-3 w-100">
+                                                <a href="#" class="tm-banner-button">Перейти в магазин</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Электронные платежи
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionDelivery">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Безналичный расчет
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionDelivery">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="tab-pane fade" id="entity" role="tabpanel" aria-labelledby="entity-tab">
+                <section class="p-0">
+                    <div class="tm-media mt-0" style="background-image: url('img/delivery-1.png')">
+                        <div class="tm-media-flex">
+                            <div class="tm-media-text">
+                                Юридическим<br> лицам
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid tm-banner2">
+        <div class="container">
+            <div class="row">
+                <div class="tm-banner2-col1">
+                    <img src="img/Aviation-Global-Group-Request-quote-miami-1.png">
+                </div>
+                <div class="tm-banner2-col2">
+                    <form class="tm-banner-form">
+
+                        <div class="tm-banner-form-title">Получите
+                            <div>Бесплатную консультацию</div>
+                            эксперта по подбору лучшей модели
+                        </div>
+
+                        <div>
+                            <span class="tm-icon-user">
+                                <input type="text" placeholder="Имя" />
+                            </span>
+                            <span class="tm-icon-phone">
+                                <input type="text" placeholder="Телефон" />
+                            </span>
+                            <span>
+                                <button type="submit">Получить помощь</button>
+                            </span>
+                        </div>
+                        <div class="tm-banner-form-agree">
+                            <label class="tm-container">Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих персональных данных в соотвествии с <a href="#">политикой конфиденциальности</a>
+                                <input type="checkbox">
+                                <span class="tm-checkmark"></span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="tm-banner2-slogan-container-box">
+                    <div class="tm-banner2-slogan-container">
+                        <div class="tm-banner2-slogan">
+                            <div>
+                                Мы подберем варианты,<br> наиболее подходящие именно Вам
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
