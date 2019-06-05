@@ -1889,17 +1889,21 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 1.45rem 1rem;
+  height: calc(11px + 23px + 13px);
+  padding: 11px 23px 13px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
+  line-height: 23px;
+  color: #9f9f9f;
   background-color: #FFFFFF;
   background-clip: padding-box;
-  border: 2px solid #E8EAF6;
-  border-radius: 10px;
+  border: 1px solid #AEC6E0;
+  border-radius: 8px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 @media (prefers-reduced-motion: reduce) {
