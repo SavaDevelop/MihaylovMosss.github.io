@@ -47,6 +47,7 @@ const common = merge([
         'order':  PATHS.source + '/desktop.bundles/order/order.js',
         'partnership':  PATHS.source + '/desktop.bundles/partnership/partnership.js',
         'password-recovery':  PATHS.source + '/desktop.bundles/password-recovery/password-recovery.js',
+        'password-recovery-answer':  PATHS.source + '/desktop.bundles/password-recovery-answer/password-recovery-answer.js',
         'privacy-policy':  PATHS.source + '/desktop.bundles/privacy-policy/privacy-policy.js',
         'purchase':  PATHS.source + '/desktop.bundles/purchase/purchase.js',
         'search':  PATHS.source + '/desktop.bundles/search/search.js',
@@ -175,6 +176,11 @@ const common = merge([
             filename: 'password-recovery.html',
             chunks: ['password-recovery'],
             template: PATHS.source + '/desktop.bundles/password-recovery/password-recovery.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'password-recovery-answer.html',
+            chunks: ['password-recovery-answer'],
+            template: PATHS.source + '/desktop.bundles/password-recovery-answer/password-recovery-answer.pug'
         }),
         new HtmlWebpackPlugin({
             filename: 'privacy-policy.html',

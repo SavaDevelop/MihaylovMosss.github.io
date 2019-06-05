@@ -1,5 +1,5 @@
 import '../../common.blocks/base/base.js';
-import './check-in.sass';
+import './password-recovery-answer.sass';
 
 import '../../common.blocks/button/button.js';
 import '../../common.blocks/trafarets/trafarets.js';
