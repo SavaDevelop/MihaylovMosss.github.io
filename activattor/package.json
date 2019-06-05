@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "Переверстка, довертска",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SavaDevelop/MihaylovMosss.github.io.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --env development",
     "build": "webpack --env production",
     "serv": "static build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anton S, Anton, Moisey",
   "license": "ISC",
   "devDependencies": {
+    "ajv": "^6.10.0",
     "bootstrap-loader": "^2.1.0",
     "bootstrap-sass": "^3.3.7",
     "css-loader": "^0.28.4",
