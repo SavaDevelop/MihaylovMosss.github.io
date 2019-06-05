@@ -1,4 +1,5 @@
 import '../../common.blocks/base/base.js';
+import '../../common.blocks/video-block/video-block.js';
 import './catalog.sass';
 
 import './sass/bootstrap-slider.scss';
