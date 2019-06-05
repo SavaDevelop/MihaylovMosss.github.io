@@ -5,29 +5,30 @@ block main
   main
     .check-in__wrapp
       .container
-        h1.title_h1.title_center Регистрация
+        h1.title_center Регистрация
         .check-in__form-wrapp
           form(action="#" enctype="text/plain" name="check-in")
             .row
               .form-group.col-6
-                input(type='text' name='name' value='' placeholder='Ваше имя').form-control
+                input(type='text' name='name' value='' placeholder='Ваше имя').form-control.input_theme_blue-sky
               .form-group.col-6
-                input(type='text' name='phone' value='' placeholder='Телефон').form-control
+                input(type='text' name='phone' value='' placeholder='Телефон').form-control.input_theme_blue-sky
             .row
               .form-group.col-6
-                input(type='text' name='mail' value='' placeholder='E-mail').form-control
+                input(type='text' name='mail' value='' placeholder='E-mail').form-control.input_theme_blue-sky
               .form-group.col-6
-                input(type='text' name='city' value='' placeholder='Город').form-control
-            .row
-              .form-group.col-12
-                input(type='text' name='address' value='' placeholder='Адрес').form-control
+                input(type='text' name='city' value='' placeholder='Город').form-control.input_theme_blue-sky
             .row
               .form-group.col-12
-                .agreements 
+                input(type='text' name='address' value='' placeholder='Адрес').form-control.input_theme_blue-sky
+            .row
+              .form-group.col-12
+                .check-in__agreements
                   label.radio_input(for="radio")
                     input#radio(type="radio")
                     span.radio-check
-                  p Нажимая на кнопку "Регистрация", вы соглашаетесь с пользовательским соглашением и политикой конфиденциальности
+                    p Нажимая на кнопку "Регистрация", вы соглашаетесь с 
+                      a(href="#").link_line_yellow.color-black пользовательским соглашением и политикой конфиденциальности
             .row
               .form-group.col-12
                 button(href="#").btn.button.button-golden-bg.w-100.text-uppercase Регистрация
