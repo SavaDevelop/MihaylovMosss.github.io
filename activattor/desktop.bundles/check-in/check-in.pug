@@ -5,18 +5,18 @@ block main
   main
     .check-in__wrapp
       .container
-        h1.title_center Регистрация
+        h1.title_center.check-in_title_padding_bottom Регистрация
         .check-in__form-wrapp
           form(action="#" enctype="text/plain" name="check-in")
             .row
-              .form-group.col-6
+              .form-group.col-md-6.col-sm-12
                 input(type='text' name='name' value='' placeholder='Ваше имя').form-control.input_theme_blue-sky
-              .form-group.col-6
+              .form-group.col-md-6.col-sm-12
                 input(type='text' name='phone' value='' placeholder='Телефон').form-control.input_theme_blue-sky
             .row
-              .form-group.col-6
+              .form-group.col-md-6.col-sm-12
                 input(type='text' name='mail' value='' placeholder='E-mail').form-control.input_theme_blue-sky
-              .form-group.col-6
+              .form-group.col-md-6.col-sm-12
                 input(type='text' name='city' value='' placeholder='Город').form-control.input_theme_blue-sky
             .row
               .form-group.col-12
@@ -27,8 +27,8 @@ block main
                   label.radio_input(for="radio")
                     input#radio(type="radio")
                     span.radio-check
-                    p Нажимая на кнопку "Регистрация", вы соглашаетесь с 
-                      a(href="#").link_line_yellow.color-black пользовательским соглашением и политикой конфиденциальности
+                    p.text-secondary.title_5 Нажимая на кнопку "Регистрация", вы соглашаетесь с 
+                      a(href="#").link_line_yellow.text-dark пользовательским соглашением и политикой конфиденциальности
             .row
               .form-group.col-12
                 button(href="#").btn.button.button-golden-bg.w-100.text-uppercase Регистрация
