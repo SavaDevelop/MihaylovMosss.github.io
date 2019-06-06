@@ -1,0 +1,26 @@
+.privacy-policy
+  &_padding_top_5
+    padding-top: 5px!important
+  &_num_ul_off
+    list-style-type: disc
+    counter-reset: li
+    li:before
+      counter-increment: none!important
+      content: none!important
+  ol
+    padding: 0px
+    /* убираем стандартную нумерацию */
+    list-style: none
+    /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+    counter-reset: li
+    > li.title_h2
+      padding: 30px 0 0 0
+      span
+        padding-bottom: 10px
+        font-family: 'SF UI Display Bold', sans-serif
+
+    li:before
+      /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+      counter-increment: li
+      /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+      content: counters(li,".") ". "
