@@ -1,10 +1,37 @@
 extends ../../common.blocks/base/base
 block title
-  | Корзина
+  | Оформление заказа
 block main
   main
     div.container
       div.row
         include ../../common.blocks/breadcrumb/breadcrumb
-    .container.app-det
-      h1.title_h1.title_center Корзина
+    .container.basket
+      h1.title_h1 Оформление заказа
+      .basket__wrapp
+        .basket__items
+          .row.basket__tit
+            .col-6.text-white.title_h4 Наименование товара
+            .col-2.text-white.title_h4 Колличество
+            .col-2.text-white.title_h4 Стоимость
+            .col-2.text-white.title_h4 Итого
+          .basket__item
+            .row
+              .col-6  фото Наименование товара 1
+              .col-2 - 1 +
+              .col-2 70 000 р.
+              .col-2 70 000 р.
+          .basket__item
+            .row
+              .col-6  фото Наименование товара 1
+              .col-2 - 1 +
+              .col-2 70 000 р.
+              .col-2 70 000 р.
+          .basket__line 
+          .basket__panel
+            .row
+              .col-6.text-left
+                button.btn.btn-theme_snow Продолжить покупки
+              .col-6.text-right Общая стоимость: 
+                b 250 000 р.
+        .basket__form
