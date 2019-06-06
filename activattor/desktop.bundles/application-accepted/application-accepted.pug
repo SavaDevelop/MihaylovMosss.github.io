@@ -1,0 +1,50 @@
+extends ../../common.blocks/base/base
+block title
+  | Заявка принята
+block main
+  main
+    div.container
+      div.row
+        include ../../common.blocks/breadcrumb/breadcrumb
+    .container.app-det
+      h1.title_h1.title_center Заявка принята
+      .app-det__content
+        .app-det__item
+          .app-det__nav
+            .app-det__ord-num номер заказа - 39459
+            a.app-det__ord-detais Детали заказа
+        .app-det__item.app-det_item_border.app-det_js-detail
+          .app-det__book
+            p.app-det_dots
+              span Дата
+              span 24.03.2019
+            p.app-det_dots 
+              span Фио
+              span Иванов Маким Леонидович
+            p.app-det_dots 
+              span Адрес доставки
+              span г. Москва, ул. Просвещения, д.2, к.5, кв. 78
+            p.app-det_dots 
+              span Способ оплаты
+              span Оплата при получении после проверки
+          .row
+            .col-12.app-det_bg_blue
+              .title_h3 Товар
+          .row
+            .col-12.app-det_border-bottom_blue
+              img(src=require('../../img/items/boat-motor.jpg') alt="").app-det__img
+              .app-det__title Лодочный мотор Микатсу (Mikatsu) M15FHS (15 л.с., 2 такта)
+              .app-det__sub-title.text-muted Код товара: 2-20011a-00102в
+              .app-det__desc 1 × 30 000 р.
+          .row
+            .col-12.app-det_border-bottom_blue
+              img(src=require('../../img/items/boat.jpg') alt="").app-det__img
+              .app-det__title Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор комби светлосерый-синий
+              .app-det__sub-title.text-muted Код товара: 2-20011a-00102в
+              .app-det__desc 3 × 70 000 р.
+          .row
+            .col-6.text-left Общая стоимость:
+            .col-6.text-right 250 000 р.
+        .row
+          .col-12.text-center.app-det_js-go-main
+            a(href="/").button.button--yellow.btn-size_xs.app-det_margin_space На главную

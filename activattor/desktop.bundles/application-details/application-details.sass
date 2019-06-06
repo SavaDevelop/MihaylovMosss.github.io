@@ -1,0 +1,79 @@
+.app-det
+  &_js-detail, &_js-go-main
+    display: none
+  &__content
+    display: flex
+    align-content: space-between
+    align-items: center
+    flex-direction: column
+    height: 60vh
+  &__nav
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    align-content: stretch
+  &__ord-num
+    width: 217px
+    height: 39px
+    background: rgba(85, 122, 255, 0.8)
+    border-radius: 12px
+    display: flex
+    justify-content: center
+    align-items: center
+    align-content: space-between
+    font-size: 16px
+    line-height: 17px
+    color: #fff
+    margin-right: 3%
+  &__ord-detais
+    cursor: pointer
+    color: #f9c300!important
+    border-bottom: 1px dashed #f9c300
+  &__item
+    width: 874px
+    padding: 26px 25px 10px 28px
+    @media (max-width: 720px)
+      width: 100%
+  &__book
+    width: 600px
+  &__img
+    float: left
+  &__title
+  &__sub-title
+  &__desc
+
+  &_margin_space
+    margin: 59px 0 101px 0!important
+  &_item_border
+    border: 1px solid #8DAFD7
+    box-sizing: border-box
+    border-radius: 10px
+  &_bg_blue
+    background: rgba(124, 196, 252, 0.2)
+  &_border-bottom_blue
+    border-bottom: 1px solid rgba(141, 175, 215, 0.5)
+/* example: https://ru.stackoverflow.com/questions/548666/%D0%97%D0%B0%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C-%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D1%83%D1%81%D1%82%D0%BE%D0%B5-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D0%BC%D0%B8*/
+p.app-det_dots
+  overflow: hidden
+  margin: 0px
+  &::after
+    content: '.................................................................................................................................................................................................................................'
+    color: #7C7C7C
+    display: block
+    white-space: nowrap
+    overflow: hidden
+p.app-det_dots
+  span:first-of-type
+    float: left
+    color: #7C7C7C
+p.app-det_dots
+  span:last-of-type
+    float: right
+    margin-left: 0px
+    width: 400px
+    text-align: left
+
+  // &:last-of-type
+  //   margin-left: 20px
