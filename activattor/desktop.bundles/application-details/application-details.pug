@@ -13,7 +13,8 @@ block main
           .app-det__nav
             .app-det__ord-num номер заказа - 39459
             a.app-det__ord-detais Детали заказа
-        .app-det__item.app-det_item_border.app-det_js-detail
+            
+        .app-det__item.app-det_item_border.app-det_js-detail.d-none
           .app-det__book
             p.app-det_dots
               span Дата
@@ -45,6 +46,6 @@ block main
           .row
             .col-6.text-left Общая стоимость:
             .col-6.text-right 250 000 р.
-        .row
+        .row.app-det_js-detail.d-none
           .col-12.text-center.app-det_js-go-main
             a(href="/").button.button--yellow.btn-size_xs.app-det_margin_space На главную
