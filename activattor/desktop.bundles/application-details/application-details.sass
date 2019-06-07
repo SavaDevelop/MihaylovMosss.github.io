@@ -1,4 +1,5 @@
-.app-det
+.app-details
+  margin-top: 30px
   &__content
     display: flex
     align-content: space-between
@@ -15,7 +16,7 @@
     @media (max-width: 415px)
       flex-wrap: wrap
 
-  &__ord-num
+  &__block-num
     width: 217px
     height: 39px
     background: rgba(85, 122, 255, 0.8)
@@ -28,10 +29,14 @@
     line-height: 17px
     color: #fff
     margin-right: 3%
-  &__ord-detais
+    strong
+      padding-left: 3px
+  &__block-details_link
     cursor: pointer
-    color: #f9c300!important
-    border-bottom: 1px dashed #f9c300
+    font-size: 17px
+    color: #0C0C0C
+    font-family: 'SF UI Display SemiBold', sans-serif
+    border-bottom: 1px dashed #f9C300
     @media (max-width: 415px)
         margin-top: 20px
   &__item
@@ -61,7 +66,7 @@
     border-bottom: 1px solid rgba(141, 175, 215, 0.5)
 /* example: https://ru.stackoverflow.com/questions/548666/%D0%97%D0%B0%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C-%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BF%D1%83%D1%81%D1%82%D0%BE%D0%B5-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D0%BC%D0%B8*/
 @media (min-width: 415px)
-  p.app-det_dots
+  p.app-details_dots
     overflow: hidden
     margin: 0px
     &::after
@@ -70,11 +75,11 @@
       display: block
       white-space: nowrap
       overflow: hidden
-  p.app-det_dots
+  p.app-details_dots
     span:first-of-type
       float: left
       color: #7C7C7C
-  p.app-det_dots
+  p.app-details_dots
     span:last-of-type
       float: right
       margin-left: 0px

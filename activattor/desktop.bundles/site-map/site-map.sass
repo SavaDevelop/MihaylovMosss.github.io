@@ -1,19 +1,54 @@
 .s-map
   &_ul_in_line_1_level
-    overflow: hidden
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    margin-right: -15px
+    margin-left: -15px
   &_li_in_line_1_level
-    float: left
-    width: 30%
-    padding-left: 2%
+    @media (min-width: 993px)
+      padding-right: 2%
+      margin-bottom: 2rem
+      -ms-flex: 0 0 33%
+      flex: 0 0 33%
+      max-width: 33%
+  .title_h1
+    width: 100%
+    margin-bottom: 10px
   ul
+    padding-left: 1rem
+    width: 100%
     li
-      list-style-type: none; /* Скрываем маркеры, отображаемые по умолчанию */
-    li:before
-     font-family: 'Montserrat', sans-serif
-     font-weight: 400
-     color: #008AD8
-     content: "•"
-     padding-right: 7px
+      list-style-type: none
+      position: relative
+      a
+       font-family: 'SF UI Display Medium', sans-serif
+       margin-bottom: 10px
+       line-height: 23px
+       font-size: 18px
+       color: #242424
+       &:hover
+         text-decoration: underline
+    li::before
+     font-family: 'Montserrat Medium', sans-serif
+     background-color: #008AD8
+     content: ''
+     position: absolute
+     left: -14px
+     bottom: 50%
+     border-radius: 100%
+     height: 4px
+     width: 4px
+    li ul
+      padding-left: 2rem
+      li ul
+        padding-left: 0
+        li a
+          font-family: 'SF UI Display Light', sans-serif
+          line-height: 23px
+          font-size: 18px
+          color: #242424
 
   ul
     li

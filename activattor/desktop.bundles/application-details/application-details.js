@@ -6,15 +6,15 @@ import '../../common.blocks/title/title.js';
 
 $(function(){
 
-  $(document).on('click touch', '.app-det__ord-detais', function(){
+  $(document).on('click touch', '.app-details__block-details_link', function(){
 
-    $('.app-det_js-detail', document).toggleClass(function() {
+    $('.app-details_js', document).toggleClass(function() {
       if ($(this).hasClass('.d-none')) {
         return 'd-none';
       } else {
         return 'd-block';
       }
-    })
+    });
 
   });
 
