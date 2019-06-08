@@ -6,9 +6,8 @@
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-between
-    align-items: center
+    align-items: flex-start
     align-content: flex-start
-    padding: 0 15px
   &__items
     /* вертикально */
     display: flex
@@ -17,59 +16,107 @@
     justify-content: space-around
     align-items: baseline
     align-content: stretch
-    width: 60%
-    padding-right: 2%
+    width: 59%
+    padding-right: 0
+    &-header
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      align-content: flex-start
+      background: #557AFF
+      border-radius: 10px 10px 0 0
+      padding: 7px 0px 6px 12px
+      color: #FFFFFF
+      width: 100%
+      font-size: 15px
+      line-height: 20px
+      letter-spacing: 0.01em
+      &-title
+        display: flex
+        padding: 0
+        -ms-flex: 0 0 54%
+        flex: 0 0 54%
+        max-width: 54%
+      &-count
+        -ms-flex: 0 0 10%
+        flex: 0 0 10%
+        max-width: 10%
+        display: flex
+      &-price
+        -ms-flex: 0 0 11%
+        flex: 0 0 11%
+        max-width: 11%
+        display: flex
+      &-total
+        -ms-flex: 0 0 12%
+        flex: 0 0 12%
+        max-width: 12%
+        display: flex
   &__item
+    display: flex
     width: 100%
-    margin: 13px 0 13px -15px
-    padding: 24px
+    margin: 13px 0 0px 0
+    padding: 14px 18px
+    flex-wrap: wrap
+    align-items: center
     border: 1px solid #8DAFD7
     box-sizing: border-box
-    border-radius: 10px
-  &__tit
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: space-around
-    align-items: center
-    align-content: flex-start
-    background: #557AFF
-    border-radius: 10px 10px 0 0
-    padding: 7px 0px 5px 12px
-    width: 100%
-    font-family: 'SF UI Display', sans-serif
-    font-size: 15px
-    line-height: 20px
-    letter-spacing: 0.01em
-    &-title
-      margin-left: -15px
-    &-count
-    &-cost
-    &-total
-  &__btn-cls_position
     position: relative
-  &__btn-cls
-    position: absolute
-    top: 0px
-    right: -50px
-    width: 24.23px
-    height: 24.23px
-    color: #fff
-    background: #0073DC!important
-    border-radius: 5px
-  &__form
-    background: green
-    width: 40%
-    &_tltle
-      font-family: 'SF UI Display', sans-serif
-      font-size: 17px
-      line-height: 23px
-      letter-spacing: 0.01em
-      text-transform: uppercase
+    justify-content: space-between
+    border-radius: 10px
+    &-content
+      display: flex
+      padding: 0
+      -ms-flex: 0 0 55%
+      flex: 0 0 55%
+      max-width: 55%
+      img
+        height: 108px
+      &-title
+        padding-left: 8px
+        padding-top: 8px
+        a
+          font-size: 16px
+          line-height: 23px
+          letter-spacing: 0.01em
+        .item_sku
+          margin-top: 10px
+    &-count
+      -ms-flex: 0 0 8%
+      flex: 0 0 8%
+      max-width: 8%
+      display: flex
+      justify-content: center
+    &-price
+      -ms-flex: 0 0 10%
+      flex: 0 0 10%
+      max-width: 10%
+      display: flex
+      justify-content: center
+      p
+        margin-bottom: 0
+    &-total
+      -ms-flex: 0 0 10%
+      flex: 0 0 10%
+      max-width: 10%
+      display: flex
+      justify-content: center
+      p
+        margin-bottom: 0
+    button.button-close.basket__btn-cls
+      height: 25px
+      width: 25px
+      border-radius: 8px
+      background: #f0f0f0
+      position: absolute
+      right: -40px
+      bottom: 0
+      top: 40%
   &__line
     width: 100%
     border-bottom: 5px solid #557AFF
-    margin-left: -15px
     padding: 10px 0 0 0
   &__panel
     width: 100%
@@ -78,3 +125,12 @@
   &_border_blue
     border: 1px solid #8DAFD7
     border-radius: 10px
+  &__form
+    background: green
+    width: 31%
+    &_tltle
+      font-family: 'SF UI Display', sans-serif
+      font-size: 17px
+      line-height: 23px
+      letter-spacing: 0.01em
+      text-transform: uppercase

@@ -14,24 +14,50 @@ block main
             h1.title_h1(style="padding: 10px 0 31px") Оформление заказа
             .basket__wrapp
               .basket__items
-                .row.basket__tit
-                  .col-6.text-white.basket__tit-title Наименование товара
-                  .col-2.text-white Колличество
-                  .col-2.text-white Стоимость
-                  .col-2.text-white Итого
+                .basket__items-header
+                  .basket__items-header-title Наименование товара
+                  .basket__items-header-count Количество
+                  .basket__items-header-price Стоимость
+                  .basket__items-header-total Итого
                 .basket__item
-                  .row
-                    .col-6  фото Наименование товара 1
-                    .col-2 - 1 +
-                    .col-2 70 000 р.
-                    .col-2.basket__btn-cls_position 70 000 р.
-                      button.button-close.basket__btn-cls X
+                  .basket__item-content
+                    img(src=require("../../img/items/basket_boat.jpg"))
+                    div.basket__item-content-title
+                      a(href="#") Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор комби светлосерый-синий
+                      span.item_sku Код товара: 2-20011a-00102в
+                  .basket__item-count
+                    span - 1 +
+                  .basket__item-price
+                    p 70 000 р.
+                  .basket__item-total
+                    p 70 000 р.
+                  button.button-close.basket__btn-cls X
                 .basket__item
-                  .row
-                    .col-6  фото Наименование товара 1
-                    .col-2 - 1 +
-                    .col-2 70 000 р.
-                    .col-2 70 000 р.
+                  .basket__item-content
+                    img(src=require("../../img/items/basket_boat.jpg"))
+                    div.basket__item-content-title
+                      a(href="#") Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор комби светлосерый-синий
+                      span.item_sku Код товара: 2-20011a-00102в
+                  .basket__item-count
+                    span - 1 +
+                  .basket__item-price
+                    p 70 000 р.
+                  .basket__item-total
+                    p 70 000 р.
+                  button.button-close.basket__btn-cls X
+                .basket__item
+                  .basket__item-content
+                    img(src=require("../../img/items/basket_boat.jpg"))
+                    div.basket__item-content-title
+                      a(href="#") Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор комби светлосерый-синий
+                      span.item_sku Код товара: 2-20011a-00102в
+                  .basket__item-count
+                    span - 1 +
+                  .basket__item-price
+                    p 70 000 р.
+                  .basket__item-total
+                    p 70 000 р.
+                  button.button-close.basket__btn-cls X
                 .basket__line 
                 .basket__panel
                   .row
@@ -40,5 +66,5 @@ block main
                     .col-6.text-right Общая стоимость: 
                       b 250 000 р.
               .basket__form
-                .row.basket__tit
+                .basket__tit
                   .col-6.text-white.text-left.basket__form_tltle Информация о доставке
