@@ -1,11 +1,62 @@
 extends ../../common.blocks/base/base
 block head
-  link(rel="stylesheet" type="text/css" href="../sass/main.css")
-  link(rel="stylesheet" type="text/css" href="../sass/media.css")
-  link(rel="stylesheet" type="text/css" href="../sass/news_list.css")
 block title
   | News-section
 block main
         main
-          .trafarets
-          div.container Новость
+          .container 
+            .row
+            include ../../common.blocks/breadcrumb/breadcrumb
+            .row
+              //- .trafaret-news-single
+              .col-12
+                h1.title_h1 Как выбрать надувную лодку ПВХ?
+                .news-section__date-off-wrapp-mob
+                  .news-section__date-off-mob 28.05.19 16:30
+                .news-section__icons.text-right
+                  a(href="#").news-section__btn-heart
+                    img(src="../../img/icons/eye.svg")
+                    span 0
+                  a(href="#").news-section__btn-comment
+                    img(src="../../img/icons/speech-bubble.svg")
+                    span 0
+                  a(href="#").news-section__btn-like
+                    img(src="../../img/icons/like.svg")
+                    span 0  
+                .news-section__image
+                  img(src=require('../../img/news/boats2.jpg') alt='Доски').news-section__image.news-section_imag_display
+                  img(src=require('../../img/news/boats2_m.jpg') alt='Доски').news-section__image.news-section_imag_mobil
+                .news-section__date-off-wrapp
+                  .news-section__date-off.text-right 28.05.19 16:30
+                .news-section__content
+                  h2.title_h2.SF-UI-Display-Semibold Надувная доска для sup-бординга Stormline Powermax 10.6
+                  p Сейчас морской транспорт стал более доступным для частных нужд как никогда раньше. Сконструировано множество лодок больших и малых размеров, которые используются для туризма, развлечения или рыбалки. Очень популярны среди них модели из ПВХ, отличающиеся малым весом, компактными транспортировочными размерами и высокой скоростью, благодаря подсоединенному мотору. В характеристиках такой продукции много непонятных терминов и цифр, разобравшись в которых будет легче выбрать лодку ПВХ для своих нужд. 
+                  h2.title_h2.SF-UI-Display-Semibold Лучшие производители лодок ПВХ - какую фирму выбрать:
+                  ul.news-section__ul
+                    li Corsar
+                    li Морские прогулки;
+                    li Охота по заболоченным местам;
+                    li Экстремальные спуски по рекам;
+                    li Троллинг;
+                    li Водные аттракционы (присоединение лыж, "ватрушки")
+                  p Их продукция высокого качества, но существует столько размеров и форм, что желательно ознакомиться с рейтингом лучших лодок ПВХ и сузить зону поиска. Эта же статья научит разбираться самостоятельно в параметрах лодок ПВХ и более точно определиться с выбором.
+
+                  h2.title_h2 Используют лодки ПВХ для различных целей:
+                  ol.news-section__ol
+                    li Рыбалка на крупных озерах;
+                    li Морские прогулки;
+                    li Охота по заболоченным местам;
+                    li Экстремальные спуски по рекам;
+                    li Троллинг;
+                    li Водные аттракционы (присоединение лыж, «ватрушки»).
+                  .news-section__soc
+                    p Поделитесь этой статьей:
+                    a(href="https://vk.ru" target="_blank")
+                      img(src='../../img/icons/facebook.svg' alt="")
+                    a(href="https://vk.ru" target="_blank")
+                      img(src='../../img/icons/vk.svg'  alt="")
+                    
+                  include ../../common.blocks/comment-form/comment-form
+            include ../../common.blocks/catalog_boats_main/catalog_boats_main
+            symbol#heart_fill(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 29 27")
+               path(d="M14.4 4.8C15.6 2 18.3 0 21.4 0c4.2 0 7.2 3.6 7.6 7.9 0 0 .2 1.1-.2 3-.6 2.6-2.1 5-4 6.8L14.4 27 4.3 17.7c-1.9-1.8-3.4-4.1-4-6.8-.5-1.9-.3-3-.3-3C.4 3.6 3.4 0 7.6 0c3.1 0 5.6 2 6.8 4.8z")

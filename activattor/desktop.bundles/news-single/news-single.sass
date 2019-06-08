@@ -1,33 +1,103 @@
-.news-single
-  &_ol
+.news-section
+  width: 100%
+  border: 1px solid green
+  &__icons
+    width: 50%
+    float: right
+
+  &__image
+    border-radius: 5px
+    width: 100%
+    padding: 2px 0 0 0
+  &__btn-heart
+    padding: 0 10px
+    span
+      padding: 0 5px
+  &__btn-comment
+    padding: 0 10px
+    span
+      padding: 0 5px
+  &__btn-like
+    span
+      padding: 0 5px
+
+  &_imag_display
+    @media (max-width: 1000px)
+      display: none
+  &_imag_mobil
+    display: none
+    @media (max-width: 1000px)
+      display: block
+
+  &__date-mobile
+    padding-bottom: 9px
+    @media (min-width: 641px)
+      display: none
+  &__block-image
+    width: 100%
+
+  &__date-off-wrapp-mob
+    width: 40%
+    float: left
+    display: none
     @media (max-width: 992px)
-      padding: 0
-      list-style: none
-      li
-        padding-left: 30px
-        background: url(../../img/news/news_list_num1.png) no-repeat 0 5px
-    @media (min-width: 992px) /* https://codepen.io/VadymVolos/pen/OEyENK */
-      list-style: none
-      padding: 0px
-      list-style-type: none
-      counter-reset: item
-      list-style-position: outside
-      li
-        display: flex
-        margin-left: 0px
-      li:before
-        content: counter(item)
-        counter-increment: item
-        background: #0091fa
-        color: #fff
-        border-radius: 2.5em
-        font-size: 1.0em
-        text-align: center
-        width: 20px
-        height: 20px
-        display: flex
-        align-items: center
-        justify-content: center
-        margin-left: 0px
-        margin-right: 1.0em
-        margin-top: 0.2em
+      display: block
+  &__date-off-mob
+    color: #989898
+    font-size: 14px
+    line-height: 17px
+
+  &__date-off-wrapp
+    padding: 20px 0px
+    width: 100%
+    display: block
+    @media (max-width: 992px)
+      display: none
+
+  &__date-off
+    color: #989898
+    font-size: 14px
+    line-height: 17px
+
+  &_subtitle_correct
+    display: block
+    width: 100%
+    padding-bottom: 15px
+  &__soc
+    text-align: right
+    padding: 0 0 10px 0
+    font-size: 18px
+    line-height: 20px
+    a
+      padding: 0 0 0 10px
+  &__ul
+    padding: 0
+    list-style: none
+    li
+      padding-left: 30px
+      background: url(../../img/news/news_list_num1.png) no-repeat 0 5px
+  &__ol
+    list-style: none
+    padding: 0px
+    list-style-type: none
+    counter-reset: item
+    list-style-position: outside
+    li
+      display: flex
+      margin-left: 0px
+    li:before
+      content: counter(item)
+      counter-increment: item
+      background: #0091fa
+      color: #fff
+      border-radius: 2.5em
+      font-size: 1.0em
+      text-align: center
+      width: 20px
+      height: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-left: 0px
+      margin-right: 1.0em
+      margin-top: 0.2em

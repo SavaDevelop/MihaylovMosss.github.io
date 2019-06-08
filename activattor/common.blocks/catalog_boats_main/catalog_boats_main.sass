@@ -1,0 +1,35 @@
+.boats_main
+  background: linear-gradient(255.75deg, rgba(117, 180, 255, 0.1) 3.79%, rgba(117, 180, 255, 0.065) 119%)
+  padding: 80px 0
+
+.boat_cnt
+  padding: 15px
+  background-color: #fff
+  border: 2px solid #95AAC2
+  border-radius: 10px
+  text-align: center
+  margin: 15px 0
+  &:hover
+    border: 2px solid #F9C300
+
+  img
+    width: 100%
+
+.boat_title
+  text-align: center
+  height: 68px
+  font-size: 22px
+  line-height: 23px
+  margin-top: 15px
+
+.boats_main_mobile
+  display: none
+  background: url(../../img/blue-background.png) no-repeat
+  background-size: cover
+
+@media all and (max-width: 1200px)
+  .boats_main
+    display: none
+
+  .boats_main_mobile
+    display: block
