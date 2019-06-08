@@ -52,76 +52,7 @@
 
 .rate_row .star_stat li .hovered-star_stroke
   fill: #EB3939
-
-.radio_input
-  display: block
-  position: relative
-  padding-left: 25px
-  margin-bottom: 12px
-  cursor: pointer
-  font-size: 22px
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-  transition: .3s ease-in-out
-  input
-    position: absolute
-    opacity: 0
-    cursor: pointer
-    width: 20px
-    height: 20px
-    left: 0
-    &:disabled
-      cursor: not-allowed
-      ~ .radio-check
-        &:after
-          display: none
-        &:focus, &:hover, &:active
-          border: 2px solid #CCE3F8
-    &:checked ~ .radio-check
-      border: 2px solid #0073DC
-      opacity: unset
-      &:after
-        display: block
-        opacity: unset
-  &:hover input ~ .radio-check
-    border-color: #55BAFF
-    &:after
-      display: block
-      top: 3px
-      left: 3px
-      width: 10px
-      height: 10px
-      border-radius: 50%
-      background: #55BAFF
-  &:active, &:focus
-    outline: none
-  &:active input ~ .radio-check, &:focus input ~ .radio-check
-    border: 2px solid #0073DC
-    opacity: 0.5
-  &:active input ~ .radio-check:after, &:focus input ~ .radio-check:after
-    display: block
-    background: #0073DC
-
-.radio_input-selected
-  border: 2px solid #0073DC
-  &:after
-    display: block
-
-.radio_input-disabled
-  cursor: not-allowed
-  input ~ .radio-check
-    border-color: #CCE3F8
-    opacity: unset
-  &:hover, &:focus, &:active
-    outline: none
-  &:hover input ~ .radio-check, &:focus input ~ .radio-check, &:active input ~ .radio-check
-    border-color: #CCE3F8
-    opacity: unset
-  &:hover input ~ .radio-check:after, &:focus input ~ .radio-check:after, &:active input ~ .radio-check:after
-    display: none
-
+ 
 /* custom radio button
 
 .radio-check
