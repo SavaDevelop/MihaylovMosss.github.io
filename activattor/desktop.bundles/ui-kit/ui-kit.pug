@@ -1,4 +1,9 @@
 extends ../../common.blocks/base/base
+block head
+  //- link(rel="stylesheet" type="text/css" href="../sass/main.css")
+  //- link(rel="stylesheet" type="text/css" href="../sass/media.css")
+  //- link(rel="stylesheet" type="text/css" href="../sass/news_list.css")
+  link(rel="stylesheet" type="text/css" href="../sass/theme.css")
 block title
   | Ui-kit
 block main
@@ -170,6 +175,11 @@ block main
               label.radio_input(for="radio")
                 input#radio(type="radio")
                 span.radio-check
+    hr
+    include ../../common.blocks/stock-slider/stock-slider
+    hr
+    include ../../common.blocks/catalog_boats_main/catalog_boats_main.pug
+    include ../../common.blocks/block.consultant/block.consultant.pug
     .ui-main
       //- // Modal city start
       //- button.btn.btn-primary(type="button" data-toggle="modal" data-target="#city-modal")

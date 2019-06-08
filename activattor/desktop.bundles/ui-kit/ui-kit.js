@@ -7,6 +7,9 @@ import '../../common.blocks/trafarets/trafarets.js';
 import '../../common.blocks/title/title.js';
 import '../../common.blocks/pagination/pagination.js';
 
+import '../../common.blocks/stock-slider/stock-slider.js';
+
+
 $(document).ready(function() {
     $(document).on('click', '.checkbox_cnt label', function() {
         var _parent = $(this).parent();

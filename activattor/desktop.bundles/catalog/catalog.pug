@@ -1,5 +1,6 @@
 extends ../../common.blocks/base/base
 block head
+  link(rel="stylesheet" type="text/css" href="../sass/theme.css")
 block title
   | Каталог
 block main
@@ -2639,8 +2640,8 @@ block main
           //-     </ul>
           //-   </div>
           //- </div>
-    include ../../common.blocks/catalog_boats_main.pug
-    include ../../common.blocks/block.consultant.pug
+    include ../../common.blocks/catalog_boats_main/catalog_boats_main.pug
+    include ../../common.blocks/block.consultant/block.consultant.pug
 
     .lower_main.mx-auto
       .lower_main-left
