@@ -1,0 +1,33 @@
+.news-single
+  &_ol
+    @media (max-width: 992px)
+      padding: 0
+      list-style: none
+      li
+        padding-left: 30px
+        background: url(../../img/news/news_list_num1.png) no-repeat 0 5px
+    @media (min-width: 992px) /* https://codepen.io/VadymVolos/pen/OEyENK */
+      list-style: none
+      padding: 0px
+      list-style-type: none
+      counter-reset: item
+      list-style-position: outside
+      li
+        display: flex
+        margin-left: 0px
+      li:before
+        content: counter(item)
+        counter-increment: item
+        background: #0091fa
+        color: #fff
+        border-radius: 2.5em
+        font-size: 1.0em
+        text-align: center
+        width: 20px
+        height: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: 0px
+        margin-right: 1.0em
+        margin-top: 0.2em
