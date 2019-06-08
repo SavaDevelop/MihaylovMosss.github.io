@@ -60,11 +60,30 @@ block main
                   button.button-close.basket__btn-cls X
                 .basket__line 
                 .basket__panel
-                  .row
-                    .col-6.text-left
-                      button.btn.btn-theme_snow Продолжить покупки
-                    .col-6.text-right Общая стоимость: 
-                      b 250 000 р.
+                    button.btn.btn-theme_snow Продолжить покупки
+                    div.total-price Общая стоимость: 
+                      strong 250 000 р.
               .basket__form
-                .basket__tit
-                  .col-6.text-white.text-left.basket__form_tltle Информация о доставке
+                .basket__form-title
+                  .text-white.basket__form_tltle Информация о доставке
+                .basket__form-payment-method
+                  h3.SF-UI-Display-Medium Способ оплаты
+                  .form-group
+                    label(class="radio_input" for="radio1")
+                      input(id="radio1" type="radio" name="plata")
+                      | Предоплата заказа
+                      span.radio-check
+                    label(class="radio_input" for="radio2")
+                      input(id="radio2" type="radio" name="plata")
+                      | Оплата при получении после проверки
+                      span.radio-check
+                    label(class="radio_input" for="radio3")
+                      input(id="radio3" type="radio" name="plata")
+                      | Рассрочка от Банка
+                      span.radio-check
+                  h3.SF-UI-Display-Medium Контактные данные
+                  form
+                    input(type="text" name="checkout-name" placeholder="ФИО" value="")
+                    texarea(name="checkout-delivery-address" placeholder="Адрес доставки")
+                    texarea(name="checkout-name" placeholder="Комментрий к заказу")
+                  

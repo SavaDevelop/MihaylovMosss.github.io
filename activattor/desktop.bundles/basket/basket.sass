@@ -120,17 +120,37 @@
     padding: 10px 0 0 0
   &__panel
     width: 100%
-    margin-left: -15px
+    display: flex
     padding: 27px 0
+    justify-content: space-between
+    .total-price
+      letter-spacing: 0.02em
   &_border_blue
     border: 1px solid #8DAFD7
     border-radius: 10px
   &__form
-    background: green
-    width: 31%
-    &_tltle
-      font-family: 'SF UI Display', sans-serif
+    border-radius: 10px
+    background: #F4F4F4
+    width: 32.5%
+    &-title
+      height: 53px
       font-size: 17px
       line-height: 23px
+      background: #557AFF
+      border-radius: 10px 10px 0 0px
       letter-spacing: 0.01em
       text-transform: uppercase
+      display: flex
+      padding-left: 24px
+      align-items: center
+    &-payment-method
+      padding: 20px 22px
+      h3
+        font-size: 20px
+        margin-bottom: 20px
+        letter-spacing: 0.02em
+      div.form-group
+        margin-bottom: 2.4rem
+      form
+        input
+          width: 100%
