@@ -3,3 +3,4 @@ import './basket.sass';
 
 import '../../common.blocks/button/button.js';
 import '../../common.blocks/title/title.js';
+import '../../common.blocks/trafarets/trafarets.js';

@@ -7,33 +7,38 @@ block main
       div.row
         include ../../common.blocks/breadcrumb/breadcrumb
     .container.basket
-      h1.title_h1 Оформление заказа
-      .basket__wrapp
-        .basket__items
-          .row.basket__tit
-            .col-6.text-white.title_h4 Наименование товара
-            .col-2.text-white.title_h4 Колличество
-            .col-2.text-white.title_h4 Стоимость
-            .col-2.text-white.title_h4 Итого
-          .basket__item
-            .row
-              .col-6  фото Наименование товара 1
-              .col-2 - 1 +
-              .col-2 70 000 р.
-              .col-2 70 000 р.
-          .basket__item
-            .row
-              .col-6  фото Наименование товара 1
-              .col-2 - 1 +
-              .col-2 70 000 р.
-              .col-2 70 000 р.
-          .basket__line 
-          .basket__panel
-            .row
-              .col-6.text-left
-                button.btn.btn-theme_snow Продолжить покупки
-              .col-6.text-right Общая стоимость: 
-                b 250 000 р.
-        .basket__form
-          .row.basket__tit
-            .col-6.text-white.title_h4 Информация о доставке
+      .trafaret-basket
+      .row
+        .col-12
+          .row
+            h1.title_h1(style="padding: 10px 0 31px") Оформление заказа
+            .basket__wrapp
+              .basket__items
+                .row.basket__tit
+                  .col-6.text-white.basket__tit-title Наименование товара
+                  .col-2.text-white Колличество
+                  .col-2.text-white Стоимость
+                  .col-2.text-white Итого
+                .basket__item
+                  .row
+                    .col-6  фото Наименование товара 1
+                    .col-2 - 1 +
+                    .col-2 70 000 р.
+                    .col-2.basket__btn-cls_position 70 000 р.
+                      button.button-close.basket__btn-cls X
+                .basket__item
+                  .row
+                    .col-6  фото Наименование товара 1
+                    .col-2 - 1 +
+                    .col-2 70 000 р.
+                    .col-2 70 000 р.
+                .basket__line 
+                .basket__panel
+                  .row
+                    .col-6.text-left
+                      button.btn.btn-theme_snow Продолжить покупки
+                    .col-6.text-right Общая стоимость: 
+                      b 250 000 р.
+              .basket__form
+                .row.basket__tit
+                  .col-6.text-white.text-left.basket__form_tltle Информация о доставке
