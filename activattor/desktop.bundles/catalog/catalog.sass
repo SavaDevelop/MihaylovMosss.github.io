@@ -1,183 +1,181 @@
 $color-goldenrod: pink
 #character-main
   position: relative
-.chosen_section_title
-  width: 100%
-  display: flex
-  align-items: center
-  justify-content: space-between
-  height: 142px
-
-  h2
-    color: #000
-    font-size: 33px
-    line-height: 40px
-    letter-spacing: -0.02em
-    @media all and (max-width: 1060px)
-      font-size: 29px
-
-  span
+  .chosen_section_title
+    width: 100%
     display: flex
     align-items: center
-    padding: 0 15px
-    border-radius: 22px
-    height: 41px
-    line-height: 21px
-    font-size: 18px
-    color: #1D1D1D
-    background: rgba(124, 196, 252, 0.2)
+    justify-content: space-between
+    height: 142px
+    h1
+      color: #000
+      font-size: 33px
+      line-height: 40px
+      letter-spacing: -0.02em
+      @media all and (max-width: 1060px)
+        font-size: 29px
 
 .element_grid
-  width: calc(100% + 30px)
-  padding-bottom: 18px
-  @media all and (max-width: 1440px)
-    .col-lg-3
-      -ms-flex: 0 0 33.333333%
-      flex: 0 0 33.333333%
-      max-width: 33.333333%
-  @media all and (max-width: 1060px)
-    .col-lg-3
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  margin-right: -10px
+  margin-left: -10px
+
+  .element_grid__el
+    padding: 0 10px
+    -ms-flex: 0 0 25%
+    flex: 0 0 25%
+    max-width: 25%
+    @media all and (max-width: 1060px)
+      -ms-flex: 0 0 33.3%
+      flex: 0 0 33.3%
+      max-width: 33.3%
+    @media all and (max-width: 992px)
       -ms-flex: 0 0 50%
       flex: 0 0 50%
       max-width: 50%
-
-  .element_grid__el
-    overflow: hidden
-    margin-bottom: 40px
-    border-radius: 10px
-    border: 1px solid #95AAC2
-    background-color: #fff
-
-    .element_grid__slider
-      height: 100%
-      display: flex
-      align-items: center
-      justify-content: center
-      .carousel-inner
-        height: 100%
-        padding-top: 20px
-      .element_grid__slider_el
-        height: 100%
-        .slider_image
-          width: 100%
-          height: 100%
-          display: flex
-          align-content: center
-          justify-content: center
-        img
-          height: 100%
-          width: auto !important
-
-    .prod_preview
-      width: 100%
-      height: 287px
-      position: relative
-      padding-bottom: 40px
-      box-sizing: border-box
-      .we_have
-        position: absolute
-        bottom: 0
-        left: 17px
-        height: 22px
-        border-radius: 11px
-        padding: 0 6px 0 8px
-        background-color: rgba(55, 69, 97, 0.05)
-        display: flex
-        align-items: center
-        svg
-          fill: #F9C300
-        & > span
-          display: block
-          padding-left: 3px
-          color: #6E6E6E
-          font-size: 14px
-          line-height: 18px
-          span
-            color: #000000
-
-      .carousel-control-prev
-        opacity: 1
-        .slider_control_prev
-          height: 43px
-          width: 23px
-          border-radius: 9px
+    @media all and (max-width: 1060px)
+      .col-lg-3
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+        max-width: 100%
+    &-content
+      overflow: hidden
+      margin-bottom: 40px
+      border-radius: 10px
+      border: 1px solid #95AAC2
+      background-color: #ffffff
+      .prod_preview
+        width: 100%
+        height: 287px
+        position: relative
+        padding-bottom: 40px
+        box-sizing: border-box
+        .percent
+          position: absolute
+          width: calc(100% / 6)
+          height: calc(100% / 6)
+          background: linear-gradient(302.13deg, rgba(186, 230, 255, 0.4015) -32.53%, rgba(158, 0, 238, 0.511) 89.34%), #54F5FF
+          top: 14px
+          left: 15px
+          border-radius: 6px
           display: flex
           align-items: center
           justify-content: center
-          padding-right: 1px
-          background-color: rgba(53, 53, 53, 0.25)
-          margin-top: 127px
+          font-size: 19px
+          line-height: 23px
+          color: #fff
+          z-index: 2
           @media all and (max-width: 1060px)
-            width: 27px
-            height: 52px
-            border-radius: 14px
-          svg
-            fill: white
-        &:hover .slider_control_prev
-          background-color: #F9C300
-        &:active .slider_control_prev
-          background-color: #FCDD6E
-          
-      .carousel-control-next
-        opacity: 1
-        .slider_control_next
-          height: 43px
-          width: 23px
-          border-radius: 9px
+            top: 23px
+
+        .element_grid__slider
+          height: 100%
           display: flex
           align-items: center
           justify-content: center
-          padding-left: 2px
-          background-color: rgba(53, 53, 53, 0.25)
-          margin-top: 127px
-          transition: all .3s ease-in-out
-          @media all and (max-width: 1060px)
-            width: 27px
-            height: 52px
-            border-radius: 14px
+          .carousel-inner
+            height: 100%
+            padding-top: 20px
+          .element_grid__slider_el
+            height: 100%
+            .slider_image
+              width: 100%
+              height: 100%
+              display: flex
+              align-content: center
+              justify-content: center
+            img
+              height: 100%
+              width: auto !important
+        .we_have
+          position: absolute
+          bottom: 0
+          left: 17px
+          height: 22px
+          border-radius: 11px
+          padding: 0 6px 0 8px
+          background-color: rgba(55, 69, 97, 0.05)
+          display: flex
+          align-items: center
           svg
-            fill: white
-        &:hover .slider_control_next
-          background-color: #F9C300
-        &:active .slider_control_next
-          background-color: #FCDD6E
+            fill: #F9C300
+          & > span
+            display: block
+            padding-left: 3px
+            color: #6E6E6E
+            font-size: 14px
+            line-height: 18px
+            span
+              color: #000000
 
-      .percent
-        position: absolute
-        width: 59px
-        height: 59px
-        background: linear-gradient(302.13deg, rgba(186, 230, 255, 0.4015) -32.53%, rgba(158, 0, 238, 0.511) 89.34%), #54F5FF
-        top: 14px
-        left: 15px
-        border-radius: 6px
-        display: flex
-        align-items: center
-        justify-content: center
-        font-size: 19px
-        line-height: 23px
-        color: #fff
-        z-index: 2
-        @media all and (max-width: 1060px)
-          top: 23px
+        .carousel-control-prev
+          opacity: 1
+          .slider_control_prev
+            height: 43px
+            width: 23px
+            border-radius: 9px
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-right: 1px
+            background-color: rgba(53, 53, 53, 0.25)
+            margin-top: 127px
+            @media all and (max-width: 1060px)
+              width: 27px
+              height: 52px
+              border-radius: 14px
+            svg
+              fill: white
+          &:hover .slider_control_prev
+            background-color: #F9C300
+          &:active .slider_control_prev
+            background-color: #FCDD6E
 
-      .action_buttons
-        list-style-type: none
-        height: 67px
-        position: absolute
-        right: 0
-        padding: 0 21px
-        display: flex
-        align-items: center
-        z-index: 2
-        top: 0
-        @media all and (max-width: 1060px)
-          flex-direction: column-reverse
-          justify-content: flex-start
-          height: auto
+        .carousel-control-next
+          opacity: 1
+          .slider_control_next
+            height: 43px
+            width: 23px
+            border-radius: 9px
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-left: 2px
+            background-color: rgba(53, 53, 53, 0.25)
+            margin-top: 127px
+            transition: all .3s ease-in-out
+            @media all and (max-width: 1060px)
+              width: 27px
+              height: 52px
+              border-radius: 14px
+            svg
+              fill: white
+          &:hover .slider_control_next
+            background-color: #F9C300
+          &:active .slider_control_next
+            background-color: #FCDD6E
 
-        .chosen_icon
-          margin-top: 23px
-          margin-bottom: 13px
+        .action_buttons
+          list-style-type: none
+          height: 67px
+          position: absolute
+          right: 0
+          padding: 0 21px
+          display: flex
+          align-items: center
+          z-index: 2
+          top: 0
+          @media all and (max-width: 1060px)
+            flex-direction: column-reverse
+            justify-content: flex-start
+            height: auto
+
+          .chosen_icon
+            margin-top: 23px
+            margin-bottom: 13px
 
 .chosen_icon
   margin-left: 18px
@@ -300,7 +298,7 @@ $color-goldenrod: pink
         font-size: 16px
         color: #ABABAB
         line-height: 18px
-        
+
         text-decoration: line-through
         @media all and (max-width: 1440px)
           font-size: 14px
@@ -314,7 +312,10 @@ $color-goldenrod: pink
     .button
       width: calc(50% - 3px)
     button
-      min-width: 155px
+      width: calc(50% - 3px)
+      font-size: 13px
+      line-height: 16px
+      padding: 10px 8px
 
     .button--fill_btn
       padding: 0 10px
@@ -389,7 +390,6 @@ $color-goldenrod: pink
   padding: 7px 15px 13px
   font-family: 'SF UI Display Bold', sans-serif
   margin: 0
-
 
 .solo_btn
   padding: 0 15px
@@ -574,6 +574,8 @@ $color-goldenrod: pink
   background: #FFFFFF
   height: 35px
   box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.07)
+  align-items: center
+  display: flex
   input
     width: 100%
     cursor: pointer
@@ -592,7 +594,6 @@ $color-goldenrod: pink
     width: 11px
     height: 9px
     transform: translateY(-50%)
-
 
 .rotated
   transform: translateY(-50%) rotate(180deg) !important
@@ -793,7 +794,7 @@ $color-goldenrod: pink
 
 .btn-reset, .btn-show
   background: white
-  
+
   font-size: 13px
   text-align: center
   letter-spacing: 0.03em
@@ -1088,7 +1089,7 @@ $color-goldenrod: pink
   line-height: 17px
   letter-spacing: 0.02em
   color: #FFFFFF
-  
+
 
 
 
@@ -1119,7 +1120,7 @@ $color-goldenrod: pink
 .character-listed
   list-style: none
   padding-left: 0
-  
+
   &>li
     border-bottom: 1px dotted #7C7C7C
     display: flex
@@ -1183,7 +1184,7 @@ $color-goldenrod: pink
 .element_grid.flat .character_info
   margin-top: 16px
 
-#pageHtml .element_grid.flat .we_have
+#catalog_list .element_grid.flat .we_have
   bottom: 33px
 
 .aside_info
@@ -1198,7 +1199,6 @@ $color-goldenrod: pink
   margin-top: 35px
 
 .element_grid.flat
-
   .prod_info
     width: 293px
   .aside_info
@@ -1313,7 +1313,7 @@ $color-goldenrod: pink
       right: auto
 .mobile-select:nth-child(2)
   border-right: 0px solid #fff
-  
+
 .blue-sorting-bottom
   display: flex
   justify-content: center
@@ -1540,7 +1540,7 @@ body.active
   .boats-main-content
     display: none
 
-  #pageHtml .blue-bg
+  #catalog_list .blue-bg
     padding: 23px
 
 
@@ -1610,13 +1610,13 @@ body.active
     display: none
 
 @media all and (min-width: 650px) and (max-width: 1200px)
-  #pageHtml .element_grid.flat > div
+  #catalog_list .element_grid.flat > div
     flex: 0 0 50% !important
 @media all and (max-width: 950px)
   .help-main
     .col-lg-6
       flex: 0 0 80%
-#pageHtml .element_grid.flat > div
+#catalog_list .element_grid.flat > div
   width: 100%
   max-width: 100%
   flex: 0 0 100%
@@ -1968,7 +1968,7 @@ body.active
   display: block
   z-index: 9
 
-.catal_section_title
+.catalog_section_title
   width: 100%
   padding: 0px 0 20px
   @media all and (max-width: 375px)
@@ -1982,16 +1982,16 @@ body.active
   .sort_right
     height: 100%
 
-#pageHtml .element_grid .prod_preview
+#catalog_list .element_grid .prod_preview
   height: 355px
 
-#pageHtml .rate_row
+#catalog_list .rate_row
   margin-top: 0
 
-#pageHtml .element_grid .element_grid__el .prod_preview
+#catalog_list .element_grid .element_grid__el .prod_preview
   padding-bottom: 60px
 
-#pageHtml .we_have
+#catalog_list .we_have
   bottom: 18px
 
 .lower-mobile-content
@@ -2098,7 +2098,7 @@ body.active
     width: 11px
     height: 9px
 
-  #pageHtml .solo_btn svg
+  #catalog_list .solo_btn svg
     display: none
 
   .boat_group figure
@@ -2193,7 +2193,7 @@ body.active
 
   .rivera-mobile-content
     display: none
-    
+
   .help_main-btn
     width: 100%
 
@@ -2237,7 +2237,7 @@ body.active
   width: 100%
   max-width: none
 
-#pageHtml .element_grid.flat .element_grid__el .prod_preview .action_buttons
+#catalog_list .element_grid.flat .element_grid__el .prod_preview .action_buttons
   display: none
 
 @media all and (max-width: 380px)
@@ -2292,7 +2292,7 @@ button:not(:disabled)
       button
         min-width: auto
 
-//.chosen-block
+//.catalog_list
 //  overflow: visible !important
 //  overflow-x: hidden !important
 

@@ -5,13 +5,12 @@ block title
   | Каталог
 block main
   main
-    section.chosen-block#chosen-second-block
+    section.catalog_list#catalog_list
       div.container
         div.row
           include ../../common.blocks/breadcrumb/breadcrumb
-          div.col-lg-12
-            div.catal_section_title
-              h2 Лодки ПВХ
+          div.catalog_section_title
+            h1 Лодки ПВХ
           div.boats-main-content
             div.boat_buttons_cnt
               div.boat_button
@@ -149,57 +148,172 @@ block main
                 div.white_bar
                   div.grey_round
           div#character-main
-            section.element_grid.row
-              .col-lg-3.col-md-4.col-sm-6.col-xs-6
-                  article.element_grid__el
-                    .prod_preview
-                      span.percent -10%
-                      ul.action_buttons
-                        li.balance_icon
-                          a(href="javascript:void(0)")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                        li.chosen_icon.active
-                          a(href="javascript:void(0)")
-                            svg.icon.heart_fill.active(width="29" height="27")
-                              use(xlink:href="#heart_fill")
-                            svg.icon.heart_stroke(width="30" height="27")
-                              use(xlink:href="#heart_stroke")
-                      #element_grid__el-2.carousel.slide.element_grid__slider(data-ride="carousel")
-                        .carousel-inner
-                          .carousel-item.active.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
-                        a.carousel-control-prev(href="#element_grid__el-2" role="button" data-slide="prev")
-                          .slider_control_prev(aria-hidden="true")
-                            svg.icon(width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Previous
-                        a.carousel-control-next(href="#element_grid__el-2" role="button" data-slide="next")
-                          .slider_control_next(aria-hidden="true")
-                            svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Next
-                      .we_have.charachter_we_have
-                        svg.icon(width="13" height="10")
-                          use(xlink:href="#check")
-                        span
-                          | В наличии
-                          span 3 ед.
-                      p.aside_info.aside_character.top-aside от 1416 рублей в месяц
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                    .prod_char_block
-                      p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
-                      .rate_row.character-rate
+            section.element_grid
+              article.element_grid__el
+                .element_grid__el-content
+                  .prod_preview
+                    span.percent -10%
+                    ul.action_buttons
+                      li.balance_icon
+                        a(href="javascript:void(0)")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                      li.chosen_icon.active
+                        a(href="javascript:void(0)")
+                          svg.icon.heart_fill.active(width="29" height="27")
+                            use(xlink:href="#heart_fill")
+                          svg.icon.heart_stroke(width="30" height="27")
+                            use(xlink:href="#heart_stroke")
+                    #element_grid__el-2.carousel.slide.element_grid__slider(data-ride="carousel")
+                      .carousel-inner
+                        .carousel-item.active.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
+                      a.carousel-control-prev(href="#element_grid__el-2" role="button" data-slide="prev")
+                        .slider_control_prev(aria-hidden="true")
+                          svg.icon(width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Previous
+                      a.carousel-control-next(href="#element_grid__el-2" role="button" data-slide="next")
+                        .slider_control_next(aria-hidden="true")
+                          svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Next
+                    .we_have.charachter_we_have
+                      svg.icon(width="13" height="10")
+                        use(xlink:href="#check")
+                      span
+                        | В наличии
+                        span 3 ед.
+                    p.aside_info.aside_character.top-aside от 1416 рублей в месяц
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                  .prod_char_block
+                    p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
+                    .rate_row.character-rate
+                      ul.star_stat
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                      .rate_rev 45 отзывов
+                    .min_price_block
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .element-character
+                      ul.character-listed
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Вид
+                          span.right-char моторная
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Длина (мм)
+                          span.right-char 3100
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Ширина (мм)
+                          span.right-char 1680
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Диаметр борта (мм)
+                          span.right-char 450
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Масса лодки (кг)
+                          span.right-char 36
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Слань (жесткий пол)
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Киль
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Максимальная мощность мотора (л.с.)
+                          span.right-char 10
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Пассажировместимость (чел)
+                          span.right-char 3
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Гарантия
+                          span.right-char 5 лет
+                      .mob_more_button
+                        a(href="javascript:void(0)") Подробные характеристики
+                      .more-button
+                        a(href="javascript:void(0)") подробнее
+                  .prod_info
+                    .prod_charachter
+                      p.old-price 35 900 р.
+                      p.new-price 30 500 р.
+                      .solo_btn
+                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
+                      .grey-buttons
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                          span
+                            | сравнить
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#heart_stroke")
+                          span
+                            | в избранное
+                    .prod_main
+                      .rate_row
                         ul.star_stat
                           li.active
                             svg.icon.star_stroke(width="15" height="15")
@@ -227,203 +341,203 @@ block main
                             svg.icon.star_fill(width="15" height="15")
                               use(xlink:href="#star_fill")
                         .rate_rev 45 отзывов
-                      .min_price_block
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
-                      .element-character
-                        ul.character-listed
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Вид
-                            span.right-char моторная
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Длина (мм)
-                            span.right-char 3100
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Ширина (мм)
-                            span.right-char 1680
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Диаметр борта (мм)
-                            span.right-char 450
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Масса лодки (кг)
-                            span.right-char 36
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Слань (жесткий пол)
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Киль
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Максимальная мощность мотора (л.с.)
-                            span.right-char 10
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Пассажировместимость (чел)
-                            span.right-char 3
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Гарантия
-                            span.right-char 5 лет
-                        .mob_more_button
-                          a(href="javascript:void(0)") Подробные характеристики
-                        .more-button
-                          a(href="javascript:void(0)") подробнее
-                    .prod_info
-                      .prod_charachter
-                        p.old-price 35 900 р.
-                        p.new-price 30 500 р.
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                        .grey-buttons
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                            span
-                              | сравнить
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#heart_stroke")
-                            span
-                              | в избранное
-                      .prod_main
-                        .rate_row
-                          ul.star_stat
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                          .rate_rev 45 отзывов
-                        h2.prod_title
-                          a(href="#")
-                            | Гладиатор (Gladiator) E 350 под мотор
-                            | красно-черная
-                        .prod_price_block
-                          span(data-oldprice="35 900 р.") 30 500 р.
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                        p.aside_info от 1416 рублей в месяц
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
-                            | купить и
-                            | вернуть 5%
-                            svg.icon(width="16" height="11")
-                              use(xlink:href="#arrow-long")
-                    .prod-info-mobile
-                      a.more-charachter(href="#") Подробные характеристики
-                      .prod_info.aside_info.character_info.prod-mobile-btn
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                      p.aside_info.aside_character от 1416 рублей в месяц
-                      div
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
+                      h2.prod_title
+                        a(href="#")
+                          | Гладиатор (Gladiator) E 350 под мотор
+                          | красно-черная
+                      .prod_price_block
+                        span(data-oldprice="35 900 р.") 30 500 р.
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                      p.aside_info от 1416 рублей в месяц
+                      .solo_btn
+                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
+                          | купить и
+                          | вернуть 5%
+                          svg.icon(width="16" height="11")
+                            use(xlink:href="#arrow-long")
+                  .prod-info-mobile
+                    a.more-charachter(href="#") Подробные характеристики
+                    .prod_info.aside_info.character_info.prod-mobile-btn
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                    p.aside_info.aside_character от 1416 рублей в месяц
+                    div
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .solo_btn
+                      a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+              article.element_grid__el
+                .element_grid__el-content
+                  .prod_preview
+                    span.percent -10%
+                    ul.action_buttons
+                      li.balance_icon
+                        a(href="javascript:void(0)")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                      li.chosen_icon.active
+                        a(href="javascript:void(0)")
+                          svg.icon.heart_fill.active(width="29" height="27")
+                            use(xlink:href="#heart_fill")
+                          svg.icon.heart_stroke(width="30" height="27")
+                            use(xlink:href="#heart_stroke")
+                    #element_grid__el-2.carousel.slide.element_grid__slider(data-ride="carousel")
+                      .carousel-inner
+                        .carousel-item.active.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
+                      a.carousel-control-prev(href="#element_grid__el-2" role="button" data-slide="prev")
+                        .slider_control_prev(aria-hidden="true")
+                          svg.icon(width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Previous
+                      a.carousel-control-next(href="#element_grid__el-2" role="button" data-slide="next")
+                        .slider_control_next(aria-hidden="true")
+                          svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Next
+                    .we_have.charachter_we_have
+                      svg.icon(width="13" height="10")
+                        use(xlink:href="#check")
+                      span
+                        | В наличии
+                        span 3 ед.
+                    p.aside_info.aside_character.top-aside от 1416 рублей в месяц
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                  .prod_char_block
+                    p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
+                    .rate_row.character-rate
+                      ul.star_stat
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                      .rate_rev 45 отзывов
+                    .min_price_block
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .element-character
+                      ul.character-listed
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Вид
+                          span.right-char моторная
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Длина (мм)
+                          span.right-char 3100
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Ширина (мм)
+                          span.right-char 1680
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Диаметр борта (мм)
+                          span.right-char 450
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Масса лодки (кг)
+                          span.right-char 36
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Слань (жесткий пол)
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Киль
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Максимальная мощность мотора (л.с.)
+                          span.right-char 10
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Пассажировместимость (чел)
+                          span.right-char 3
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Гарантия
+                          span.right-char 5 лет
+                      .mob_more_button
+                        a(href="javascript:void(0)") Подробные характеристики
+                      .more-button
+                        a(href="javascript:void(0)") подробнее
+                  .prod_info
+                    .prod_charachter
+                      p.old-price 35 900 р.
+                      p.new-price 30 500 р.
                       .solo_btn
                         a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-              .col-lg-3.col-md-4.col-sm-6.col-xs-6
-                  article.element_grid__el
-                    .prod_preview
-                      span.percent -10%
-                      ul.action_buttons
-                        li.balance_icon
-                          a(href="javascript:void(0)")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                        li.chosen_icon.active
-                          a(href="javascript:void(0)")
-                            svg.icon.heart_fill.active(width="29" height="27")
-                              use(xlink:href="#heart_fill")
-                            svg.icon.heart_stroke(width="30" height="27")
-                              use(xlink:href="#heart_stroke")
-                      #element_grid__el-7.carousel.slide.element_grid__slider(data-ride="carousel")
-                        .carousel-inner
-                          .carousel-item.active.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
-                        a.carousel-control-prev(href="#element_grid__el-7" role="button" data-slide="prev")
-                          .slider_control_prev(aria-hidden="true")
-                            svg.icon(width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Previous
-                        a.carousel-control-next(href="#element_grid__el-7" role="button" data-slide="next")
-                          .slider_control_next(aria-hidden="true")
-                            svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Next
-                      .we_have.charachter_we_have
-                        svg.icon(width="13" height="10")
-                          use(xlink:href="#check")
-                        span
-                          | В наличии
-                          span 3 ед.
-                      p.aside_info.aside_character.top-aside от 1416 рублей в месяц
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                    .prod_char_block
-                      p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
-                      .rate_row.character-rate
+                      .grey-buttons
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                          span
+                            | сравнить
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#heart_stroke")
+                          span
+                            | в избранное
+                    .prod_main
+                      .rate_row
                         ul.star_stat
                           li.active
                             svg.icon.star_stroke(width="15" height="15")
@@ -451,203 +565,203 @@ block main
                             svg.icon.star_fill(width="15" height="15")
                               use(xlink:href="#star_fill")
                         .rate_rev 45 отзывов
-                      .min_price_block
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
-                      .element-character
-                        ul.character-listed
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Вид
-                            span.right-char моторная
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Длина (мм)
-                            span.right-char 3100
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Ширина (мм)
-                            span.right-char 1680
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Диаметр борта (мм)
-                            span.right-char 450
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Масса лодки (кг)
-                            span.right-char 36
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Слань (жесткий пол)
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Киль
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Максимальная мощность мотора (л.с.)
-                            span.right-char 10
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Пассажировместимость (чел)
-                            span.right-char 3
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Гарантия
-                            span.right-char 5 лет
-                        .mob_more_button
-                          a(href="javascript:void(0)") Подробные характеристики
-                        .more-button
-                          a(href="javascript:void(0)") подробнее
-                    .prod_info
-                      .prod_charachter
-                        p.old-price 35 900 р.
-                        p.new-price 30 500 р.
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                        .grey-buttons
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                            span
-                              | сравнить
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#heart_stroke")
-                            span
-                              | в избранное
-                      .prod_main
-                        .rate_row
-                          ul.star_stat
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                          .rate_rev 45 отзывов
-                        h2.prod_title
-                          a(href="#")
-                            | Гладиатор (Gladiator) E 350 под мотор
-                            | красно-черная
-                        .prod_price_block
-                          span(data-oldprice="35 900 р.") 30 500 р.
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                        p.aside_info от 1416 рублей в месяц
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
-                            | купить и
-                            | вернуть 5%
-                            svg.icon(width="16" height="11")
-                              use(xlink:href="#arrow-long")
-                    .prod-info-mobile
-                      a.more-charachter(href="#") Подробные характеристики
-                      .prod_info.aside_info.character_info.prod-mobile-btn
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                      p.aside_info.aside_character от 1416 рублей в месяц
-                      div
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
+                      h2.prod_title
+                        a(href="#")
+                          | Гладиатор (Gladiator) E 350 под мотор
+                          | красно-черная
+                      .prod_price_block
+                        span(data-oldprice="35 900 р.") 30 500 р.
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                      p.aside_info от 1416 рублей в месяц
+                      .solo_btn
+                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
+                          | купить и
+                          | вернуть 5%
+                          svg.icon(width="16" height="11")
+                            use(xlink:href="#arrow-long")
+                  .prod-info-mobile
+                    a.more-charachter(href="#") Подробные характеристики
+                    .prod_info.aside_info.character_info.prod-mobile-btn
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                    p.aside_info.aside_character от 1416 рублей в месяц
+                    div
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .solo_btn
+                      a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+              article.element_grid__el
+                .element_grid__el-content
+                  .prod_preview
+                    span.percent -10%
+                    ul.action_buttons
+                      li.balance_icon
+                        a(href="javascript:void(0)")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                      li.chosen_icon.active
+                        a(href="javascript:void(0)")
+                          svg.icon.heart_fill.active(width="29" height="27")
+                            use(xlink:href="#heart_fill")
+                          svg.icon.heart_stroke(width="30" height="27")
+                            use(xlink:href="#heart_stroke")
+                    #element_grid__el-2.carousel.slide.element_grid__slider(data-ride="carousel")
+                      .carousel-inner
+                        .carousel-item.active.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
+                      a.carousel-control-prev(href="#element_grid__el-2" role="button" data-slide="prev")
+                        .slider_control_prev(aria-hidden="true")
+                          svg.icon(width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Previous
+                      a.carousel-control-next(href="#element_grid__el-2" role="button" data-slide="next")
+                        .slider_control_next(aria-hidden="true")
+                          svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Next
+                    .we_have.charachter_we_have
+                      svg.icon(width="13" height="10")
+                        use(xlink:href="#check")
+                      span
+                        | В наличии
+                        span 3 ед.
+                    p.aside_info.aside_character.top-aside от 1416 рублей в месяц
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                  .prod_char_block
+                    p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
+                    .rate_row.character-rate
+                      ul.star_stat
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                      .rate_rev 45 отзывов
+                    .min_price_block
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .element-character
+                      ul.character-listed
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Вид
+                          span.right-char моторная
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Длина (мм)
+                          span.right-char 3100
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Ширина (мм)
+                          span.right-char 1680
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Диаметр борта (мм)
+                          span.right-char 450
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Масса лодки (кг)
+                          span.right-char 36
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Слань (жесткий пол)
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Киль
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Максимальная мощность мотора (л.с.)
+                          span.right-char 10
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Пассажировместимость (чел)
+                          span.right-char 3
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Гарантия
+                          span.right-char 5 лет
+                      .mob_more_button
+                        a(href="javascript:void(0)") Подробные характеристики
+                      .more-button
+                        a(href="javascript:void(0)") подробнее
+                  .prod_info
+                    .prod_charachter
+                      p.old-price 35 900 р.
+                      p.new-price 30 500 р.
                       .solo_btn
                         a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-              .col-lg-3.col-md-4.col-sm-6.col-xs-6
-                  article.element_grid__el
-                    .prod_preview
-                      span.percent -10%
-                      ul.action_buttons
-                        li.balance_icon
-                          a(href="javascript:void(0)")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                        li.chosen_icon.active
-                          a(href="javascript:void(0)")
-                            svg.icon.heart_fill.active(width="29" height="27")
-                              use(xlink:href="#heart_fill")
-                            svg.icon.heart_stroke(width="30" height="27")
-                              use(xlink:href="#heart_stroke")
-                      #element_grid__el-3.carousel.slide.element_grid__slider(data-ride="carousel")
-                        .carousel-inner
-                          .carousel-item.active.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
-                        a.carousel-control-prev(href="#element_grid__el-3" role="button" data-slide="prev")
-                          .slider_control_prev(aria-hidden="true")
-                            svg.icon(width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Previous
-                        a.carousel-control-next(href="#element_grid__el-3" role="button" data-slide="next")
-                          .slider_control_next(aria-hidden="true")
-                            svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Next
-                      .we_have.charachter_we_have
-                        svg.icon(width="13" height="10")
-                          use(xlink:href="#check")
-                        span
-                          | В наличии
-                          span 3 ед.
-                      p.aside_info.aside_character.top-aside от 1416 рублей в месяц
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                    .prod_char_block
-                      p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
-                      .rate_row.character-rate
+                      .grey-buttons
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                          span
+                            | сравнить
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#heart_stroke")
+                          span
+                            | в избранное
+                    .prod_main
+                      .rate_row
                         ul.star_stat
                           li.active
                             svg.icon.star_stroke(width="15" height="15")
@@ -675,203 +789,203 @@ block main
                             svg.icon.star_fill(width="15" height="15")
                               use(xlink:href="#star_fill")
                         .rate_rev 45 отзывов
-                      .min_price_block
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
-                      .element-character
-                        ul.character-listed
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Вид
-                            span.right-char моторная
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Длина (мм)
-                            span.right-char 3100
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Ширина (мм)
-                            span.right-char 1680
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Диаметр борта (мм)
-                            span.right-char 450
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Масса лодки (кг)
-                            span.right-char 36
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Слань (жесткий пол)
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Киль
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Максимальная мощность мотора (л.с.)
-                            span.right-char 10
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Пассажировместимость (чел)
-                            span.right-char 3
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Гарантия
-                            span.right-char 5 лет
-                        .mob_more_button
-                          a(href="javascript:void(0)") Подробные характеристики
-                        .more-button
-                          a(href="javascript:void(0)") подробнее
-                    .prod_info
-                      .prod_charachter
-                        p.old-price 35 900 р.
-                        p.new-price 30 500 р.
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                        .grey-buttons
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                            span
-                              | сравнить
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#heart_stroke")
-                            span
-                              | в избранное
-                      .prod_main
-                        .rate_row
-                          ul.star_stat
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                          .rate_rev 45 отзывов
-                        h2.prod_title
-                          a(href="#")
-                            | Гладиатор (Gladiator) E 350 под мотор
-                            | красно-черная
-                        .prod_price_block
-                          span(data-oldprice="35 900 р.") 30 500 р.
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                        p.aside_info от 1416 рублей в месяц
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
-                            | купить и
-                            | вернуть 5%
-                            svg.icon(width="16" height="11")
-                              use(xlink:href="#arrow-long")
-                    .prod-info-mobile
-                      a.more-charachter(href="#") Подробные характеристики
-                      .prod_info.aside_info.character_info.prod-mobile-btn
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                      p.aside_info.aside_character от 1416 рублей в месяц
-                      div
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
+                      h2.prod_title
+                        a(href="#")
+                          | Гладиатор (Gladiator) E 350 под мотор
+                          | красно-черная
+                      .prod_price_block
+                        span(data-oldprice="35 900 р.") 30 500 р.
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                      p.aside_info от 1416 рублей в месяц
+                      .solo_btn
+                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
+                          | купить и
+                          | вернуть 5%
+                          svg.icon(width="16" height="11")
+                            use(xlink:href="#arrow-long")
+                  .prod-info-mobile
+                    a.more-charachter(href="#") Подробные характеристики
+                    .prod_info.aside_info.character_info.prod-mobile-btn
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                    p.aside_info.aside_character от 1416 рублей в месяц
+                    div
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .solo_btn
+                      a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+              article.element_grid__el
+                .element_grid__el-content
+                  .prod_preview
+                    span.percent -10%
+                    ul.action_buttons
+                      li.balance_icon
+                        a(href="javascript:void(0)")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                      li.chosen_icon.active
+                        a(href="javascript:void(0)")
+                          svg.icon.heart_fill.active(width="29" height="27")
+                            use(xlink:href="#heart_fill")
+                          svg.icon.heart_stroke(width="30" height="27")
+                            use(xlink:href="#heart_stroke")
+                    #element_grid__el-2.carousel.slide.element_grid__slider(data-ride="carousel")
+                      .carousel-inner
+                        .carousel-item.active.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
+                      a.carousel-control-prev(href="#element_grid__el-2" role="button" data-slide="prev")
+                        .slider_control_prev(aria-hidden="true")
+                          svg.icon(width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Previous
+                      a.carousel-control-next(href="#element_grid__el-2" role="button" data-slide="next")
+                        .slider_control_next(aria-hidden="true")
+                          svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Next
+                    .we_have.charachter_we_have
+                      svg.icon(width="13" height="10")
+                        use(xlink:href="#check")
+                      span
+                        | В наличии
+                        span 3 ед.
+                    p.aside_info.aside_character.top-aside от 1416 рублей в месяц
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                  .prod_char_block
+                    p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
+                    .rate_row.character-rate
+                      ul.star_stat
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                      .rate_rev 45 отзывов
+                    .min_price_block
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .element-character
+                      ul.character-listed
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Вид
+                          span.right-char моторная
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Длина (мм)
+                          span.right-char 3100
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Ширина (мм)
+                          span.right-char 1680
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Диаметр борта (мм)
+                          span.right-char 450
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Масса лодки (кг)
+                          span.right-char 36
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Слань (жесткий пол)
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Киль
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Максимальная мощность мотора (л.с.)
+                          span.right-char 10
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Пассажировместимость (чел)
+                          span.right-char 3
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Гарантия
+                          span.right-char 5 лет
+                      .mob_more_button
+                        a(href="javascript:void(0)") Подробные характеристики
+                      .more-button
+                        a(href="javascript:void(0)") подробнее
+                  .prod_info
+                    .prod_charachter
+                      p.old-price 35 900 р.
+                      p.new-price 30 500 р.
                       .solo_btn
                         a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-              .col-lg-3.col-md-4.col-sm-6.col-xs-6
-                  article.element_grid__el
-                    .prod_preview
-                      span.percent -10%
-                      ul.action_buttons
-                        li.balance_icon
-                          a(href="javascript:void(0)")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                        li.chosen_icon.active
-                          a(href="javascript:void(0)")
-                            svg.icon.heart_fill.active(width="29" height="27")
-                              use(xlink:href="#heart_fill")
-                            svg.icon.heart_stroke(width="30" height="27")
-                              use(xlink:href="#heart_stroke")
-                      #element_grid__el-4.carousel.slide.element_grid__slider(data-ride="carousel")
-                        .carousel-inner
-                          .carousel-item.active.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
-                        a.carousel-control-prev(href="#element_grid__el-4" role="button" data-slide="prev")
-                          .slider_control_prev(aria-hidden="true")
-                            svg.icon(width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Previous
-                        a.carousel-control-next(href="#element_grid__el-4" role="button" data-slide="next")
-                          .slider_control_next(aria-hidden="true")
-                            svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Next
-                      .we_have.charachter_we_have
-                        svg.icon(width="13" height="10")
-                          use(xlink:href="#check")
-                        span
-                          | В наличии
-                          span 3 ед.
-                      p.aside_info.aside_character.top-aside от 1416 рублей в месяц
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                    .prod_char_block
-                      p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
-                      .rate_row.character-rate
+                      .grey-buttons
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                          span
+                            | сравнить
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#heart_stroke")
+                          span
+                            | в избранное
+                    .prod_main
+                      .rate_row
                         ul.star_stat
                           li.active
                             svg.icon.star_stroke(width="15" height="15")
@@ -899,203 +1013,203 @@ block main
                             svg.icon.star_fill(width="15" height="15")
                               use(xlink:href="#star_fill")
                         .rate_rev 45 отзывов
-                      .min_price_block
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
-                      .element-character
-                        ul.character-listed
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Вид
-                            span.right-char моторная
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Длина (мм)
-                            span.right-char 3100
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Ширина (мм)
-                            span.right-char 1680
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Диаметр борта (мм)
-                            span.right-char 450
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Масса лодки (кг)
-                            span.right-char 36
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Слань (жесткий пол)
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Киль
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Максимальная мощность мотора (л.с.)
-                            span.right-char 10
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Пассажировместимость (чел)
-                            span.right-char 3
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Гарантия
-                            span.right-char 5 лет
-                        .mob_more_button
-                          a(href="javascript:void(0)") Подробные характеристики
-                        .more-button
-                          a(href="javascript:void(0)") подробнее
-                    .prod_info
-                      .prod_charachter
-                        p.old-price 35 900 р.
-                        p.new-price 30 500 р.
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                        .grey-buttons
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                            span
-                              | сравнить
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#heart_stroke")
-                            span
-                              | в избранное
-                      .prod_main
-                        .rate_row
-                          ul.star_stat
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                          .rate_rev 45 отзывов
-                        h2.prod_title
-                          a(href="#")
-                            | Гладиатор (Gladiator) E 350 под мотор
-                            | красно-черная
-                        .prod_price_block
-                          span(data-oldprice="35 900 р.") 30 500 р.
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                        p.aside_info от 1416 рублей в месяц
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
-                            | купить и
-                            | вернуть 5%
-                            svg.icon(width="16" height="11")
-                              use(xlink:href="#arrow-long")
-                    .prod-info-mobile
-                      a.more-charachter(href="#") Подробные характеристики
-                      .prod_info.aside_info.character_info.prod-mobile-btn
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                      p.aside_info.aside_character от 1416 рублей в месяц
-                      div
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
+                      h2.prod_title
+                        a(href="#")
+                          | Гладиатор (Gladiator) E 350 под мотор
+                          | красно-черная
+                      .prod_price_block
+                        span(data-oldprice="35 900 р.") 30 500 р.
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                      p.aside_info от 1416 рублей в месяц
+                      .solo_btn
+                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
+                          | купить и
+                          | вернуть 5%
+                          svg.icon(width="16" height="11")
+                            use(xlink:href="#arrow-long")
+                  .prod-info-mobile
+                    a.more-charachter(href="#") Подробные характеристики
+                    .prod_info.aside_info.character_info.prod-mobile-btn
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                    p.aside_info.aside_character от 1416 рублей в месяц
+                    div
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .solo_btn
+                      a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+              article.element_grid__el
+                .element_grid__el-content
+                  .prod_preview
+                    span.percent -10%
+                    ul.action_buttons
+                      li.balance_icon
+                        a(href="javascript:void(0)")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                      li.chosen_icon.active
+                        a(href="javascript:void(0)")
+                          svg.icon.heart_fill.active(width="29" height="27")
+                            use(xlink:href="#heart_fill")
+                          svg.icon.heart_stroke(width="30" height="27")
+                            use(xlink:href="#heart_stroke")
+                    #element_grid__el-2.carousel.slide.element_grid__slider(data-ride="carousel")
+                      .carousel-inner
+                        .carousel-item.active.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
+                      a.carousel-control-prev(href="#element_grid__el-2" role="button" data-slide="prev")
+                        .slider_control_prev(aria-hidden="true")
+                          svg.icon(width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Previous
+                      a.carousel-control-next(href="#element_grid__el-2" role="button" data-slide="next")
+                        .slider_control_next(aria-hidden="true")
+                          svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Next
+                    .we_have.charachter_we_have
+                      svg.icon(width="13" height="10")
+                        use(xlink:href="#check")
+                      span
+                        | В наличии
+                        span 3 ед.
+                    p.aside_info.aside_character.top-aside от 1416 рублей в месяц
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                  .prod_char_block
+                    p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
+                    .rate_row.character-rate
+                      ul.star_stat
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                      .rate_rev 45 отзывов
+                    .min_price_block
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .element-character
+                      ul.character-listed
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Вид
+                          span.right-char моторная
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Длина (мм)
+                          span.right-char 3100
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Ширина (мм)
+                          span.right-char 1680
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Диаметр борта (мм)
+                          span.right-char 450
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Масса лодки (кг)
+                          span.right-char 36
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Слань (жесткий пол)
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Киль
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Максимальная мощность мотора (л.с.)
+                          span.right-char 10
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Пассажировместимость (чел)
+                          span.right-char 3
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Гарантия
+                          span.right-char 5 лет
+                      .mob_more_button
+                        a(href="javascript:void(0)") Подробные характеристики
+                      .more-button
+                        a(href="javascript:void(0)") подробнее
+                  .prod_info
+                    .prod_charachter
+                      p.old-price 35 900 р.
+                      p.new-price 30 500 р.
                       .solo_btn
                         a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-              .col-lg-3.col-md-4.col-sm-6.col-xs-6
-                  article.element_grid__el
-                    .prod_preview
-                      span.percent -10%
-                      ul.action_buttons
-                        li.balance_icon
-                          a(href="javascript:void(0)")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                        li.chosen_icon.active
-                          a(href="javascript:void(0)")
-                            svg.icon.heart_fill.active(width="29" height="27")
-                              use(xlink:href="#heart_fill")
-                            svg.icon.heart_stroke(width="30" height="27")
-                              use(xlink:href="#heart_stroke")
-                      #element_grid__el-5.carousel.slide.element_grid__slider(data-ride="carousel")
-                        .carousel-inner
-                          .carousel-item.active.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
-                        a.carousel-control-prev(href="#element_grid__el-5" role="button" data-slide="prev")
-                          .slider_control_prev(aria-hidden="true")
-                            svg.icon(width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Previous
-                        a.carousel-control-next(href="#element_grid__el-5" role="button" data-slide="next")
-                          .slider_control_next(aria-hidden="true")
-                            svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Next
-                      .we_have.charachter_we_have
-                        svg.icon(width="13" height="10")
-                          use(xlink:href="#check")
-                        span
-                          | В наличии
-                          span 3 ед.
-                      p.aside_info.aside_character.top-aside от 1416 рублей в месяц
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                    .prod_char_block
-                      p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
-                      .rate_row.character-rate
+                      .grey-buttons
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                          span
+                            | сравнить
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#heart_stroke")
+                          span
+                            | в избранное
+                    .prod_main
+                      .rate_row
                         ul.star_stat
                           li.active
                             svg.icon.star_stroke(width="15" height="15")
@@ -1123,203 +1237,203 @@ block main
                             svg.icon.star_fill(width="15" height="15")
                               use(xlink:href="#star_fill")
                         .rate_rev 45 отзывов
-                      .min_price_block
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
-                      .element-character
-                        ul.character-listed
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Вид
-                            span.right-char моторная
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Длина (мм)
-                            span.right-char 3100
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Ширина (мм)
-                            span.right-char 1680
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Диаметр борта (мм)
-                            span.right-char 450
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Масса лодки (кг)
-                            span.right-char 36
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Слань (жесткий пол)
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Киль
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Максимальная мощность мотора (л.с.)
-                            span.right-char 10
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Пассажировместимость (чел)
-                            span.right-char 3
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Гарантия
-                            span.right-char 5 лет
-                        .mob_more_button
-                          a(href="javascript:void(0)") Подробные характеристики
-                        .more-button
-                          a(href="javascript:void(0)") подробнее
-                    .prod_info
-                      .prod_charachter
-                        p.old-price 35 900 р.
-                        p.new-price 30 500 р.
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                        .grey-buttons
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                            span
-                              | сравнить
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#heart_stroke")
-                            span
-                              | в избранное
-                      .prod_main
-                        .rate_row
-                          ul.star_stat
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                          .rate_rev 45 отзывов
-                        h2.prod_title
-                          a(href="#")
-                            | Гладиатор (Gladiator) E 350 под мотор
-                            | красно-черная
-                        .prod_price_block
-                          span(data-oldprice="35 900 р.") 30 500 р.
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                        p.aside_info от 1416 рублей в месяц
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
-                            | купить и
-                            | вернуть 5%
-                            svg.icon(width="16" height="11")
-                              use(xlink:href="#arrow-long")
-                    .prod-info-mobile
-                      a.more-charachter(href="#") Подробные характеристики
-                      .prod_info.aside_info.character_info.prod-mobile-btn
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                      p.aside_info.aside_character от 1416 рублей в месяц
-                      div
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
+                      h2.prod_title
+                        a(href="#")
+                          | Гладиатор (Gladiator) E 350 под мотор
+                          | красно-черная
+                      .prod_price_block
+                        span(data-oldprice="35 900 р.") 30 500 р.
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                      p.aside_info от 1416 рублей в месяц
+                      .solo_btn
+                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
+                          | купить и
+                          | вернуть 5%
+                          svg.icon(width="16" height="11")
+                            use(xlink:href="#arrow-long")
+                  .prod-info-mobile
+                    a.more-charachter(href="#") Подробные характеристики
+                    .prod_info.aside_info.character_info.prod-mobile-btn
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                    p.aside_info.aside_character от 1416 рублей в месяц
+                    div
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .solo_btn
+                      a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+              article.element_grid__el
+                .element_grid__el-content
+                  .prod_preview
+                    span.percent -10%
+                    ul.action_buttons
+                      li.balance_icon
+                        a(href="javascript:void(0)")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                      li.chosen_icon.active
+                        a(href="javascript:void(0)")
+                          svg.icon.heart_fill.active(width="29" height="27")
+                            use(xlink:href="#heart_fill")
+                          svg.icon.heart_stroke(width="30" height="27")
+                            use(xlink:href="#heart_stroke")
+                    #element_grid__el-2.carousel.slide.element_grid__slider(data-ride="carousel")
+                      .carousel-inner
+                        .carousel-item.active.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
+                        .carousel-item.element_grid__slider_el
+                          .slider_image
+                            img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
+                      a.carousel-control-prev(href="#element_grid__el-2" role="button" data-slide="prev")
+                        .slider_control_prev(aria-hidden="true")
+                          svg.icon(width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Previous
+                      a.carousel-control-next(href="#element_grid__el-2" role="button" data-slide="next")
+                        .slider_control_next(aria-hidden="true")
+                          svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
+                            use(xlink:href="#chevron")
+                        span.sr-only Next
+                    .we_have.charachter_we_have
+                      svg.icon(width="13" height="10")
+                        use(xlink:href="#check")
+                      span
+                        | В наличии
+                        span 3 ед.
+                    p.aside_info.aside_character.top-aside от 1416 рублей в месяц
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                  .prod_char_block
+                    p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
+                    .rate_row.character-rate
+                      ul.star_stat
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li.active
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                        li
+                          svg.icon.star_stroke(width="15" height="15")
+                            use(xlink:href="#star_stroke")
+                          svg.icon.star_fill(width="15" height="15")
+                            use(xlink:href="#star_fill")
+                      .rate_rev 45 отзывов
+                    .min_price_block
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .element-character
+                      ul.character-listed
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Вид
+                          span.right-char моторная
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Длина (мм)
+                          span.right-char 3100
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Ширина (мм)
+                          span.right-char 1680
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Диаметр борта (мм)
+                          span.right-char 450
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Масса лодки (кг)
+                          span.right-char 36
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Слань (жесткий пол)
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Киль
+                          span.right-char есть
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                           Максимальная мощность мотора (л.с.)
+                          span.right-char 10
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Пассажировместимость (чел)
+                          span.right-char 3
+                        li
+                          span.quest_icon
+                            svg.icon
+                              use(xlink:href="#question_icon")
+                            |                         Гарантия
+                          span.right-char 5 лет
+                      .mob_more_button
+                        a(href="javascript:void(0)") Подробные характеристики
+                      .more-button
+                        a(href="javascript:void(0)") подробнее
+                  .prod_info
+                    .prod_charachter
+                      p.old-price 35 900 р.
+                      p.new-price 30 500 р.
                       .solo_btn
                         a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-              .col-lg-3.col-md-4.col-sm-6.col-xs-6
-                  article.element_grid__el
-                    .prod_preview
-                      span.percent -10%
-                      ul.action_buttons
-                        li.balance_icon
-                          a(href="javascript:void(0)")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                        li.chosen_icon.active
-                          a(href="javascript:void(0)")
-                            svg.icon.heart_fill.active(width="29" height="27")
-                              use(xlink:href="#heart_fill")
-                            svg.icon.heart_stroke(width="30" height="27")
-                              use(xlink:href="#heart_stroke")
-                      #element_grid__el-6.carousel.slide.element_grid__slider(data-ride="carousel")
-                        .carousel-inner
-                          .carousel-item.active.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="First slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Second slide")
-                          .carousel-item.element_grid__slider_el
-                            .slider_image
-                              img.d-block.w-100(src="../img/grid_el.png" alt="Third slide")
-                        a.carousel-control-prev(href="#element_grid__el-6" role="button" data-slide="prev")
-                          .slider_control_prev(aria-hidden="true")
-                            svg.icon(width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Previous
-                        a.carousel-control-next(href="#element_grid__el-6" role="button" data-slide="next")
-                          .slider_control_next(aria-hidden="true")
-                            svg.icon(style="transform: rotateY(180deg)" width="11" height="18")
-                              use(xlink:href="#chevron")
-                          span.sr-only Next
-                      .we_have.charachter_we_have
-                        svg.icon(width="13" height="10")
-                          use(xlink:href="#check")
-                        span
-                          | В наличии
-                          span 3 ед.
-                      p.aside_info.aside_character.top-aside от 1416 рублей в месяц
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                    .prod_char_block
-                      p.glat_title Гладиатор (Gladiator) E 350 под мотор красно-черная
-                      .rate_row.character-rate
+                      .grey-buttons
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#balance")
+                          span
+                            | сравнить
+                        button(type="button")
+                          svg.icon(width="29" height="27")
+                            use(xlink:href="#heart_stroke")
+                          span
+                            | в избранное
+                    .prod_main
+                      .rate_row
                         ul.star_stat
                           li.active
                             svg.icon.star_stroke(width="15" height="15")
@@ -1347,153 +1461,38 @@ block main
                             svg.icon.star_fill(width="15" height="15")
                               use(xlink:href="#star_fill")
                         .rate_rev 45 отзывов
-                      .min_price_block
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
-                      .element-character
-                        ul.character-listed
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Вид
-                            span.right-char моторная
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Длина (мм)
-                            span.right-char 3100
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Ширина (мм)
-                            span.right-char 1680
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Диаметр борта (мм)
-                            span.right-char 450
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Масса лодки (кг)
-                            span.right-char 36
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Слань (жесткий пол)
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Киль
-                            span.right-char есть
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                           Максимальная мощность мотора (л.с.)
-                            span.right-char 10
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Пассажировместимость (чел)
-                            span.right-char 3
-                          li
-                            span.quest_icon
-                              svg.icon
-                                use(xlink:href="#question_icon")
-                              |                         Гарантия
-                            span.right-char 5 лет
-                        .mob_more_button
-                          a(href="javascript:void(0)") Подробные характеристики
-                        .more-button
-                          a(href="javascript:void(0)") подробнее
-                    .prod_info
-                      .prod_charachter
-                        p.old-price 35 900 р.
-                        p.new-price 30 500 р.
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                        .grey-buttons
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#balance")
-                            span
-                              | сравнить
-                          button(type="button")
-                            svg.icon(width="29" height="27")
-                              use(xlink:href="#heart_stroke")
-                            span
-                              | в избранное
-                      .prod_main
-                        .rate_row
-                          ul.star_stat
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li.active
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                            li
-                              svg.icon.star_stroke(width="15" height="15")
-                                use(xlink:href="#star_stroke")
-                              svg.icon.star_fill(width="15" height="15")
-                                use(xlink:href="#star_fill")
-                          .rate_rev 45 отзывов
-                        h2.prod_title
-                          a(href="#")
-                            | Гладиатор (Gladiator) E 350 под мотор
-                            | красно-черная
-                        .prod_price_block
-                          span(data-oldprice="35 900 р.") 30 500 р.
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                        p.aside_info от 1416 рублей в месяц
-                        .solo_btn
-                          a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
-                            | купить и
-                            | вернуть 5%
-                            svg.icon(width="16" height="11")
-                              use(xlink:href="#arrow-long")
-                    .prod-info-mobile
-                      a.more-charachter(href="#") Подробные характеристики
-                      .prod_info.aside_info.character_info.prod-mobile-btn
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
-                      p.aside_info.aside_character от 1416 рублей в месяц
-                      div
-                        p.new-price 30 500 р.
-                        p.old-price 35 900 р.
+                      h2.prod_title
+                        a(href="#")
+                          | Гладиатор (Gladiator) E 350 под мотор
+                          | красно-черная
+                      .prod_price_block
+                        span(data-oldprice="35 900 р.") 30 500 р.
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                      p.aside_info от 1416 рублей в месяц
                       .solo_btn
-                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
-                      .prod_info.aside_info.character_info
-                        .tween_btns
-                          button.button-blue-bg(type="button") купить в кредит
-                          button.button-blue-outline(type="button") в корзину
+                        a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)")
+                          | купить и
+                          | вернуть 5%
+                          svg.icon(width="16" height="11")
+                            use(xlink:href="#arrow-long")
+                  .prod-info-mobile
+                    a.more-charachter(href="#") Подробные характеристики
+                    .prod_info.aside_info.character_info.prod-mobile-btn
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
+                    p.aside_info.aside_character от 1416 рублей в месяц
+                    div
+                      p.new-price 30 500 р.
+                      p.old-price 35 900 р.
+                    .solo_btn
+                      a.button.button--fill_btn.button--fill_btn_yellow.grid_btn(href="javascript:void(0)") купить и вернуть 5%
+                    .prod_info.aside_info.character_info
+                      .tween_btns
+                        button.button-blue-bg(type="button") купить в кредит
+                        button.button-blue-outline(type="button") в корзину
             #filterSlider.filter.display
               .filter_mob_action
                 h2 Фильтр
