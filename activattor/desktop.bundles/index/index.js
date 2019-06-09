@@ -34,7 +34,7 @@ $(document).ready(function(){
         {
           breakpoint: 1300,
           settings: {
-            slidesToShow: 7,
+            slidesToShow: 6,
             slidesToScroll: 1,
             variableWidth: false,
             arrow: false,
@@ -248,7 +248,7 @@ $(document).ready(function(){
         }
       ]
     });
-  
+
     $('ul.nav-pills .slick-slide:nth-child(1)').addClass('active');
     $('ul.nav-pills').on('click', '.slick-slide:not(.active)', function() {
       $(this)
@@ -256,4 +256,3 @@ $(document).ready(function(){
         .closest('section.quick-view-block').find('div.tab-pane').removeClass('active').removeClass('show').eq($(this).index()).addClass('active').addClass('show');
     });
   });
-  
