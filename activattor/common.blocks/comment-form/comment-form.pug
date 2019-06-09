@@ -1,5 +1,41 @@
-h3.title_h3 Комментарии
+h3.title_h3.comment-form__title Комментарии
 .comment-form
-  h4.title_h4 Ваш комментарий
+  h4.title_h3 Ваш комментарий
   textarea(name='comment' placeholder="Введите ваш комментрий").w-100
-  input(type="text" name='name' placeholder='Имя').w-50
+  .comment-form__agreements-wrapp
+    .comment-form__input-wrapp
+      input(type="text" name='name' placeholder='Имя').comment-form__input
+    .comment-form__attention
+      p 
+        span Внимание! 
+        | Публикация производится только после предварительной модерации
+        div.comment-form__confident-pc
+          input(type="checkbox" id="confident" name="confident" checked)
+          label(for="confident")
+            span
+            | Нажимая на кнопку, вы даете согласие на обработку своих персональных данных в соотвествии с
+            a(href="#") политикой конфиденциальности
+      .comment-form__btn-send-wrap
+        a.btn-theme_sanny.btn-size_s(href="#") ОСТАВИТЬ КОММЕНТАРИЙ
+      div.comment-form__confident-mob
+        input(type="checkbox" id="confident" name="confident" checked)
+        label(for="confident")
+          span Нажимая на кнопку, вы даете согласие на обработку своих персональных данных в соотвествии с
+            a(href="#") политикой конфиденциальности
+.comment-form__comment-wrapp
+  .comment-form__comment
+    .comment-form__fio
+      .comment-form__date-mob 04.01.2019
+      div Александр Степанов
+      .comment-form__date 04.01.2019
+    .comment-form__content Лодка бомба! Для моря то, что надо. Лет 5 катался на кетайской, начала расклеиваться, что опасно на волне. Эта просто радует глаз качеством исполнения, явно на порядок выше. Отдельное спасибо команде Мазая за скрупулезную и добросовестную работу. Вот прямо порадовали! Сразу заказал колеса и ходовой тент, теперь дело за мотором, с таким судном не менее 5 лошадей на одного и 8 на двоих. Всем 7 футов под килем и Мазаю особенно!
+      .comment-form__btn-answer-wrapp
+        a(href="#").comment-form__btn-answer ответить
+  .comment-form__comment
+    .comment-form__fio
+      .comment-form__date-mob 04.01.2019
+      div Бротислав Беловенко
+      .comment-form__date 04.01.2019
+    .comment-form__content Всем привет! Вот и пришла моя лодка Ривьера 3400 СК Компакт. Заказ от 30.01. Лодка отличная! Швы все ровные, клей нигде не торчит.Транспортная кампания «Энергия». Отдельное спасибо менеджерам! Вошли в положение и быстро переделали договор! Огромное спасибо, я всем доволен!
+      .comment-form__btn-answer-wrapp
+        a(href="#").comment-form__btn-answer ответить
