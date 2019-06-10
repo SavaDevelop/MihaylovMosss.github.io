@@ -18,7 +18,7 @@ $color-black: #000000
         padding: 0rem 1rem
     &-menu a:hover, &-menu a.active
         background: #775CEC
-    
+
     &-description p
         margin-bottom: 0
         &-title
@@ -251,13 +251,13 @@ $color-black: #000000
                 right: 46%
                 margin-right: -25px
                 text-align: center
-            
+
             .icn-action-wishlist .icn-action-count
                 top: -10px
 
             .icn-action-compare .icn-action-count
                 top: -10px
-        
+
         &-action:first-child
             .icn-action
                 margin: 0 0 0 0
@@ -331,10 +331,6 @@ $color-black: #000000
     .header-content-section-block-logo
         display: inline-block
         width: 16%
-    .header-content-section-block-menu
-        -ms-flex: 0 0 41.666667%
-        flex: 0 0 41.666667%
-        max-width: 41.666667%
     .header-product-search
         -ms-flex: 0 0 25%
         flex: 0 0 25%
@@ -414,12 +410,6 @@ $color-black: #000000
     .header-content-section-mainmenu nav ul li a
         padding: 0px 22px 0px 24px
 
-@media (max-width: 1340px)
-    .header-content-section-block-menu
-        max-width: 44%
-        padding-left: 0
-        padding-right: 0
-
 @media (max-width: 1280px)
     .header-content-section-block-menu
         ul.nav
@@ -495,13 +485,19 @@ $color-black: #000000
             -ms-flex: 0 0 60%
             flex: 0 0 60%
             max-width: 60%
+            @media (min-width: 1441px)
+              -ms-flex: 0 0 41.666667%
+              flex: 0 0 41.666667%
+              max-width: 41.666667%
+            @media (max-width: 1340px)
+              max-width: 44%
 
             nav .nav
                 justify-content: left
 
             nav .nav li:nth-child(1)
                 display: none
-            
+
             ul li a
                 font-size: 18px
 
@@ -518,7 +514,7 @@ $color-black: #000000
         padding: 15px 0px
         &-menu
             display: none
-    
+
     .header-top-actions
         -ms-flex: 0 0 83.333333%
         flex: 0 0 83.333333%

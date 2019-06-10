@@ -4,12 +4,9 @@
   &__icons
     width: 50%
     float: right
+    margin-bottom: 21px
     @media (max-width: 415px)
       width: 100%
-  &__image
-    border-radius: 5px
-    width: 100%
-    padding: 2px 0 0 0
   &__btn-heart
     padding: 0 10px
     span
@@ -22,10 +19,19 @@
     span
       padding: 0 5px
 
-  &_imag_display
+  &__image
+    border-radius: 10px
+    width: 100%
+    padding: 0px 0 0 0
+    margin-bottom: 48px
+    img
+      height: auto
+      max-width: 100%
+
+  &_image_display
     @media (max-width: 1000px)
       display: none
-  &_imag_mobil
+  &_image_mobile
     display: none
     @media (max-width: 1000px)
       display: block
@@ -49,7 +55,7 @@
     line-height: 17px
 
   &__date-off-wrapp
-    padding: 20px 0px
+    padding: 0 0px
     width: 100%
     display: block
     @media (max-width: 992px)
@@ -59,6 +65,8 @@
     color: #989898
     font-size: 14px
     line-height: 17px
+  &__content
+    width: 80%
 
   &_subtitle_correct
     display: block
