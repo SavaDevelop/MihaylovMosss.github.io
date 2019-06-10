@@ -2,7 +2,13 @@ import './compare-slider.sass';
 import '../base/sass/bootstrap-slider.scss';
 
 $(document).ready(function(){
-  $('.compare-slider').slick({
+  $('.compare-slider__switcher').on('click', function () {
+    $('.compare-slider__switcher').toggleClass('compare-slider__switcher-on'); //меняем положение переключателя
+    $('.compare-slider__switcher-off').toggleClass('compare-slider__switcher-on'); //меняем положение переключателя
+    $('.compare__item:not(.compare__item_bg_blue)').toggleClass('d-none'); //прячем все блоки, которе не имею класс .compare__item_bg_blu т.е. блоки тольчко отличия
+  });
+
+  $('.compare-slider__slider').slick({
     rows: 0, // delete empty div
     dots: false,
     arrow: true,
@@ -54,4 +60,5 @@ $(document).ready(function(){
       }
     ]
   })
+  //*/
 });

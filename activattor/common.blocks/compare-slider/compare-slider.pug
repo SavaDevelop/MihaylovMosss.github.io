@@ -1,5 +1,33 @@
-.compare-slider__wrap
-  .ncompare-actions
+.compare-slider
+  .compare-slider__wrapp
+    .compare-slider__header
+      .compare-slider__tab-nav
+        ul.nav.nav-tabs#myTab(role="tablist")
+          li.nav-item
+            a.nav-link.active#home-tab(data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true") Лодка ПВХ (6)
+          li.nav-item
+            a.nav-link#profile-tab(data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false") SUP-доски (2)
+      .compare-slider__switcher-wrapp только отличия
+        .compare-slider__switcher
+          .compare-slider__switcher-off
+          
+    .compare-slider__content
+    .tab-content#myTabContent
+      div.tab-pane.fade.show.active#home(role="tabpanel" aria-labelledby="home-tab")
+        .compare-slider__slider
+          .compare-slider__item контент 1
+          .compare-slider__item контент 2
+          .compare-slider__item контент 3
+          .compare-slider__item контент 4
+          .compare-slider__item контент 5
+          .compare-slider__item контент 6
+          .compare-slider__item контент 7
+          .compare-slider__item контент 8
+          .compare-slider__item контент 9
+          .compare-slider__item контент 0
+      div.tab-pane.fade#profile(role="tabpanel" aria-labelledby="profile-tab") content 2
+
+  //- .ncompare-actions
     .ncompare-cat-switcher
       span.ncompare-cat-switch.active(data-cat="630")
         | Лодки под мотор
@@ -8,7 +36,7 @@
       .ncompare-diffs-toggler
         | Только отличия
         i
-  .ncompare-header
+  //- .ncompare-header
     .ncompare-products.slick-initialized.slick-slider
       .slick-list.draggable(aria-live="polite")
         .slick-track(style="opacity: 1; width: 960px; transform: translate3d(0px, 0px, 0px);")
