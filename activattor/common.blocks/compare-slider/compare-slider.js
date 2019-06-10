@@ -60,6 +60,7 @@ $(document).ready(function(){
       }
     ]
   })
+
   $('.compare-slider__slider-tab2').slick({
     rows: 0, // delete empty div
     dots: false,
@@ -112,4 +113,5 @@ $(document).ready(function(){
       }
     ]
   })
+  $('ul.nav li a', document).slick('reinit');
 });
