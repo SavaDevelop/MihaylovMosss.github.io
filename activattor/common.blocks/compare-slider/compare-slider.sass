@@ -1,0 +1,100 @@
+.compare-slider
+  &__wrap
+    background: #C4C4C4
+    opacity: 0.2
+    border-radius: 10px
+    position: relative
+    width: 100%
+    padding: 50px 0
+    // &::before
+    //   content: ''
+    //   position: absolute
+    //   bottom: 0
+    //   left: -50px
+    //   width: 250px
+    //   height: 250px
+    //   z-index: -1
+    //   opacity: .5
+    //   background: url(../../img/slider/left.png) 0px 0px no-repeat
+    //   @media (max-width: 992px)
+    //     top: 0px
+    //     background: url(../../img/slider/left_2.png) -43px 20px no-repeat
+    // &::after
+    //   content: ''
+    //   position: absolute
+    //   right: 0
+    //   bottom: 0
+    //   width: 250px
+    //   height: 250px
+    //   z-index: -1
+    //   opacity: .5
+    //   background: url(../../img/slider/right.png) 10px -150px no-repeat
+    //   @media (max-width: 992px)
+    //     top: 0px
+    //     background: url(../../img/slider/right_2.png) -100px 0px no-repeat
+    // &_title
+    //   padding-bottom: 38px
+.stock-slider
+  display: flex
+  padding: 0 15px
+  .slick-list,
+  .slick-track
+    display: flex
+  .slick-slide
+    padding: 0 15px
+  &__item
+    display: flex
+    flex-wrap: wrap
+  &__content
+    background: #ffffff
+    border: 2px solid #E2E2E2
+    padding-bottom: 23px
+    border-radius: 10px
+    position: relative
+    overflow: hidden
+    &:hover
+      border: 2px solid #F9C300
+    .img
+      height: calc(100% - 55%)
+      display: flex
+      align-items: center
+      justify-content: center
+      overflow: hidden
+  &__image
+    max-width: 100%
+    height: auto
+  &__inform
+  &__title
+    background: rgba(104, 151, 255, 0.3)
+    padding: 8px 18px
+    font-family: 'SF UI Display SemiBold', sans-serif
+    font-size: 18px
+    line-height: 20px
+    color: #000000
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    height: 70px
+    width: 100%
+    @media (max-width: 1400px)
+      font-size: 16px
+  &__text
+    color: #767676
+    font-size: 14px
+    line-height: 19px
+    margin-bottom: 0px
+    padding: 12px 22px 36px
+  &__info-text
+    justify-content: space-between
+    display: flex
+    padding: 0 22px
+    position: absolute
+    bottom: 0
+    width: 100%
+    p
+      @media (max-width: 1400px)
+        font-size: 14px
+
+.slick-initialized .slick-slide
+  display: flex
