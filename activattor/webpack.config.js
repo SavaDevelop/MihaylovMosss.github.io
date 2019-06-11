@@ -9,7 +9,7 @@ const css = require('./webpack/css'); //нормалайз css
 const extractCSS = require('./webpack/css.extract');//подгружаем самодостаточный моудль выгрузки css только для буилд
 const uglifyJS = require('./webpack/js.uglify');//минификация js
 const images = require('./webpack/images');//подгрузка картинок
-const bootstrapEntryPoints = require('./webpack/webpack.bootstrap.config.js');
+// const bootstrapEntryPoints = require('./webpack/webpack.bootstrap.config.js');
 const fonts = require('./webpack/fonts.js'); //fonts and icons
 
 const PATHS = {
@@ -21,7 +21,7 @@ const PATHS = {
 console.log('===============================================');
 console.log('=======================>', process.argv[3], '<==========');
 console.log('===============================================');
-var bootstrapConfig = (process.argv[3] === 'development') ? bootstrapEntryPoints.dev : bootstrapEntryPoints.prod;
+// var bootstrapConfig = (process.argv[3] === 'development') ? bootstrapEntryPoints.dev : bootstrapEntryPoints.prod;
 
 const common = merge([
   {
