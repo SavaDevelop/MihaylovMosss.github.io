@@ -7,12 +7,12 @@ block main
       div.row
         include ../../common.blocks/breadcrumb/breadcrumb
         .container
-          .trafaret-compare
-          h1.title_h1 Сравнение товаров
-          //- include ../../common.blocks/compare-slider/compare-slider
+          //- .trafaret-compare
+          h1.title_h1(style="margin-bottom:48px") Сравнение товаров
+          include ../../common.blocks/compare-slider/compare-slider
           .compare
             h2.title_h2(style="margin-bottom:35px;") Характеристики
-            .compare__item.compare__item-first
+            .compare__item.compare__item_bg_blue.compare__item-first
               .compare__item-opis
                 .compare__item-title Лодка
                 .compare__item-content 1 шт
@@ -112,7 +112,7 @@ block main
               .compare__item-desc 2 шт
               .compare__item-desc 2 шт
               .compare__item-desc 2 шт
-            .compare__item.compare__item-last
+            .compare__item
               .compare__item-opis
                 .compare__item-title Насос
                   i ?
@@ -120,3 +120,35 @@ block main
               .compare__item-desc 1 шт
               .compare__item-desc 1 шт
               .compare__item-desc 1 шт
+            .compare__item
+              .compare__item-opis
+                .compare__item-title Диаметр борта (мм)
+                  i ?
+                .compare__item-content 3 600
+              .compare__item-desc 3 600
+              .compare__item-desc 2 800
+              .compare__item-desc 20 800
+            .compare__item
+              .compare__item-opis
+                .compare__item-title Масса лодки (кг)
+                  i ?
+                .compare__item-content 36
+              .compare__item-desc 22
+              .compare__item-desc 43
+              .compare__item-desc 32
+            .compare__item
+              .compare__item-opis
+                .compare__item-title Киль
+                  i ?
+                .compare__item-content есть
+              .compare__item-desc есть
+              .compare__item-desc -
+              .compare__item-desc нет
+            .compare__item.compare__item-last
+              .compare__item-opis
+                .compare__item-title Вид
+                  i ?
+                .compare__item-content моторная
+              .compare__item-desc моторная
+              .compare__item-desc моторная
+              .compare__item-desc моторная
