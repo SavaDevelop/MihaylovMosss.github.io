@@ -1,38 +1,38 @@
 extends ../../common.blocks/base/base
 block head
 block title
-  | News-section
+  | news-single
 block main
         main
-          .container 
+          .container
             .row
             include ../../common.blocks/breadcrumb/breadcrumb
             .row
               //- .trafaret-news-single
               .col-12
                 h1.title_h1 Как выбрать надувную лодку ПВХ?
-                .news-section__date-off-wrapp-mob
-                  .news-section__date-off-mob 28.05.19 16:30
-                .news-section__icons.text-right
-                  a(href="#").news-section__btn-heart
+                .news-single__date-off-wrapp-mob
+                  .news-single__date-off-mob 28.05.19 16:30
+                .news-single__icons.text-right
+                  a(href="#").news-single__btn-heart
                     img(src="../../img/icons/eye.svg")
                     span 0
-                  a(href="#").news-section__btn-comment
+                  a(href="#").news-single__btn-comment
                     img(src="../../img/icons/speech-bubble.svg")
                     span 0
-                  a(href="#").news-section__btn-like
+                  a(href="#").news-single__btn-like
                     img(src="../../img/icons/like.svg")
-                    span 0  
-                .news-section__image
-                  img(src=require('../../img/news/boats2.jpg') alt='Доски').news-section__image.news-section_imag_display
-                  img(src=require('../../img/news/boats2_m.jpg') alt='Доски').news-section__image.news-section_imag_mobil
-                .news-section__date-off-wrapp
-                  .news-section__date-off.text-right 28.05.19 16:30
-                .news-section__content
+                    span 0
+                .news-single__image
+                  img(src=require('../../img/news/boats2.jpg') alt='Доски').news-single__image.news-single_imag_display
+                  img(src=require('../../img/news/boats2_m.jpg') alt='Доски').news-single__image.news-single_imag_mobil
+                .news-single__date-off-wrapp
+                  .news-single__date-off.text-right 28.05.19 16:30
+                .news-single__content
                   h2.title_h2.SF-UI-Display-Semibold Надувная доска для sup-бординга Stormline Powermax 10.6
-                  p Сейчас морской транспорт стал более доступным для частных нужд как никогда раньше. Сконструировано множество лодок больших и малых размеров, которые используются для туризма, развлечения или рыбалки. Очень популярны среди них модели из ПВХ, отличающиеся малым весом, компактными транспортировочными размерами и высокой скоростью, благодаря подсоединенному мотору. В характеристиках такой продукции много непонятных терминов и цифр, разобравшись в которых будет легче выбрать лодку ПВХ для своих нужд. 
+                  p Сейчас морской транспорт стал более доступным для частных нужд как никогда раньше. Сконструировано множество лодок больших и малых размеров, которые используются для туризма, развлечения или рыбалки. Очень популярны среди них модели из ПВХ, отличающиеся малым весом, компактными транспортировочными размерами и высокой скоростью, благодаря подсоединенному мотору. В характеристиках такой продукции много непонятных терминов и цифр, разобравшись в которых будет легче выбрать лодку ПВХ для своих нужд.
                   h2.title_h2.SF-UI-Display-Semibold Лучшие производители лодок ПВХ - какую фирму выбрать:
-                  ul.news-section__ul
+                  ul.news-single__ul
                     li Corsar
                     li Морские прогулки;
                     li Охота по заболоченным местам;
@@ -42,20 +42,20 @@ block main
                   p Их продукция высокого качества, но существует столько размеров и форм, что желательно ознакомиться с рейтингом лучших лодок ПВХ и сузить зону поиска. Эта же статья научит разбираться самостоятельно в параметрах лодок ПВХ и более точно определиться с выбором.
 
                   h2.title_h2 Используют лодки ПВХ для различных целей:
-                  ol.news-section__ol
+                  ol.news-single__ol
                     li Рыбалка на крупных озерах;
                     li Морские прогулки;
                     li Охота по заболоченным местам;
                     li Экстремальные спуски по рекам;
                     li Троллинг;
                     li Водные аттракционы (присоединение лыж, «ватрушки»).
-                  .news-section__soc
+                  .news-single__soc
                     p Поделитесь этой статьей:
                     a(href="https://vk.ru" target="_blank")
                       img(src='../../img/icons/facebook.svg' alt="")
                     a(href="https://vk.ru" target="_blank")
                       img(src='../../img/icons/vk.svg'  alt="")
-                    
+
                   include ../../common.blocks/comment-form/comment-form
             include ../../common.blocks/catalog_boats_main/catalog_boats_main
             symbol#heart_fill(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 29 27")
