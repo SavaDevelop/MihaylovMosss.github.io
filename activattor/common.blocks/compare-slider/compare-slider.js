@@ -2,6 +2,7 @@ import './compare-slider.sass';
 import '../base/sass/bootstrap-slider.scss';
 
 $(document).ready(function(){
+
   $('.compare-slider__switcher').on('click', function () {
     $('.compare-slider__switcher').toggleClass('compare-slider__switcher-on'); //меняем положение переключателя
     $('.compare-slider__switcher-off').toggleClass('compare-slider__switcher-on'); //меняем положение переключателя
