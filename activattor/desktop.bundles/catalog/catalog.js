@@ -101,6 +101,7 @@ $(document).ready(function () {
   });
 
   $(".white_icon").on("click", function () {
+      $(this).toggleClass("open-filter");
       $(".filter").toggleClass("display");
       if($(".filter").hasClass("display")){
         $(this).find("use").attr("xlink:href", "#plus_icon");
