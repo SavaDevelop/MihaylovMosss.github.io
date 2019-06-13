@@ -14,15 +14,15 @@ import '../../common.blocks/trafarets/trafarets.js';
 
 $(function(){
 
-  $(document).on('click touch', '.news-section__btn-heart', function(){
+  $(document).on('click touch', '.news-single__btn-heart', function(){
 
   })
 
-  $(document).on('click touch', '.news-section__btn-comment', function(){
+  $(document).on('click touch', '.news-single__btn-comment', function(){
 
   })
 
-  $(document).on('click touch', '.news-section__btn-like', function(){
+  $(document).on('click touch', '.news-single__btn-like', function(){
 
   })
 

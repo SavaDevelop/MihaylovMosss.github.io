@@ -2,6 +2,7 @@ import './compare-slider.sass';
 import '../base/sass/bootstrap-slider.scss';
 
 $(document).ready(function(){
+
   $('.compare-slider__switcher').on('click', function () {
     $('.compare-slider__switcher').toggleClass('compare-slider__switcher-on'); //меняем положение переключателя
     $('.compare-slider__switcher-off').toggleClass('compare-slider__switcher-on'); //меняем положение переключателя
@@ -59,7 +60,7 @@ $(document).ready(function(){
         }
       }
     ]
-  })
+  });
 
   $('.compare-slider__slider-tab2').slick({
     rows: 0, // delete empty div
@@ -112,6 +113,16 @@ $(document).ready(function(){
         }
       }
     ]
+  });
+
+  $('ul.nav li a', document).on('click touch', function(){
+    //обновляем слайдер для его правильного отображения
+    $('.compare-slider__slider, .compare-slider__slider-tab2', document).slick('refresh');
   })
-  $('ul.nav li a', document).slick('reinit');
+
+  $('.compare-slider__item-close', document).on('click touch', function(){
+    //Удаляем карточки при нажатии крестика пользователем
+    $(this).parent().remove();
+  });
+
 });

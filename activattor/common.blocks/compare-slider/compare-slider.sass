@@ -1,4 +1,5 @@
 .compare-slider
+  overflow: hidden
   &__wrapp
     background: #f3f3f3
     border-radius: 10px
@@ -56,6 +57,9 @@
     &-on
       float: right!important
       display: block!important
+      border-color: #FFD84F
+      div
+        background-color: #FFD84F
 
   &__content
   &__slider
@@ -63,7 +67,13 @@
   &__slider-tab2
     padding: 20px 0 0 0
   &__item
-    display: block!important
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: stretch
+    align-content: stretch
+
     position: relative
     width: 344px
     height: 163px
@@ -81,24 +91,50 @@
     &-img
       height: 135px
       float: left
+    &-content
+      display: flex
+      flex-direction: column
+      flex-wrap: nowrap
+      justify-content: space-between
+      align-items: stretch
+      align-content: stretch
     &-title
       width: 100%
       font-size: 15px
       line-height: 19px
       color: #202020
       font-weight: bold
-    &-start
+    &-info
+    &-stars
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: space-around
+      align-items: stretch
+      align-content: stretch
+
       float: left
       width: 30%
       height: 30px
+      span
+        cursor: pointer
+        width: 20px
+        height: 20px
+        background: url('../../img/icons/star_white.png') 0 0 no-repeat
+      &-selected
+        width: 20px
+        height: 20px
+        background: url('../../img/icons/star_red.png') 0 0 no-repeat!important
     &-reviews
-      float: left
+      float: right
       width: 35%
       font-size: 13px
       line-height: 15px
       text-align: right
       color: #6C6C6C
       height: 30px
+    &-bottom
+      height: 28px
     &-price
       font-size: 15px
       line-height: 17px
@@ -109,8 +145,8 @@
       float: left
       padding: 8px 13px
       margin-top: 3px
-    &-botton
-      width: 37%
+    &-button
+      width: 53%
       float: right
       botton
         width: 115px

@@ -1,4 +1,14 @@
 .compare
+  &__items
+    .compare__item
+      &:first-child
+        border-top: 1px solid #d7d7d7
+        border-radius: 10px 10px 0 0
+        background: #f3fbff
+      &:last-child
+        border-top: 1px solid #d7d7d7
+        border-radius: 0 0 10px 10px
+        margin-bottom: 100px
   &__item
     border-left: 1px solid #d7d7d7
     border-right: 1px solid #d7d7d7
@@ -7,6 +17,7 @@
     height: 118px
     padding: 24px 0 0 34px
     display: flex
+
     &-opis
       width: 25%
     &-content
@@ -18,14 +29,6 @@
       width: 25%
       padding-top: 41px
       font-size: 19px
-    &-first
-      border-top: 1px solid #d7d7d7
-      border-radius: 10px 10px 0 0
-      background: #f3fbff
-    &-last
-      border-top: 1px solid #d7d7d7
-      border-radius: 0 0 10px 10px
-      margin-bottom: 100px
     &-title
       font-size: 21px
       line-height: 26px
