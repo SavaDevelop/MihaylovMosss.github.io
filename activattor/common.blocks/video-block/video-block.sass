@@ -1,0 +1,60 @@
+.video-block
+  position: relative
+  video
+    border-radius: 10px
+    height: auto
+    width: 100%
+
+.yellow-circle
+    padding-left: 4px
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    top: 50%
+    left: 50%
+    background-color: #FFD702
+    width: 74px
+    height: 74px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    transition: all .8s
+    border: none
+    outline: 0
+    svg
+      width: 32px
+      height: 29px
+    &:hover
+      background-color: #FFB802
+    &:active, &:focus
+      background-color: #FFD569
+
+    &:before
+      content: ""
+      top: 50%
+      left: 50%
+      transform: translateY(-50%) translateX(-50%)
+      position: absolute
+      width: 90px
+      height: 90px
+      border: 2px solid rgba(255, 215, 2, 0.35)
+      border-radius: 50%
+    &:hover:before
+      border: 2px solid rgba(255, 184, 2, 0.57)
+    &:after
+      content: ""
+      top: 50%
+      left: 50%
+      transform: translateY(-50%) translateX(-50%)
+      position: absolute
+      width: 107px
+      height: 107px
+      border: 2px solid rgba(255, 215, 2, 0.35)
+      border-radius: 50%
+    &:hover:after
+      border: 2px solid rgba(255, 184, 2, 0.13)
+    &:active:before
+      border: 2px solid rgba(255, 215, 2, 0.35)
+    &:active:after
+      border: 2px solid rgba(255, 238, 148, 0.35)

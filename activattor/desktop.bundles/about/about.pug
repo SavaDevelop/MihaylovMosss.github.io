@@ -5,11 +5,15 @@ block title
 block main
   main
     .container
-        section.pl-0.pr-0.pb-0
+      .row
+        include ../../common.blocks/breadcrumb/breadcrumb
+        section.pl-0.pr-0.pb-0.col-12
             h2 Первый маркет-плейс товаров для активного отдыха
-            .tm-media(style="background-image: url('img/delivery-1.png')")
-                .tm-media-flex.tm-media-flex-center
-                img(src="img/tm-btn-play.svg")
+            div.tm-media(style="background-image: url('../../img/delivery-1.png')")
+                div.yellow-circle
+                  svg.icon(width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+                      path(d="M22 14L.25 27.856V.144L22 14z" fill="#fff")
+                  video(src="../../video/fishing.mp4" id="movie1" style="display: none")
         section.mt-5
             .row
                 .col-12
