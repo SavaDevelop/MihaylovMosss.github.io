@@ -15,10 +15,10 @@ $(document).ready(function(){
     arrow: true,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -35,8 +35,6 @@ $(document).ready(function(){
       {
         breakpoint: 992,
         settings: {
-          centerMode: true,
-          centerPadding: '80px',
           slidesToShow: 2,
           slidesToScroll: 1
         }
