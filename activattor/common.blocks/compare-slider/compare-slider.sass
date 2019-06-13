@@ -1,4 +1,6 @@
 .compare-slider
+  @media (max-width: 415px)
+    margin: 0 -25px
   &__wrapp
     background: #f3f3f3
     border-radius: 10px
@@ -7,10 +9,21 @@
     padding: 19px 30px 34px
     @media screen and (max-width: 992px)
       padding: 19px 30px 78px
+    @media (max-width: 415px)
+      padding: 19px 30px 38px
   &__header
     display: flex
+    @media (max-width: 415px)
+      display: flex
+      flex-direction: column-reverse
+      flex-wrap: nowrap
+      justify-content: space-around
+      align-items: stretch
+      align-content: stretch
   &__tab-nav
     width: 70%
+    @media (max-width: 415px)
+      width: 100%
     .nav-tabs
       border: none
     .nav-item
@@ -20,7 +33,7 @@
         padding: 0
       .active
         background: none
-        border-bottom: 1px dashed #F9C300
+        border-bottom: 1px dashed #F9C300!important
       a
         font-size: 15px
         line-height: 19px
@@ -33,6 +46,10 @@
   &__switcher-wrapp
     width: 30%
     text-align: right
+    @media (max-width: 415px)
+      width: 60%
+      text-align: left
+      padding-bottom: 20px
   &__switcher
     float: right
     width: 49px
@@ -72,14 +89,6 @@
       top: 55%
     .slick-list
       margin: 0 -10px
-  &__slider-tab2
-    padding: 20px 0 0 0
-    .slick-prev
-      left: -45px
-    .slick-next
-      right: -45px
-    .slick-list
-      margin: 0 -10px
   &__item
     display: flex
     flex-direction: row
@@ -97,13 +106,25 @@
     border-radius: 10px
     margin: 0 10px
     padding: 13px 15px 13px 1px
+    @media (max-width: 415px)
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: stretch
+      align-content: stretch
+      height: auto
+      width: auto
+      padding: 10px
     &:hover
       border: 2px solid #F9C300
       .compare-slider__item-close
         display: block
     &-img
       height: 135px
-      float: left
+      @media (max-width: 415px)
+        display: flex
+        justify-content: center
     &-content
       display: flex
       flex-direction: column
@@ -117,7 +138,11 @@
       line-height: 19px
       color: #202020
       font-weight: bold
+      @media (max-width: 415px)
+        font-size: 12px
     &-info
+      @media (max-width: 415px)
+        display: none
     &-stars
       display: flex
       flex-direction: row
@@ -160,16 +185,31 @@
       font-family: 'SF UI Display SemiBold', sans-serif
       float: left
       padding: 8px 13px
+      @media (max-width: 415px)
+        padding: 8px
+        width: auto
+        font-size: 12px
     &-button
+      &-text
+        @media (max-width: 415px)
+          display: none
+      &-img
+        @media (min-width: 415px)
+          display: none
       button
         font-size: 12px
         line-height: 14px
         border-radius: 8px
         padding: 13px 26px 13px 26px
+        @media (max-width: 1025px)
+          padding: 12px 8px 12px
+        @media (max-width: 415px)
+          padding: 8px 10px
+
     &-close
       position: absolute
-      top: 5px
-      right: 10px
+      top: 0px
+      right: 6px
       display: none
       cursor: pointer
 
