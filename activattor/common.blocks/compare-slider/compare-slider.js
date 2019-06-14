@@ -93,16 +93,9 @@ $(document).ready(function(){
     if($('.nav-link').is('.active')){
       setTimeout(function(){
         $('#' + tab_active + " > .compare-slider__slider").slick('refresh');
-        // $('.compare-slider__slider').slick('refresh'); //обновляем слайдер, иначе не строится ширина
         $('.compare-slider__slider').css({'opacity': 1}); //показываем слайдер
         $('.compare-slider').css({'height': 'auto'}); //возвращяет высоту
-        //
-        // $('#' + tab_active + " > .compare-slider__slider").on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
-        //   var i = (currentSlide ? currentSlide : 0) + 1;
-        //   $('.slide__info', document).text(i + ' / ' + slick.slideCount);
-        //  });
-         init_s(tab_active, 'reInit refresh afterChange');
-        // $(".slide__totall").text( $('#' + tab_active + " > .compare-slider__slider").slick("getSlick").slideCount ); // вычисляем и даем колличество слайдов
+        init_s(tab_active, 'reInit refresh afterChange');
       },150); //критическое время 150, меньше нельзя
     }
   })
@@ -128,7 +121,6 @@ $(document).ready(function(){
     });
 
     window.console.log('.compare-slider__item-close:',  index);
-
 
   });
 
