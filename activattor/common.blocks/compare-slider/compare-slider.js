@@ -60,7 +60,6 @@ $(document).ready(function(){
       {
         breakpoint: 640,
         settings: {
-          centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1,
           slidesToScroll: 1
@@ -69,7 +68,6 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
-          centerMode: true,
           centerPadding: '10px',
           slidesToShow: 2,
           slidesToScroll: 1
