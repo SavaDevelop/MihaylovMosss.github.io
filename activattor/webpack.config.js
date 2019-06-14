@@ -34,7 +34,7 @@ const common = merge([
         // 'card-product':  PATHS.source + '/desktop.bundles/card-product/card-product.js',
         // 'catalog':  PATHS.source + '/desktop.bundles/catalog/catalog.js',
         // 'check-in':  PATHS.source + '/desktop.bundles/check-in/check-in.js',
-        // 'compare':  PATHS.source + '/desktop.bundles/compare/compare.js',
+        'compare':  PATHS.source + '/desktop.bundles/compare/compare.js',
         // 'contacts':  PATHS.source + '/desktop.bundles/contacts/contacts.js',
         // 'credit':  PATHS.source + '/desktop.bundles/credit/credit.js',
         // 'delivery':  PATHS.source + '/desktop.bundles/delivery/delivery.js',
@@ -112,11 +112,11 @@ const common = merge([
         //     chunks: ['check-in'],
         //     template: PATHS.source + '/desktop.bundles/check-in/check-in.pug'
         // }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'compare.html',
-        //     chunks: ['compare'],
-        //     template: PATHS.source + '/desktop.bundles/compare/compare.pug'
-        // }),
+        new HtmlWebpackPlugin({
+            filename: 'compare.html',
+            chunks: ['compare'],
+            template: PATHS.source + '/desktop.bundles/compare/compare.pug'
+        }),
         // new HtmlWebpackPlugin({
         //     filename: 'contacts.html',
         //     chunks: ['contacts'],
