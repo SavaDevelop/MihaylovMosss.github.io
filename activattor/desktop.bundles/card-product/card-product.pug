@@ -1,7 +1,7 @@
 extends ../../common.blocks/base/base
 block head
 block title
-  | Test
+  | Cartd-product
 block main
     main
       include ../../common.blocks/card-product/advant/advant
@@ -11,7 +11,6 @@ block main
       include ../../common.blocks/card-product/dev-pay/dev-pay
       //- include ../../common.blocks/card-product/images/images
       include ../../common.blocks/card-product/price/price
-      include ../../common.blocks/card-product/stars/stars
       //- include ../../common.blocks/card-product/video/video
       #navigation.container
         .bx-breadcrumb.row
@@ -37,6 +36,7 @@ block main
           .row
             .single-product__title
               h1 Лодка ПВХ Штормлайн (Stormline) Adventure Standard 310
+            div(style="font-size: 15px; text-aligh:right; width:100%") Код товара: 201-10007
             .single-product__description
               .col-lg-5
                 include ../../common.blocks/card-product/images/images
