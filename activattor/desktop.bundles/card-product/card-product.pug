@@ -9,10 +9,10 @@ block main
       include ../../common.blocks/card-product/compare-like/compare-like
       include ../../common.blocks/card-product/desc/desc
       include ../../common.blocks/card-product/dev-pay/dev-pay
-      include ../../common.blocks/card-product/images/images
+      //- include ../../common.blocks/card-product/images/images
       include ../../common.blocks/card-product/price/price
       include ../../common.blocks/card-product/stars/stars
-      include ../../common.blocks/card-product/video/video
+      //- include ../../common.blocks/card-product/video/video
       #navigation.container
         .bx-breadcrumb.row
           .bx-breadcrumb-item(id="" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" itemref="bx_breadcrumb_0")
@@ -39,44 +39,7 @@ block main
               h1 Лодка ПВХ Штормлайн (Stormline) Adventure Standard 310
             .single-product__description
               .col-lg-5
-                section.module-gallery.module-12345.row
-                  .maxWidth900.padLR15
-                    .padTB20
-                      .slider-wrapper
-                        ul.slider-thumb.noPad.noMar
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                        ul.slider-preview.noPad.noMar
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
-                          li.type-image
-                            img(src="img/river-3400-8-600x365.png" alt="")
+                include ../../common.blocks/card-product/images/images
               .single-product__description_excerpt.col-lg-3
                 .row
                   .single-product__description_excerpt_block
@@ -213,16 +176,7 @@ block main
                     .single-product__buy_list_item
                       .single-product__buy_list_item_label На расчётный счёт
                       .single-product__buy_list_item_value есть
-        .single-product__video_section.color-white
-          .container
-            .row
-              .col-12.text-center
-                h2.title Посмотрите видео
-                p про Лодку ПВХ Штормлайн (Stormline) Adventure Standard 310
-                .video
-                  iframe(width="930" height="403" src="https://www.youtube.com/embed/qV-vY0p-8mA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
-                h3 Лодка Ривьера 3400 СК версии
-                p Здесь небольшое описание видео
+        include ../../common.blocks/card-product/video/video
         .single-product__crossell_block
           .container
             .row
